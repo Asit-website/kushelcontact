@@ -1,13 +1,634 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@600&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@600&family=Raleway&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@600&family=Raleway&family=Red+Hat+Display&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap');
+
+/* just drop the last if not like  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@600&family=Raleway&family=Red+Hat+Display:wght@500;700&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap');
+
+/* ==========poppins===================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;600&family=Raleway&family=Red+Hat+Display:wght@500;700&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap');
+
+/* =============nunio sans====================== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  overflow-x: hidden;
 }
+
+
+/* =========navbar css================= */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(http://localhost:3000/static/media/gradian.59748f4….png), linear-gradient( to left, rgb(0, 0, 0), rgb(0, 0, 0));
+  padding: 10px 60px;
+  box-shadow: 0 3px 6px #000000;
+  filter: drop-shadow(0 3px 6px #000000);
+  filter: brightness(100%);
+}
+
+.navbar .logo img{
+  display: block;
+  max-width: 100%;
+   width: 150px;
+   height: auto;
+   object-fit: cover;
+   margin: auto;
+}
+
+.head ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head ul li{
+  list-style: none;
+  padding: 0 20px;
+  
+}
+
+.head ul li a{
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+}
+
+.head ul li .contact{
+  font-family: 'Roboto Slab', serif;
+    background-color: #0E66F9;
+    font-size: 10px;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* =========contact css=================== */
+
+.cont{
+  background-image: url(http://localhost:3000/static/media/gradian.59748f4….png), linear-gradient( to left, rgb(27 106 118), rgb(0, 0, 0));
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  box-shadow: 0 3px 6px #000000; 
+  filter: drop-shadow(0 3px 6px #000000);
+  filter: brightness(15px);
+ 
+  /* filter: blur(5px); */
+}
+
+.cont .first_heading_contact{
+ 
+  padding: 140px 55px;
+  
+}
+
+.first_heading_contact h2{
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'Red Hat Display', serif;
+  filter: brightness(100%);
+}
+
+.first_heading_contact span{
+  font-weight: bold;
+ color: #0E66F9;
+}
+
+.first_heading_contact p{
+  color: #FFFFFF;
+  /* font-family: 'Red Hat Display', sans-serif; */
+  font-family: 'Red Hat Display', serif;
+  line-height: 24px;
+  width: 550px;
+  font-size: 14px;
+  font-weight: 400;
+ margin-top: 15px;
+}
+
+.second_heading_contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 55px;
+}
+
+.second_heading_contact .concentric p{
+  font-family: 'Red Hat Display', serif;
+   color: #FFFFFF;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .first_line{
+  margin: 0 120px;
+ }
+.line .first_line img{
+  max-width: 100%;
+  object-fit: cover;
+  width: 230px;
+  
+}
+
+.line .second_line img{
+  max-width: 100%;
+  object-fit: cover;
+  width: 230px;
+}
+
+.contact_us{
+  background-color: #010910;
+  padding:30px 60px;
+}
+
+.contact_us .contact_para{
+  padding-top: 100px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: 'Red Hat Display', serif;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.contact_us .diff_btn{
+  width: 100%;
+  margin-top:35px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.diff_btn .first_link{
+  background-color: #0E66F9;
+  padding:10px 62px;
+
+}
+
+.diff_btn .second_link{
+  border: 2px solid #FFFFFF;
+  padding:10px 62px;
+}
+
+.diff_btn .third_link{
+  border: 2px solid #FFFFFF;
+  padding:10px 62px;
+}
+
+.diff_btn .fourth_link{
+  border: 2px solid #FFFFFF;
+  padding:10px 62px;
+}
+
+.diff_btn a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Red Hat Display', serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  /* margin: 0 10px; */
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.form_map{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.sorm_map{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sorm_map .sorm_map1{
+  width: 100%;
+  
+}
+
+.sorm_map .sorm_map1 h4{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Red Hat Display', serif;
+  font-size: 12px;
+ text-transform: capitalize;
+}
+
+.sorm_map .sorm_map1 span{
+ margin: 0px 2px;
+}
+
+.sorm_map .sorm_map2 span{
+  margin: 0px 2px;
+}
+
+.sorm_map .sorm_map1 p{
+ color: #FFFFFF;
+ margin-top: 10px;
+ font-size: 11px;
+ font-family: 'Red Hat Display', serif;
+ font-weight: bold;
+}
+
+.sorm_map .sorm_map1 .border{
+  border-bottom: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  margin-top: 3px;
+  width: 103px;
+  max-width: 100%;
+}
+
+.sorm_map .sorm_map2{
+  width: 100%;
+  margin: 0 30px;
+}
+
+.sorm_map .sorm_map2 h4{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Red Hat Display', serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.sorm_map .sorm_map2 p{
+  color: #FFFFFF;
+  margin-top: 10px;
+  font-size: 11px;
+  font-family: 'Red Hat Display', serif;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
+  /* border-bottom: 2px solid white; */
+ }
+
+ .sorm_map .sorm_map2 .sorder{
+  border-bottom: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  margin-top: 3px;
+  width: 103px;
+  max-width: 100%;
+  
+ }
+
+ .torm_map .map{
+ 
+   margin-top: 60px;
+ }
+
+ .torm_map .map img{
+   max-width: 100%;
+   width:360px;
+  height: auto;
+ object-fit: cover;
+ 
+ }
+
+
+/* ==========.contact css================ */
+
+ .wrapper {
+    margin: 0px auto 0;
+    width: 100%;
+    /* max-width: 1720px; */
+    /* padding: 20px; */
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  
+
+  /* form */
+  .top-form,
+  .bottom-form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+  }
+
+  .form input[type="text"]
+   {
+    height: 50px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+    border-bottom: 1px solid #FFFFFF;
+    width: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    font-family: 'Red Hat Display', serif;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0.8;
+  
+  }
+
+  .form input::placeholder
+  {
+    color: white;
+   opacity: 0.8;
+    font-weight: bold;
+    font-family: 'Red Hat Display', serif;
+  }
+
+  .form textarea{
+    font-weight: bold;
+    width: 100%;
+    max-width: 880px;
+    resize: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+    border-bottom: 1px solid #FFFFFF;
+    object-fit: cover;
+    max-height: 100%;
+    font-family: 'Red Hat Display', serif;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  .form textarea::placeholder{
+    color: #FFFFFF;
+    font-family: 'Red Hat Display', serif;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+  .form .second_area{
+    max-height: 100%;
+    height: 60px;
+  }
+
+
+  /* top-contact */
+  .top-form .inner-form {
+    width: 46.9%;
+    float: left;
+    margin-right: 6%;
+  }
+
+  .top-form .inner-form:last-child {
+    margin-right: 0;
+  }
+
+
+
+
+  /* bottom-form */
+  .bottom-form textarea {
+    max-height: 100%;
+    /* height: 20px; */
+  }
+
+  
+
+  @media screen and (max-width: 460px) {
+    .top-form .inner-form {
+      width: 100%;
+      margin: 5px 0;
+    }
+    
+
+    .top-form,
+    .bottom-form {
+      margin: 5px 0;
+    }
+
+    .form {
+      margin-top: 10px;
+    }
+
+   
+  }
+
+  /* ===============footer style==================== */
+
+  footer{
+    background-color: #020E19;
+    /* padding: 100px 130px; */
+    padding-top: 50px;
+  }
+
+  .footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    padding: 60px 130px;
+  }
+
+  .footer .first-footer .first_logo{
+    width: 100%;
+  }
+
+  .footer .first-footer .first_logo img{
+    width: 125px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .footer .first-footer .second_logo{
+    width: 100%;
+   margin-top: 30px;
+  }
+
+  .footer .first-footer .second_logo img{
+    width:26px ;
+    margin: 0px 6px;
+  }
+
+  .footer .second-footer span{
+     color: #FFFFFF;
+     font-family: 'Roboto Slab', serif;
+     font-size: 13px;
+     font-weight: 500;
+  }
+
+  .footer .second-footer .second-footer-para{
+    margin-top: 15px;
+  }
+
+  .footer .second-footer p{
+    margin-top: 12px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.8;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .footer .third-footer span{
+    color: #FFFFFF;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .footer .third-footer .third-footer-para{
+    margin-top: 15px;
+  }
+
+  .footer .third-footer p{
+    margin-top: 12px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.8;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .footer .fourth-footer span{
+    color: #FFFFFF;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    font-weight: 500;
+ }
+
+ .footer .fourth-footer .fourth-footer-para{
+  margin-top: 15px;
+}
+
+.footer .fourth-footer p{
+  margin-top: 12px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 11px;
+  opacity: 0.8;
+  font-family: 'Roboto Slab', serif;
+}
+
+.footer .fifth-footer{
+  margin: -22px 0px;
+}
+
+.footer .fifth-footer .fifth-footer-span{
+  color: #FFFFFF;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0px 7px;
+}
+
+.footer .fifth-footer .fifth-footer-para{
+  margin-top: 15px;
+}
+
+.footer .fifth-footer p{
+  margin-top: 12px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 11px;
+  opacity: 0.8;
+  font-family: 'Roboto Slab', serif;
+}
+
+.footer .fifth-footer span{
+  width: 100%;
+}
+
+.footer .fifth-footer span img{
+  width: 100%;
+  max-width: 9px;
+  height: auto;
+  opacity: 1;
+  margin: -3px 10px;
+}
+
+.footer .fifth-footer .btnInp{
+  margin-top: 20px;
+}
+
+.fifth-footer .btnInp form{
+  position: relative;
+  width: 100%;
+  margin-left: 8px;
+}
+
+.fifth-footer .btnInp form input{
+  outline: none;
+ padding: 8px 30px;
+ border-radius: 25px;
+ border: none;
+ background: none;
+ border: 1px solid #A2A2A2;
+ font-size: 10px;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 500;
+ color: white;
+}
+ 
+.fifth-footer .btnInp form button{
+  position: absolute;
+  right: 6px;
+  padding: 10px 16px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 9px;
+  font-family: 'Poppins', sans-serif; 
+  outline: none;
+  border: none;
+}
+
+.fifth-footer .btnInp form input::placeholder{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.lower-footer{
+  padding:5px 130px;
+}
+footer .foot-line{
+  border: 0.5px solid #A2A2A2;
+  background-color: #A2A2A2;;
+  opacity:0.4;
+}
+
+footer .another-footer-section{
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.another-footer-section .section-para p{
+  font-family: 'Nunito Sans', serif;
+  color: #CCCCCC;
+  font-size: 11px;
+}
+
+.another-footer-section .section-another-para{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-another-para p{
+  font-family: 'Nunito Sans', serif;
+  color: #CCCCCC;
+  padding: 0px 11px;
+  font-size: 11px;
+}
+
