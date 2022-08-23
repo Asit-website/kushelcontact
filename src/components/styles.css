@@ -80,3 +80,12 @@ background-repeat: no-repeat;
 object-position: bottom;
 background-size: cover;
 }
+
+@media only screen and (max-width:1150px){
+  .swiper-button-next{
+    display: none;
+  }
+  .swiper-button-prev{
+    display: none;
+  }
+}

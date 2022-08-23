@@ -183,9 +183,6 @@ a {
     left: 0;
   }
 
-  /* .nav-item {
-      margin: 0.1rem 0;
-  } */
 
   .header .navbar img {
     width: 150px;
@@ -193,43 +190,30 @@ a {
 }
 
 /* =============home css=================== */
-.bann {
-  /* position: relative; */
-}
 .banner {
-  position: relative;
-  /* background-color: #292201; */
-  height: 100vh;
-  /* position: absolute; */
-}
-.banner .bg1 {
-  position: relative;
+  background-image:url('./components/images/Banner.png') ;
+  background-repeat: no-repeat;
   width: 100%;
-  z-index: 1;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.banner .imgs{
+  position: relative;
+}
+.banner img{
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  height: auto;
+  left: 63%;
+  top: 73px;
 }
 
-.banner .bg2 {
-  position: absolute;
-  height: auto;
-  /* height: 700px; */
-  max-width: 100%;
-  width: 500px;
-  top: 15%;
-  right: 0px;
-  float: right;
-  z-index: 2;
-}
 
-.banner .bg3 {
-  z-index: 3;
-  position: absolute;
-  right: 25px;
-  top: 100px;
-  max-width: 100%;
-  /* height: 750px; */
-  height: auto;
-  width: 460px;
-}
 
 .banner .content {
   z-index: 10;
@@ -289,7 +273,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 150px 60px;
+  padding: 100px 60px;
   background-color: #0a0f16;
 }
 
@@ -743,7 +727,6 @@ a {
   color: #ffffff;
   font-family: "Raleway";
   font-weight: bolder;
-  /* letter-spacing: 1px; */
   font-size: 26px;
   width: 100%;
   margin-top: 30px;
@@ -759,7 +742,6 @@ a {
 .industry-system {
   display: flex;
   align-items: flex-start;
-  /* padding: 0px 60px; */
   justify-content: space-between;
   margin-top: 35px;
 }
@@ -804,13 +786,11 @@ a {
   margin-top: 20px;
 }
 .industry-system .disc li {
-  /* margin-top: 2px; */
   background: url("./components//images/bullet.png") no-repeat top left 5px;
   background-position: 0 5px;
   line-height: 1.5625;
   padding: 0 0 4px 30px;
   background-size: 10px;
-  /* margin-left: 1em; */
   font-family: "Raleway";
   font-size: 14.5px;
   font-weight: 500;
@@ -1254,22 +1234,21 @@ a {
 
 .cont {
   padding: 90px 0px;
-  background-image: url(http://localhost:3000/static/media/gradian.59748f4….png),
-    linear-gradient(to left, rgb(27 106 118), rgb(0, 0, 0));
+  /* background-image: url(http://localhost:3000/static/media/gradian.59748f4….png), */
+    /* linear-gradient(to left, rgb(27 106 118), rgb(0, 0, 0)); */
+    background-image: url('./components/images/Contact\ us\ Background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
  width: 100%;
  height: 100%;
-  box-shadow: 0 3px 6px #000000;
-  filter: drop-shadow(0 3px 6px #000000);
-  filter: brightness(15px);
+  
 
   /* filter: blur(5px); */
 }
 
 .cont .first_heading_contact {
-  padding: 140px 55px;
+  padding: 120px 55px;
 }
 
 .first_heading_contact h2 {
@@ -1301,6 +1280,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 0 55px;
+  margin: -10px 0px;
 }
 
 .second_heading_contact .concentric p {
@@ -1952,7 +1932,6 @@ footer .another-footer-section {
 .line .second-line img{
   max-width: 100%;
   width: 300px;
-  /* object-fit: cover; */
  }
   .diff_btn a{
     font-size: 10px;
@@ -1994,6 +1973,7 @@ footer .another-footer-section {
 
   .another-footer-section .section-para p{
     font-size: 6px;
+    text-align: center;
   }
 
   .section-another-para p{
@@ -2001,3 +1981,276 @@ footer .another-footer-section {
     white-space: nowrap;
   }
 }
+
+/* ========media query of home page========== */
+@media only screen and (max-width:1160px) {
+  .project{
+    padding: 50px 20px;
+  }
+  .partner{
+    padding: 100px 20px;
+  }
+  .technology{
+    padding: 60px 20px;
+  }
+  .reviews{
+    padding: 50px 20px;
+  }
+  .industry{
+    padding: 60px 20px;
+  }
+  .business{
+    padding: 100px 20px;
+  }
+}
+@media only screen and (max-width:729px){
+  .tech-image{
+    flex-direction: column;
+  }
+  .three-business{
+    flex-direction: column;
+  }
+  .three-business p{
+    margin: 20px 0px;
+    padding: 0px 0px;
+  }
+  .pic-para{
+    padding: 0px 0px;
+  }
+}
+@media only screen and (max-width:1095px) {
+   .banner img{
+    display: none;
+   }
+   .project-images{
+    flex-direction: column;
+   }
+   .project-images img{
+    margin: 30px 0px;
+    width: 600px;
+   }
+   .partner{
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   .second_partner .second_all{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    text-align: center;
+   }
+   .second_partner h2{
+      width: 100%;
+   }
+   .second_partner p{
+    width: 100%;
+   }
+   .first_partner img{
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+   }
+
+   .section-service{
+    flex-direction: column;
+   }  
+
+   .service-content p{
+    padding: 0px 0px;
+   }
+   
+}
+
+@media only screen and (max-width:973px){
+  .section-image{
+    flex-direction: column;
+  }
+
+  .section-image-first{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+  .section-image-second{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+  .section-image-third{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+  .section-image-fourth{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+
+  .section-image-fifth{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+  .section-image-sixth{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+  .section-image-seventh{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+  .section-image-eight{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+  }
+
+  .section-imagea{
+    flex-direction: column;
+  }
+  .industry-system{
+    flex-direction: column;
+    align-items: center;
+  }
+  .industry-system .disc li {
+    background: none;
+  }
+  .big-fintech{
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .small-fintech{
+    text-align: center;
+  }
+  .fintech-para{
+    text-align: center;
+  }
+  .fin-image img{
+    margin-top: 30px;
+  }
+
+  .fin-portfolio .fin-btn{
+    margin-top: 30px;
+  }
+
+  .two-div
+  {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:620px){
+  .swift-js{
+    padding: 20px 0px;
+  }
+  .swifter-js{
+    flex-direction: column;
+    align-items: center;
+  }
+  .swift-js .swifter-para{
+    margin: 0px 20px;
+  }
+  .swifter-js .swifter-para img{
+    display: block;
+    margin: 20px auto;
+  }
+  .swift-js p{
+    text-align: center;
+  }
+  .swifter-js .swifter-para .first-strong{
+    text-align: center;
+  }
+  .swifter-js .swifter-para .first-para{
+    text-align: center;
+  }
+  .pic-para{
+    flex-direction: column;
+  }
+  .pic-imagea img{
+    width: 200px;
+    left: 0px;
+    margin-left: 0px;
+  }
+  .head-pa{
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  .one-color span{
+    font-size: 18px;
+    padding: 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ano-group span{
+    font-size: 18px;
+    padding: 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width:412px){
+  .section-image-first{
+    width: 240px;
+    height: 170px;
+  }
+  .section-image-second{
+    width: 240px;
+    height: 170px;
+  }
+
+  .section-image-third{
+    width: 240px;
+    height: 170px;
+  }
+
+  .section-image-fourth{
+    width: 240px;
+    height: 170px;
+  }
+  .section-image-fifth{
+    width: 240px;
+    height: 170px;
+  }
+  .section-image-sixth{
+    width: 240px;
+    height: 170px;
+  }
+  .section-image-seventh{
+    width: 240px;
+    height: 170px;
+  }
+  .section-image-eight{
+    width: 240px;
+    height: 170px;
+  }
+  .pic-para{
+    flex-direction: column;
+  }
+  .pic-imagea img{
+    width: 200px;
+    left: 0px;
+    margin-left: 0px;
+  }
+  .head-pa{
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+}
+

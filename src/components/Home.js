@@ -16,6 +16,7 @@ import log from "../components/images/log.png";
 import man2 from "../components/images/man2.png";
 import hand from "../components/images/hand.png";
 import hand2 from "../components/images/hand2.png";
+import girl from '../components/images/girl.png';
 
 import imageApi from "./imageApi/imageApi";
 import imageAnotherApi from "./imageApi/imageAnotherApi";
@@ -47,15 +48,9 @@ const Home = () => {
   return (
     <>
       <div class="banner">
-        <div className="bann">
-          <img class='bg1' src='./images/bk1.png' />
-       
-        
-        <img class='bg2' src='./images/circle.png' />
-      
-      
-        <img class='bg3' src='./images/Image_1.png' />
-        </div>
+      <div className="imgs">
+          <img src={girl} alt="notGirl" />
+          </div>
         <div class="content">
           <strong>Welcome to Kushel Digi</strong>
           <h2>
@@ -332,6 +327,8 @@ const Home = () => {
                     augue. Phasellus mi urna, commodo sit amet tellus non,
                     consectetur consequat quam.
                   </p>
+                  <div className="first-strong">Harriet Mitchell</div>
+                <div className="first-para">Director of Inbrew</div>
                 </div>
               </div>
             </div>
@@ -348,6 +345,8 @@ const Home = () => {
                   augue. Phasellus mi urna, commodo sit amet tellus non,
                   consectetur consequat quam.{" "}
                 </p>
+                <div className="first-strong">Harriet Mitchell</div>
+                <div className="first-para">Director of Inbrew</div>
                 </div>
               </div>
             </div>
