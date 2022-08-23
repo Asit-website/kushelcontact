@@ -57,13 +57,13 @@ const Navbar = () => {
                     <img src={logo} alt='logo' />
                 </Link>
                 <div className='hamburger' onClick={handleClick}>
-                    {click ? (<i class="bi bi-x-lg"></i>)
-                        : (<i class="bi bi-list"></i>)}
+                    {click ? (<i class="fa-solid fa-xmark"></i>)
+                        : (<i class="fa-solid fa-bars"></i>)}
 
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to="/" link='/' onClick={closeMenu}>Home</Link>
+                        <Link to="/"  onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to="/about" onClick={closeMenu}>About us</Link>
