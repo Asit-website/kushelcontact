@@ -23,53 +23,6 @@ body {
 
 /* =========navbar css================= */
 
-/* .navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url(http://localhost:3000/static/media/gradian.59748f4….png), linear-gradient( to left, rgb(0, 0, 0), rgb(0, 0, 0));
-  padding: 10px 60px;
-  box-shadow: 0 3px 6px #000000;
-  filter: drop-shadow(0 3px 6px #000000);
-  filter: brightness(100%);
-}
-
-.navbar .logo img{
-  display: block;
-  max-width: 100%;
-   width: 150px;
-   height: auto;
-   object-fit: cover;
-   margin: auto;
-}
-
-.head ul{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.head ul li{
-  list-style: none;
-  padding: 0 20px;
-  
-}
-
-.head ul li a{
-  font-size: 14px;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: 'Roboto Slab', serif;
-}
-
-.head ul li .contact{
-  font-family: 'Roboto Slab', serif;
-    background-color: #0E66F9;
-    font-size: 10px;
-    padding: 6px 12px;
-    border-radius: 5px;
-} */
-
 .header {
   position: fixed;
   height: 90px;
@@ -469,10 +422,7 @@ a {
 
 .three-section-third {
   border: 2px solid;
-
   border-image: linear-gradient(#29b12b, #33ead7) 1;
-  /* background-image:url('./components/images/Rectangle\ 18102.png') ; */
-  /* background-repeat: no-repeat; */
   border-radius: 10px;
   width: 300px;
   max-width: 100%;
@@ -1576,7 +1526,7 @@ a {
 
 @media screen and (max-width: 460px) {
   .top-form .inner-form {
-    width: 100%;
+    width: 70vw;
     margin: 5px 0;
   }
 
@@ -1851,6 +1801,7 @@ footer .another-footer-section {
 /* ========ab contact ke pehle 2 section ka media query====== */
 
 @media only screen and (max-width:690px){
+  
   .cont .first_heading_contact {
     text-align: center;
   }
@@ -1937,33 +1888,27 @@ footer .another-footer-section {
     font-size: 10px;
   }
 
-  .contact_us .contact_para{
-    font-size: 10px;
-  }
-
-  .sorm_map{
-    flex-direction: column;
-  }
+  
   .sorm_map .sorm_map1{
     width: auto;
+    margin: 0px 8px;
   }
 
   .sorm_map .sorm_map2{
     width: auto;
-    margin-top: 25px;
+    margin: 0px 8px;
   }
 
   .form input[type="text"]{
-   
     width: 100%;
-    font-size: 9px;
   }
 
 
   .form textarea{
-    font-size: 8px;
+    white-space: nowrap;
     height: auto;
     margin-top: 25px;
+    overflow: hidden;
 
   }
 
@@ -1974,6 +1919,7 @@ footer .another-footer-section {
   .another-footer-section .section-para p{
     font-size: 6px;
     text-align: center;
+    white-space: nowrap;
   }
 
   .section-another-para p{
@@ -2000,6 +1946,9 @@ footer .another-footer-section {
     padding: 60px 20px;
   }
   .business{
+    padding: 100px 20px;
+  }
+  .services{
     padding: 100px 20px;
   }
 }
@@ -2056,7 +2005,7 @@ footer .another-footer-section {
    }  
 
    .service-content p{
-    padding: 0px 0px;
+    padding: 0px 15px;
    }
    
 }
@@ -2152,6 +2101,103 @@ footer .another-footer-section {
 }
 
 @media only screen and (max-width:620px){
+  .contact_us .contact_para{
+    font-size: 15px;
+  }
+  .banner{
+    height: 80vh;
+  }
+  .banner .content{
+    top: 10%;
+  }
+  .banner .content h2{
+    font-size: 18px;
+  }
+  .banner .content p{
+    font-size: 13px;
+  }
+  .banner .content .home_btn {
+    font-size: 13px;
+  }
+  .second_partner h2{
+    font-size: 18px;
+  }
+  .second_partner p{
+    font-size: 13px;
+  }
+  .second_partner .who_btn{
+    font-size: 13px;
+  }
+  .services h2{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .service-content p{
+    font-size: 13px;
+  }
+  .tech-div h2{
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .tech-div p{
+    font-size: 13px;
+    letter-spacing: normal;
+    padding: 0px 10px;
+  }
+  .tech-div .tech-btn{
+    font-size: 13px;
+  }
+  .project h2{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .project .project-btn{
+    font-size: 13px;
+  }
+  .industry h2{
+    font-size: 18px;
+  }
+  .industry-system .small-fintech span{
+    font-size: 13px;
+  }
+  .industry-system .fintech-para p {
+    font-size: 13px;
+  }
+  .industry-system .big-fintech span {
+    font-size: 18px;
+  }
+  .industry-system .big-fintch-para p{
+    font-size: 13px;
+  }
+
+  .industry-system .disc li {
+    font-size: 13px;
+  }
+  .business h2{
+    font-size: 18px;
+  }
+   .three-business .first-b{
+    font-size: 14px;
+    text-align: center;
+   }
+   .three-business .second-p{
+    font-size: 14px;
+    text-align: center;
+   }
+   .three-business .third-p{
+    font-size: 14px;
+    text-align: center;
+   }
+   .head-pa p{
+    font-size: 13px;
+    width: 80%;
+   }
+   .reviews h2{
+    font-size: 18px;
+   }
+   .reviews .second-span{
+    font-size: 18px;
+   }
   .swift-js{
     padding: 20px 0px;
   }
@@ -2188,27 +2234,75 @@ footer .another-footer-section {
     margin-top: 25px;
   }
   .one-color span{
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  
   .ano-group span{
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  .one-color button{
+    display: block;
+    margin: 30px auto;
+    font-size: 13px;
+  }
+  .ano-color button{
+    display: block;
+    margin: 30px auto;
+    font-size: 13px;
+  }
+  .first_heading_contact h2{
+    font-size: 26px;
+  }
+  .first_heading_contact p {
+    font-size: 13px;
+  }
+ 
 }
 @media only screen and (max-width:412px){
   .section-image-first{
     width: 240px;
     height: 170px;
   }
+
+  .three-section-first{
+    flex-direction: column;
+  }
+  .three-section-first p{
+    margin: 15px 0px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .three-section-second {
+    flex-direction: column;
+  }
+  .three-section-second p{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .three-section-third{
+    flex-direction: column;
+  }
+  .three-section-third p{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .another-xd img{
+    margin: 15px 6px;
+    width: 40px;
+  }
+  
   .section-image-second{
     width: 240px;
     height: 170px;
@@ -2251,6 +2345,18 @@ footer .another-footer-section {
     margin-left: 0px;
     margin-top: 25px;
   }
+ 
 
 }
 
+@media only screen and (max-width:342px){
+  .three-section-first{
+    width: 200px;
+  }
+  .three-section-second{
+    width: 200px;
+  }
+  .three-section-third{
+    width: 200px;
+  }
+}

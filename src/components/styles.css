@@ -3,10 +3,6 @@
    margin-top: 40px;
 }
 
-.swiper-slide {
- 
-}
-
 .swiper-slide img {
   max-width: 100%;
   height: auto;
@@ -83,9 +79,32 @@ background-size: cover;
 
 @media only screen and (max-width:1150px){
   .swiper-button-next{
-    display: none;
+    width: 30px;
+    height: 30px;
+    top: 2%;
+    
+  }
+  .swiper-button-next::after{
+    background-position: center;
+    background-size: 15px;
   }
   .swiper-button-prev{
-    display: none;
+    width: 30px;
+    height: 30px;
+    top: 2%;
+  }
+  .swiper-button-prev::after{
+    background-position: center;
+    background-size: 15px;
+    
+  }
+}
+
+@media only screen and (max-width:323px){
+  .swiper-button-next{
+    left: 30%;
+  }
+  .swiper-button-prev{
+    right: 30%;
   }
 }
