@@ -2091,7 +2091,8 @@ footer .another-footer-section {
   }
 
   .fin-portfolio .fin-btn{
-    margin-top: 30px;
+    display: block;
+    margin:30px auto;
   }
 
   .two-div
