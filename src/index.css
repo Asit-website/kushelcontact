@@ -2267,6 +2267,9 @@ footer .another-footer-section {
   .first_heading_contact p {
     font-size: 13px;
   }
+  .technology img{
+    margin: 20px auto;
+  }
  
 }
 @media only screen and (max-width:412px){

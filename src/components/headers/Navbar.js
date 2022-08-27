@@ -1,32 +1,6 @@
-// import React from 'react'
-// import logo from '../images/logo.png';
-// import {Link} from "react-router-dom"
-// const Navbar = () => {
-//   return (
-//     <>
-//        <nav className="navbar">
-//           <div className="logo">
-//               <img src={logo} alt="" />
-//           </div>
-//           <div className='head'>
-//             <ul>
-//               <li><Link to="/">Home</Link></li>
-//               <li><Link to="/about">About us</Link></li>
-//               <li><Link to="/brand">Our Brands</Link></li>
-//               <li><Link to="/blog">Blog</Link></li>
-//               <li><Link to="/career">Careers</Link></li>
-//               <li><Link className='contact' to="/contact">CONTACT US <i className="fa-solid fa-arrow-right"></i></Link></li>
-//             </ul>
-//           </div>
-//        </nav>
-//     </>
-//   )
-// }
-
-// export default Navbar
 
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import logo from '../images/logo.png';
 // import './NavBars.css'
 
@@ -36,6 +10,30 @@ const Navbar = () => {
     const handleClick = () => setClick(!click)
     const closeMenu = () => setClick(false)
     const [navColor,setNavColor]=useState(false)
+    
+    const nav = ({ isActive }) => {
+        return {
+            fontWeight: isActive ? 'bold' : 'normal',
+            color: isActive ? 'rgb(9, 104, 247)' : '#ffffff',
+            transition: isActive ? '0.8s' : '',
+            backgroundColor: isActive ? 'black' : 'transparent',
+            padding: isActive ? '5px' : '0px',
+            opacity: isActive ? '0.8' : '1',
+            borderRadius: isActive ? '2px' : '0px',
+            overflow:'hidden'
+        }
+    }
+
+    const navContact = ({ isActive }) => {
+        return {
+            backgroundColor: isActive ? 'black' : '#0e66f9',
+            opacity: isActive ? '0.8' : '1',
+            transition: isActive ? '0.8s' : '',
+            color: isActive ? 'rgb(9, 104, 247)' : '#ffffff',
+            fontWeight: isActive ? 'bold' : 'normal',
+            overflow:'hidden'
+        }
+    }
 
     const changeNavColor =()=>{
         if(window.scrollY >= 90){
@@ -47,39 +45,47 @@ const Navbar = () => {
 
     }
 
-    window.addEventListener('scroll' ,changeNavColor)
+   
+
+    window.addEventListener('scroll' ,changeNavColor);
+
+   
+
+    
+  
+
 
 
     return (
         <div className={navColor ? 'header activeH' : 'header' }>
             <nav className='navbar'>
-                <Link to="/" className='logo'>
+                <NavLink exact  to="/"   className='logo'>
                     <img src={logo} alt='logo' />
-                </Link>
+                </NavLink>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<i class="fa-solid fa-xmark"></i>)
                         : (<i class="fa-solid fa-bars"></i>)}
 
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
-                    <li className='nav-item'>
-                        <Link to="/"  onClick={closeMenu}>Home</Link>
+                    <li  className='nav-item'>
+                        <NavLink exact to="/" style={nav} onClick={closeMenu}>Home</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link to="/about" onClick={closeMenu}>About us</Link>
+                    <li  className='nav-item'>
+                        <NavLink to="/about" style={nav} onClick={closeMenu}>About us</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link to="/brand" onClick={closeMenu}>Our Brands</Link>
+                    <li  className='nav-item'>
+                        <NavLink to="/brand" style={nav} onClick={closeMenu}>Our Brands</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link to="/blog" onClick={closeMenu}>Blog</Link>
+                    <li  className='nav-item'>
+                        <NavLink  to="/blog" style={nav}  onClick={closeMenu}>Blog</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link to="/career" onClick={closeMenu}>Careers</Link>
+                    <li   className='nav-item'>
+                        <NavLink to="/career" style={nav}  onClick={closeMenu}>Careers</NavLink>
                     </li>
 
-                    <li className='nav-item'>
-                        <Link to="/contact" class="btn-primary" onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></Link>
+                    <li  className='nav-item'>
+                        <NavLink  to="/contact" style={navContact}   className="btn-primary"  onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </li>
                 </ul>
             </nav>

@@ -159,13 +159,6 @@ const Home = () => {
       <div className="technology">
         <img src={tech} alt="" />
         <div className="tech-image">
-          {/* <img style={{width:'60px'}} src={docker} alt="" />
-          <img style={{width:'60px'}} src={fluter} alt="" />
-          <img style={{width:'70px'}} src={firebase} alt="" />
-          <img style={{width:'70px'}} src={golang} alt="" />
-          <img style={{width:'50px'}} src={react} alt="" />
-          <img style={{width:'100px'}} src={kub} alt="" /> */}
-
           {techApi.map((val) => {
             const { id, Name, width } = val;
             return <img key={id} style={{ width: width }} src={Name} alt="" />;
