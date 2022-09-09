@@ -84,6 +84,10 @@ const Navbar = () => {
                         <NavLink to="/career" style={nav}  onClick={closeMenu}>Careers</NavLink>
                     </li>
 
+                    <li   className='nav-item'>
+                        <NavLink to="/service" style={nav}  onClick={closeMenu}>Services</NavLink>
+                    </li>
+
                     <li  className='nav-item'>
                         <NavLink  to="/contact" style={navContact}   className="btn-primary"  onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </li>

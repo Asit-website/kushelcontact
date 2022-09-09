@@ -1928,6 +1928,7 @@ footer .another-footer-section {
   }
 }
 
+/* =======================================OVVVVER=============================== */
 /* ========media query of home page========== */
 @media only screen and (max-width:1160px) {
   .project{
@@ -2364,3 +2365,153 @@ footer .another-footer-section {
     width: 200px;
   }
 }
+/* ===================OVER++++++++++++++++++++++ */
+/* ======================css of services======================= */
+
+.kushel-service{
+  background-color: #0A0F16;
+  padding: 135px 60px;
+  width: 100%;
+}
+
+.kushel-img h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 60px;
+}
+.kushel-img img{
+ max-width: 650px;
+ width: 100%;
+ margin-top: 20px;
+ object-fit: cover;
+ filter: brightness(100%);
+}
+/* #C33764 */
+.first-kushel{
+  background: linear-gradient(to right, #1E2670, #A83466) border-box;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 60px;
+  height: 376px;
+  max-height: 100%;
+}
+.kushel-first-content{
+  margin: 40px 45px;
+
+}
+.kushel-first-content h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: bold;
+  white-space: nowrap;
+ 
+}
+/* .kushel-first-content ul.a{
+  list-style-type: circle;
+} */
+/* .kushel-first-content ul.a li{
+  font-size: 16px;
+  color: white;
+ margin: 20px 16px;
+ font-family: "Raleway";
+ font-weight: 600;
+ 
+} */
+
+.kot{
+  margin-top: 30px;
+}
+.kot-a{
+  display: flex;
+  align-items: center;
+}
+
+.kot-a img{
+  width: 9px;
+  height: 9px;
+}
+
+.kot-a p{
+  font-size: 14.5px;
+  color: white;
+ font-family: "Raleway";
+ font-weight: 600;
+ margin: 12px 10px;
+}
+
+.kus-img img{
+  width: 35px;
+  height: auto;
+  max-width: 100%;
+ margin-top: 30px;
+}
+
+.kusta-img img{
+  width: 380px;
+  max-width: 100%;
+  white-space: nowrap;
+  height: 377px;
+  max-height: 100%;
+  object-fit: cover;
+  position: relative;
+  top: -2px;
+
+}
+
+.kushel-second-content{
+  margin: 40px 45px;
+  position: relative;
+  left: -40px;
+}
+
+.kushel-second-content h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.gem-dev{
+  background: linear-gradient(to right, #185A9D, #2C909F,#43CDA1) border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 40px 0px;
+  border-radius: 30px;
+  margin-top: 90px;
+}
+
+.first-game h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.first-game{
+  margin-left: -20px;
+}
+.second-game{
+  margin-left: -45px;
+}
+.second-game h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.game-img img{
+  width: 100%;
+  max-width: 380px;
+  object-fit: cover;
+  height:auto;
+}
+/* =====================css of services end======================== */
