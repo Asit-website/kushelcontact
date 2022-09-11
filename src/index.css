@@ -2514,4 +2514,143 @@ footer .another-footer-section {
   object-fit: cover;
   height:auto;
 }
+
+/* ======mobile-app css======== */
+.mobile-app{
+  background: linear-gradient(to right, #9300D2, #6B00A6,#4B0082) border-box;
+  margin-top: 80px;
+  border-radius: 30px;
+  height: 420px;
+  max-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.mobile-app-cl{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.first-cl{
+  margin: 40px 45px;
+}
+.first-cl h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.button-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-flex button{
+  background: transparent;
+  border: 1.32px solid #ffffff ;
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-family: "Raleway";
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  white-space: nowrap;
+  /* margin-left: 200px; */
+}
+.line-flex{
+  margin-top: 40px;
+}
+.line-flex .dai{
+  width: 550px;
+  max-width: 100%;
+  /* margin: 30px 0px; */
+}
+
+.line-first-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  margin-left: -80px;
+}
+.line-first-flex .dev{
+  font-size: 26px;
+ opacity: 0.5;
+ 
+}
+
+.line-first-flex .chota-dai{
+  width: 4px;
+ margin-left: -60px;
+  
+}
+.line-first-flex .anot-dev{
+  font-size: 26px;
+  margin-left: -60px;
+}
+
+.second-cl img{
+  width: 420px;
+  height: 420px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  /* visibility: hidden; */
+}
+
+.resarch-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.resarch-flex .first-res img{
+  width: 60px;
+}
+
+.resarch-flex .first-res .ant-int{
+  width: 65px;
+}
+
+.resarch-flex .first-res .big-int{
+  width: 45px;
+}
+
+/* ===============web app============ */
+
+.web-app{
+  background: linear-gradient(to right, #2D9CE0, #2872CD,#276DCB) border-box;
+  margin-top: 80px;
+  border-radius: 30px;
+  height: 420px;
+  max-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.web-app .line-first-flex{
+  margin-left:-25px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.web-app .line-first-flex .chota-dai{
+  width: 4px;
+ margin-left: -15px;
+  
+}
+.web-app .line-first-flex .anot-dev{
+  font-size: 26px;
+  margin-left: -15px;
+}
+
 /* =====================css of services end======================== */

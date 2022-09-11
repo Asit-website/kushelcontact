@@ -4,6 +4,14 @@ import kushelArrow from '../components/images/kushelArrow.png';
 import kusta from '../components/images/kusta.png';
 import put from '../components/images/put.png'
 import game from '../components/images/game.png';
+import app from '../components/images/app.png';
+import dagi from '../components/images/dagi.png'
+import chota from '../components/images/chota.png'
+import research from '../components/images/research.png';
+import ui from '../components/images/ui.png'
+import int from '../components/images/int.png';
+import prot from '../components/images/prot.png'
+import web from '../components/images/web.png';
 const Service = () => {
   return (
     <div className='kushel-service'>
@@ -126,6 +134,103 @@ shooter</p>
               <img src={game} alt="" />
            </div>
         </div>
+
+        <div className="mobile-app">
+           <div className="mobile-app-cl">
+              <div className="first-cl">
+                 <div className="button-flex">
+                 <div className="first-button-flex">
+                     <h2>Mobile App</h2>
+                     </div>
+                     <div className="second-button-flex">
+                     <button>Explore all Mobile Services</button>
+                     </div>
+                 </div>
+                  <div className="line-flex">
+                     <img className='dai' src={dagi} alt="" />
+                     <div className="line-first-flex">
+                        <h2 className='dev'>Development</h2>
+                        <img className='chota-dai' src={chota} alt="" />
+                        <h2 className='anot-dev'>Design</h2>
+                     </div>
+                     <img className='dai' src={dagi} alt="" />
+                  </div>
+
+                  <div className="resarch-flex">
+                      <div className="first-res">
+                        <img src={research} alt="" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='big-int' src={ui} alt="" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-int'  src={int} alt="" />
+                      </div>
+                      <div className="first-res">
+                        <img src={prot} alt="" />
+                      </div>
+                  </div>
+              </div>
+
+              <div className="second-cl">
+                 <img src={app} alt="" />
+              </div>
+             
+           </div>
+           
+        </div>
+
+        <div className="web-app">
+           <div className="mobile-app-cl">
+              <div className="first-cl">
+                 <div className="button-flex">
+                 <div className="first-button-flex">
+                     <h2>Web</h2>
+                     </div>
+                     <div className="second-button-flex">
+                     <button>Explore all Mobile Services</button>
+                     </div>
+                 </div>
+                  <div className="line-flex">
+                     <img className='dai' src={dagi} alt="" />
+                     <div className="line-first-flex">
+                        <h2 className='dev'>Front-end</h2>
+                        <img className='chota-dai' src={chota} alt="" />
+                        <h2 className='anot-dev'>Back-end</h2>
+                        <img className='chota-dai' src={chota} alt="" />
+                        <h2 className='anot-dev'>Design</h2>
+                     </div>
+                     <img className='dai' src={dagi} alt="" />
+                  </div>
+
+                  <div className="resarch-flex">
+                      <div className="first-res">
+                        <img src={research} alt="" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='big-int' src={ui} alt="" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-int'  src={int} alt="" />
+                      </div>
+                      <div className="first-res">
+                        <img src={prot} alt="" />
+                      </div>
+                  </div>
+              </div>
+
+              <div className="second-cl">
+                 <img src={web} alt="" />
+              </div>
+             
+           </div>
+           
+        </div>
+
     </div>
   )
 }
