@@ -12,6 +12,18 @@ import ui from '../components/images/ui.png'
 import int from '../components/images/int.png';
 import prot from '../components/images/prot.png'
 import web from '../components/images/web.png';
+import js from '../components/images/js.png';
+import webui from '../components/images/webui.png';
+import go from '../components/images/go.png';
+import webProt from '../components/images/webProt.png';
+import ly from '../components/images/ly.png';
+
+import aws from '../components/images/aws.png';
+import ku from '../components/images/ku.png';
+import gc from '../components/images/gc.png';
+import digital from '../components/images/digital.png';
+import azure from '../components/images/azure.png';
+import ma from '../components/images/ma.png';
 const Service = () => {
   return (
     <div className='kushel-service'>
@@ -93,8 +105,7 @@ const Service = () => {
                 </div>
                 <div  className="kot-a">
                    <img  src={put} alt="" />
-                   <p>First person - Third person<br/>
-shooter</p>
+                   <p>First person - Third person<br/>shooter</p>
                 </div>
               </div>
               <div className="kus-img">
@@ -207,18 +218,18 @@ shooter</p>
 
                   <div className="resarch-flex">
                       <div className="first-res">
-                        <img src={research} alt="" />
+                        <img src={js} alt="jsa" />
                        
                       </div>
                       <div className="first-res">
-                        <img className='big-int' src={ui} alt="" />
+                        <img className='big-int' src={webui} alt="web" />
                       
                       </div>
                       <div className="first-res">
-                        <img className='ant-int'  src={int} alt="" />
+                        <img className='ant-int'  src={go} alt="goa" />
                       </div>
                       <div className="first-res">
-                        <img src={prot} alt="" />
+                        <img style={{width:'65px'}} src={webProt} alt="prota" />
                       </div>
                   </div>
               </div>
@@ -229,6 +240,102 @@ shooter</p>
              
            </div>
            
+        </div>
+        <div className="cloud-container">
+        <div className="cloud-computing">
+            <div className="first-cloud">
+               <div className="cloud-button-flex">
+                    <div className="cloud-first-button-flex">
+                       <h2>Cloud Computing</h2>
+                    </div>
+                    <div className="cloud-second-button-flex">
+                       <button>Explore Cloud Services</button>
+                    </div>
+               </div>
+
+               <div className="hr-cloud">
+                  <img  src={ly} alt="" />
+               </div>
+
+               <div className="flex-kot">
+                   <div className='kot'>
+                   <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud App Development</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud Configuration</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud Integration</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud Security</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud Server Solutions</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud Migration</p>
+                </div>
+                   </div>
+
+
+
+                   <div className='kot-images-first'>
+                       <div className="firstIm">
+                          <img src={aws} alt="awsa" />
+                       </div>
+                       <div className="secondIm">
+                          <img src={ku} alt="kus" />
+                       </div>
+                       <div className="thirdIm">
+                          <img src={gc} alt="gca" />
+                       </div>
+                   </div>
+                   <div className='kot-images-second'>
+                        <div className="thirdIm">
+                           <img src={azure} alt="" />
+                           <p>Microsoft Azure</p>
+                        </div>
+                        <div className="fourthIm">
+                           <img src={digital} alt="" />
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div className="other-services">
+             <div className="iot">
+                 <div className='first-iot'>
+                    
+                 </div>
+                 <div className="second-iot">
+
+                 </div>
+             </div>
+             <div className="wearable-app">
+                 <div className="first-wear">
+
+                 </div>
+                 <div className="second-wear">
+
+                 </div>
+             </div>
+             <div className="ibeacon">
+                 <div className="first-i">
+
+                 </div>
+                 <div className="second-i">
+
+                 </div>
+             </div>
+        </div>
         </div>
 
     </div>

@@ -2652,5 +2652,85 @@ footer .another-footer-section {
   font-size: 26px;
   margin-left: -15px;
 }
+.web-app .resarch-flex{
+  margin-left: -12px;
+}
+.web-app .resarch-flex .first-res .ant-int{
+  width: 75px;
+}
+/* ==============cloud computing============ */
+.cloud-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 80px;
+}
 
+.cloud-computing{
+  background: linear-gradient(to right, #185A9D, #A3CB81) border-box;
+  border-radius: 30px;
+ 
+}
+
+.first-cloud{
+  margin: 40px 45px;
+}
+.cloud-button-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cloud-first-button-flex h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 27px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.cloud-second-button-flex button{
+  background: transparent;
+  border: 1.32px solid #ffffff ;
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-family: "Raleway";
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.hr-cloud img{
+  max-width: 630px;
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+}
+
+.flex-kot{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.flex-kot .kot{
+  margin-top: 20px;
+}
+.flex-kot .kot-a{
+  margin: 12px 0px;
+}
+.kot-images-first{
+  margin-top: 32px;
+}
+.kot-images-first img{
+  width: 90px;
+  margin: 15px 0px;
+}
+.kot-images-second{
+  margin-top: 60px;
+}
+
+.kot-images-second img{
+  width: 90px;
+}
 /* =====================css of services end======================== */
