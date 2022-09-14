@@ -804,6 +804,8 @@ a {
   font-weight: bolder;
   font-size: 26px;
 }
+
+
 .three-business {
   display: flex;
   align-items: center;
@@ -866,11 +868,11 @@ a {
   display: block;
   margin: auto;
   max-width: 100%;
-  width: 60%;
+  width: 65%;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Raleway";
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 400;
   margin-top: 10px;
 }
@@ -1524,6 +1526,8 @@ a {
   /* height: 20px; */
 }
 
+
+/* =================contact us media============== */
 @media screen and (max-width: 460px) {
   .top-form .inner-form {
     width: 70vw;
@@ -1934,6 +1938,7 @@ footer .another-footer-section {
   .project{
     padding: 50px 20px;
   }
+ 
   .partner{
     padding: 100px 20px;
   }
@@ -2178,6 +2183,13 @@ footer .another-footer-section {
   .business h2{
     font-size: 18px;
   }
+
+  .bus-mod h2{
+    font-size: 18px;
+  }
+  .head-pa h2{
+    font-size: 18px;
+  }
    .three-business .first-b{
     font-size: 14px;
     text-align: center;
@@ -2398,6 +2410,7 @@ footer .another-footer-section {
   margin-top: 60px;
   height: 376px;
   max-height: 100%;
+  flex-wrap: wrap;
 }
 .kushel-first-content{
   margin: 40px 45px;
@@ -2485,6 +2498,7 @@ footer .another-footer-section {
   padding: 40px 0px;
   border-radius: 30px;
   margin-top: 90px;
+  flex-wrap: wrap;
 }
 
 .first-game h2{
@@ -2625,6 +2639,10 @@ footer .another-footer-section {
   width: 45px;
 }
 
+.resarch-flex .first-res .ant-st{
+  width: 65px;
+}
+
 /* ===============web app============ */
 
 .web-app{
@@ -2669,6 +2687,8 @@ footer .another-footer-section {
 .cloud-computing{
   background: linear-gradient(to right, #185A9D, #A3CB81) border-box;
   border-radius: 30px;
+  height: 510px;
+  max-height: 100%;
  
 }
 
@@ -2720,10 +2740,10 @@ footer .another-footer-section {
   margin: 12px 0px;
 }
 .kot-images-first{
-  margin-top: 32px;
+  margin-top: 28px;
 }
 .kot-images-first img{
-  width: 90px;
+  width: 95px;
   margin: 15px 0px;
 }
 .kot-images-second{
@@ -2731,6 +2751,347 @@ footer .another-footer-section {
 }
 
 .kot-images-second img{
-  width: 90px;
+  width: 105px;
+  margin-bottom: 60px;
 }
+.thirdIm img{
+  width: 110px;
+}
+
+.other-services{
+  /* margin: 0px 4px; */
+}
+
+.iot{
+  display: flex;
+  align-items: center;
+  width: 360px;
+  max-width: 100%;
+  padding: 35px 40px;
+  border-radius: 30px;
+  height: auto;
+  justify-content: space-between;
+  background: linear-gradient(to right, #4A6BB6, #3A5592, #182848) border-box;
+}
+.iot .first-iot p{
+   color: #ffffff;
+   font-family: "Raleway";
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 24px;
+}
+.iot .second-iot img{
+  width: 35px;
+  max-width: 100%;
+  height: auto;
+}
+
+.wearable-app{
+  display: flex;
+  align-items: center;
+  width: 360px;
+  max-width: 100%;
+  padding: 35px 40px;
+  border-radius: 30px;
+  justify-content: space-between;
+  background: linear-gradient(to right, #604385, #5F4486, #516294) border-box;
+  margin-top: 78px;
+}
+
+.wearable-app .first-wear p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.wearable-app .second-wear img{
+  width: 35px;
+  max-width: 100%;
+  height: auto;
+}
+
+.ibeacon{
+  display: flex;
+  align-items: center;
+  max-width: 360px;
+  width: 100%;
+  padding: 35px 40px;
+  border-radius: 30px;
+  justify-content: space-between;
+  background: linear-gradient(to left, #4A6BB6, #3A5592, #182848) border-box;
+  margin-top: 78px;
+}
+
+.ibeacon .first-i p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.ibeacon .second-i img{
+  width: 35px;
+  max-width: 100%;
+  height: auto;
+}
+
+.head-pa h2{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.bus-mod h2{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.submodel{
+  margin-top: 120px;
+}
+
+.submodel .three-business .first-b{
+  border: none;
+}
+
+.submodel .abs-color{
+ width: 580px;
+ max-width: 100%;
+ height: auto;
+ border-radius: 15px;
+}
+
+.submodel .ans-color{
+  width: 580px;
+  max-width: 100%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.busta{
+  margin-top: 80px;
+}
+
+
+
+/* ======================media query of services========================= */
+  @media only screen and (max-width:1040px){
+    .first-game{
+      margin-left: 0px;
+    }
+    .second-game{
+      margin-left: 0px;
+    }
+   .kushel-service{
+      padding: 135px 20px;
+    }
+  }
+
+  @media only screen and (max-width:1090px){
+    .kushel-second-content{
+      left: 0px;
+    }
+    .first-kushel{
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width:968px) {
+      .cloud-container{
+        flex-direction: column;
+        align-items: center;
+      }
+      .other-services{
+        margin-top: 80px;
+      }
+  }
+
+  @media only screen and (max-width:845px){
+    .mobile-app-cl{
+      flex-direction: column;
+     align-items: center;
+    }
+    .mobile-app{
+      height: auto;
+    }
+    .web-app{
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width:572px){
+    .web-app .line-first-flex{
+      flex-direction: column;
+    }
+
+    .line-first-flex{
+      flex-direction: column;
+      margin-left: auto;
+    }
+    .button-flex{
+      flex-direction: column;
+    }
+
+    .second-button-flex{
+      margin-top: 20px;
+    }
+    .web-app .resarch-flex {
+      margin-left: 0px;
+    }
+    .resarch-flex{
+      /* flex-direction: column; */
+    }
+    .resarch-flex .first-res img{
+      width: 50px;
+      margin: 15px 4px;
+    }
+
+    .line-first-flex .anot-dev{
+      margin-left: 0px;
+    }
+    .line-first-flex .chota-dai{
+      margin-left: 0px;
+    }
+
+    .web-app .line-first-flex .chota-dai{
+      margin-left: 0px;
+    }
+
+    .web-app .line-first-flex .anot-dev{
+      margin-left: 0px;
+    }
+    
+    .web-app .resarch-flex .first-res .ant-int{
+      width: 50px;
+    }
+     .second-game{
+      margin-top: 60px;
+     }
+     .game-img img{
+      margin-top: 40px;
+     }
+    .resarch-flex .first-res .big-int{
+      width: 40px;
+    }
+    
+    .resarch-flex .first-res .ant-st{
+      width: 50px;
+    }
+
+    .resarch-flex .first-res .ant-int{
+      width: 50px;
+    }
+
+    .hr-cloud{
+       /* display: none; */
+    }
+
+    .flex-kot{
+      flex-direction: column;
+      align-items: center;
+    }
+    .cloud-button-flex{
+      flex-direction: column;
+    }
+    .cloud-computing{
+      height: auto;
+      
+    }
+    .cloud-second-button-flex button{
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width:375px){
+    .cloud-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .iot{
+      width: 200px;
+      flex-direction: column;
+      display: block;
+      margin: 20px auto;
+    }
+    .iot .second-iot img{
+      margin-top: 20px;
+    }
+
+    .wearable-app{
+      width: 200px;
+      flex-direction: column;
+      display: block;
+      margin: 20px auto;
+    }
+    .wearable-app .second-wear img{
+      margin-top: 20px;
+    }
+
+    .ibeacon{
+      width: 200px;
+      flex-direction: column;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .ibeacon .second-i img{
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width:329px){
+    .first-cloud{
+      margin: 40px 10px;
+    }
+  }
+
+  @media only screen and (max-width:620px) {
+    .kushel-img h2{
+      font-size: 40px;
+    }
+    .kushel-first-content h2{
+      font-size: 18px;
+    }
+
+    .kushel-second-content h2{
+      font-size: 18px;
+    }
+
+    .first-game h2{
+      font-size: 18px;
+    }
+    .second-game h2{
+      font-size: 18px;
+    }
+
+    .first-cl h2{
+      font-size:18px;
+    }
+
+    .line-first-flex .dev{
+      font-size: 18px;
+    }
+
+    .line-first-flex .anot-dev{
+      font-size: 18px;
+    }
+    .web-app .line-first-flex .anot-dev{
+      font-size: 18px;
+    }
+    .cloud-first-button-flex h2{
+      font-size: 18px;
+    }
+    .bus-mod h2{
+      font-size: 18px;
+    }
+  }
+/* ===========================media query of services end============ */
 /* =====================css of services end======================== */

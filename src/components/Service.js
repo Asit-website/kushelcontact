@@ -22,10 +22,12 @@ import aws from '../components/images/aws.png';
 import ku from '../components/images/ku.png';
 import gc from '../components/images/gc.png';
 import digital from '../components/images/digital.png';
-import azure from '../components/images/azure.png';
-import ma from '../components/images/ma.png';
+import aza from '../components/images/aza.png';
+import rightArrow from '../components/images/rightArrow.png';
+import log from "../components/images/log.png";
 const Service = () => {
   return (
+   <>
     <div className='kushel-service'>
         <div className="kushel-img">
             <h2>Our</h2>
@@ -229,7 +231,7 @@ const Service = () => {
                         <img className='ant-int'  src={go} alt="goa" />
                       </div>
                       <div className="first-res">
-                        <img style={{width:'65px'}} src={webProt} alt="prota" />
+                        <img className='ant-st'  src={webProt} alt="prota" />
                       </div>
                   </div>
               </div>
@@ -300,8 +302,8 @@ const Service = () => {
                    </div>
                    <div className='kot-images-second'>
                         <div className="thirdIm">
-                           <img src={azure} alt="" />
-                           <p>Microsoft Azure</p>
+                           <img className='aza' style={{opacity:0.9}} src={aza} alt="" />
+                           {/* <p>Microsoft Azure</p> */}
                         </div>
                         <div className="fourthIm">
                            <img src={digital} alt="" />
@@ -313,32 +315,78 @@ const Service = () => {
         <div className="other-services">
              <div className="iot">
                  <div className='first-iot'>
-                    
+                     <p>IOT App <br /> Development</p>
                  </div>
                  <div className="second-iot">
-
+                   <img src={rightArrow} alt="rightcheck" />
                  </div>
              </div>
              <div className="wearable-app">
                  <div className="first-wear">
-
+                    <p>Wearable App <br /> Development</p>
                  </div>
                  <div className="second-wear">
-
+                   <img src={rightArrow} alt="rightcheck" />
                  </div>
              </div>
              <div className="ibeacon">
                  <div className="first-i">
-
+                    <p>iBeacon App <br /> Development</p>
                  </div>
                  <div className="second-i">
-
+                 <img src={rightArrow} alt="rightcheck" />
                  </div>
              </div>
         </div>
         </div>
 
+     <div className="submodel">
+     <div className="two-div">
+          <div className="one-color abs-color">
+            <div className="span-group">
+              <span>Can’t find a service you are </span>
+              <span>looking for?</span>
+            </div>
+            <button>Explore All Services</button>
+          </div>
+          <div className="ano-color ans-color">
+            <div className="ano-group">
+              <span>Want to hire a resource to </span>
+              <span>work with you?</span>
+            </div>
+            <button>Hire team</button>
+          </div>
+        </div>
+        <div className="busta">
+        <div className='bus-mod'>
+        <h2>BUSINESS MODELS</h2>
+        </div>
+        <div className="three-business">
+          <p className="first-b">Time & Material</p>
+          <p className="second-p">Hire Team</p>
+          <p className="third-p">Fix Scope Model</p>
+        </div>
+
+        <div className="pic-para">
+          <div className="pic-imagea">
+            <img src={log} alt="" />
+          </div>
+          <div className="head-pa">
+            <h2>Time & Material</h2>
+            <p>
+              We welcome the obscure vision through Time and Material Model that
+              supports the Agile Development Process. This is a model where the
+              client only pays for the time and resources spent on the project.
+            </p>
+          </div>
+        </div>
+</div>
+     </div>
+
     </div>
+  
+    </>
+    
   )
 }
 

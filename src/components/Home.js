@@ -255,7 +255,7 @@ const Home = () => {
             <img src={log} alt="" />
           </div>
           <div className="head-pa">
-            <h2>Time & Material</h2>
+            <h2 >Time & Material</h2>
             <p>
               We welcome the obscure vision through Time and Material Model that
               supports the Agile Development Process. This is a model where the
