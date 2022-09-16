@@ -2880,6 +2880,10 @@ footer .another-footer-section {
   margin-top: 80px;
 }
 
+.kot-a .motion-gr{
+  line-height: 20px;
+}
+
 
 
 /* ======================media query of services========================= */
@@ -2888,7 +2892,7 @@ footer .another-footer-section {
       margin-left: 0px;
     }
     .second-game{
-      margin-left: 0px;
+      margin-left: 8px;
     }
    .kushel-service{
       padding: 135px 20px;
@@ -2946,12 +2950,9 @@ footer .another-footer-section {
     .web-app .resarch-flex {
       margin-left: 0px;
     }
-    .resarch-flex{
-      /* flex-direction: column; */
-    }
     .resarch-flex .first-res img{
       width: 50px;
-      margin: 15px 4px;
+      margin: 15px 15px;
     }
 
     .line-first-flex .anot-dev{
@@ -2972,9 +2973,9 @@ footer .another-footer-section {
     .web-app .resarch-flex .first-res .ant-int{
       width: 50px;
     }
-     .second-game{
+     /* .second-game{
       margin-top: 60px;
-     }
+     } */
      .game-img img{
       margin-top: 40px;
      }
@@ -2990,9 +2991,6 @@ footer .another-footer-section {
       width: 50px;
     }
 
-    .hr-cloud{
-       /* display: none; */
-    }
 
     .flex-kot{
       flex-direction: column;
@@ -3008,6 +3006,23 @@ footer .another-footer-section {
     .cloud-second-button-flex button{
       margin-top: 20px;
     }
+
+    .kushel-first-content{
+      display: block;
+     margin: 40px auto 5px;
+    }
+
+    .kushel-second-content{
+      display: block;
+      margin: 40px auto;
+    }
+  }
+
+
+  @media only screen and (max-width:470px){
+    .second-game{
+      margin-top: 50px;
+     }
   }
 
   @media only screen and (max-width:375px){
@@ -3047,9 +3062,15 @@ footer .another-footer-section {
     }
   }
 
+
+
   @media only screen and (max-width:329px){
     .first-cloud{
       margin: 40px 10px;
+    }
+
+    .resarch-flex .first-res img{
+      margin: 15px 5px;
     }
   }
 

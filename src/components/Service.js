@@ -69,7 +69,7 @@ const Service = () => {
                 </div>
                 <div  className="kot-a">
                    <img  src={put} alt="" />
-                   <p>Motion Graphics & Animations</p>
+                   <p className='motion-gr'>Motion Graphics <br /> & Animations</p>
                 </div>
                 <div  className="kot-a">
                    <img  src={put} alt="" />

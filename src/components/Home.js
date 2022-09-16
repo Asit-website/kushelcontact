@@ -235,7 +235,7 @@ const Home = () => {
           <div className="fin-portfolio">
             <button className="fin-btn">View Portfolio</button>
             <div className="fin-image">
-              <img src={mobile} alt="" />
+              <img src={mobile} alt="hter" />
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@ const Home = () => {
 
         <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="" />
+            <img src={log} alt="logo" />
           </div>
           <div className="head-pa">
             <h2 >Time & Material</h2>
