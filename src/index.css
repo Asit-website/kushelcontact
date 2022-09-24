@@ -3118,3 +3118,214 @@ footer .another-footer-section {
   }
 /* ===========================media query of services end============ */
 /* =====================css of services end======================== */
+
+/* ===================================css of solution=========================== */
+.kushel-solution{
+  background-color: #0A0F16;
+  padding: 80px 135px;
+  width: 100%;
+
+}
+.solution-img{
+  margin-top: 50px;
+}
+.solution-img h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.solution-img img{
+ max-width: 750px;
+ width: 100%;
+ margin-top: 20px;
+ object-fit: cover;
+}
+
+.solution-offer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.solution-offer-first button{
+    width: 160px;
+    height: 40px;
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid #a2a2a2;
+    margin-top: 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "Raleway";
+    font-size: 14px;
+}
+
+.solution-offer-first button:hover{
+  background-color: #0e66f9;
+  border: none;
+  transition: 0.5s;
+}
+.solution-offer-first span{
+   color: #0E66F9;
+   letter-spacing: .5px;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.head-para-offer h2{
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 26px;
+    width: 85%;
+    letter-spacing: 1px;
+    max-width: 100%;
+    margin-top: 12px;
+}
+
+.ping3{
+  margin-top: 25px;
+}
+
+.head-para-offer p{
+  color: #ffffff;
+  font-family: "Raleway";
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+  width: 75%;
+  max-width: 100%;
+}
+
+.solution-offer-second{
+ margin-right: 42px;
+}
+
+
+.offer-box-1{
+  background-color: #111D22;
+ width: 180px;
+ max-width: 100%;
+ border-radius: 10px;
+ height: 155px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ max-height: 100%;
+}
+.offer-box-1 .offer-img img{
+  display: block;
+  width: 38px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.offer-para p{
+  text-align: center;
+  font-family: "Raleway";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.offer-box-2{
+  background-color: #111D22;
+ width: 180px;
+ max-width: 100%;
+ border-radius: 10px;
+ height: 155px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ max-height: 100%;
+  margin-top: 35px;
+}
+
+.offer-box-2 .offer-img1 img{
+  width: 38px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.offer-para1 p{
+  text-align: center;
+  font-family: "Raleway";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.offer-box-3{
+  background-color: #111D22;
+  width: 180px;
+  max-width: 100%;
+  border-radius: 10px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.offer-box-3 .offer-img2 img{
+  width: 38px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.offer-para2 p{
+  text-align: center;
+  font-family: "Raleway";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.offer-box-4{
+  background-color: #111D22;
+  width: 180px;
+  max-width: 100%;
+  border-radius: 10px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 100%;
+  margin-top: 35px;
+}
+
+.offer-box-4 .offer-img3 img{
+  width: 38px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.offer-para3 p{
+  text-align: center;
+  font-family: "Raleway";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.eltimate-box{
+  margin: -60px 0px;
+}
+/* =======================================css of solution end=================== */
+

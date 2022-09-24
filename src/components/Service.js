@@ -17,7 +17,6 @@ import webui from '../components/images/webui.png';
 import go from '../components/images/go.png';
 import webProt from '../components/images/webProt.png';
 import ly from '../components/images/ly.png';
-
 import aws from '../components/images/aws.png';
 import ku from '../components/images/ku.png';
 import gc from '../components/images/gc.png';

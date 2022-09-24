@@ -80,12 +80,14 @@ const Navbar = () => {
                     <li  className='nav-item'>
                         <NavLink  to="/blog" style={nav}  onClick={closeMenu}>Blog</NavLink>
                     </li>
-                    <li   className='nav-item'>
-                        <NavLink to="/career" style={nav}  onClick={closeMenu}>Careers</NavLink>
-                    </li>
+                   
 
                     <li   className='nav-item'>
                         <NavLink to="/service" style={nav}  onClick={closeMenu}>Services</NavLink>
+                    </li>
+
+                    <li   className='nav-item'>
+                        <NavLink to="/solution" style={nav}  onClick={closeMenu}>Solutions</NavLink>
                     </li>
 
                     <li  className='nav-item'>
