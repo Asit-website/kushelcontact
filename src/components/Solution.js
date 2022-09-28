@@ -4,6 +4,14 @@ import fillo from '../components/images/fillo.png';
 import fillo2 from '../components/images/fillo2.png';
 import fillo3 from '../components/images/fillo3.png';
 import fillo4 from '../components/images/fillo4.png';
+import { Link } from 'react-router-dom';
+import tvseries from '../components/images/tvseries.png';
+import array from '../components/images/array.png';
+import cloud from '../components/images/cloud.png';
+import ops from '../components/images/ops.png';
+import doublehand from '../components/images/doubleHand.png';
+import setting from '../components/images/setting.png';
+import ditrans from '../components/images/ditrans.png';
 const Solution = () => {
   return (
     <>
@@ -30,7 +38,7 @@ const Solution = () => {
                     <p></p> */}
                     </div>
                  </div>
-                 <button>About us</button>
+                <Link to="/about"> <button>About us</button></Link>
               </div>
               <div className='solution-offer-second'>
                   <div className="offer-box-1">
@@ -71,6 +79,78 @@ const Solution = () => {
                   </div>
               </div>
            </div>
+        </div>
+        <div className="bara-section">
+        <div className='mobility-solution'>
+            <div className="mobile-sox">
+               <div className="sox-img">
+                  <img src={tvseries} alt="not working" />
+               </div>
+               <div className='sox-text'>
+                   <p>Enterprise Mobility<br />Solutions</p>
+               </div>
+               <div className="sox-images">
+                  <img src={array} alt="again" />
+               </div>
+            </div>
+            <div className="mobile-sox">
+            <div className="sox-img">
+                  <img src= {cloud} alt="" />
+               </div>
+               <div className='sox-text'>
+                   <p>Cloud Computing <br /> Solutions</p>
+               </div>
+               <div className="sox-images">
+                  <img src={array} alt="" />
+               </div>
+            </div>
+            <div className="mobile-sox">
+            <div className="sox-img">
+                  <img className='fig' src={ops} alt="out" />
+               </div>
+               <div className='sox-text'>
+                   <p>Cloud Computing <br /> Solutions</p>
+               </div>
+               <div className="sox-images">
+                  <img  src={array} alt="" />
+               </div>
+            </div>
+        </div>
+        <div className='mobility-solution nobility'>
+            <div className="mobile-sox">
+               <div className="sox-img">
+                  <img src={doublehand} alt="not working" />
+               </div>
+               <div className='sox-text'>
+                   <p>Software Solutions <br /> for  Startups</p>
+               </div>
+               <div className="sox-images">
+                  <img src={array} alt="again" />
+               </div>
+            </div>
+            <div className="mobile-sox">
+            <div className="sox-img">
+                  <img className='fig' src= {setting} alt="" />
+               </div>
+               <div className='sox-text'>
+                   <p>Software Solutions <br /> for Startups</p>
+               </div>
+               <div className="sox-images">
+                  <img src={array} alt="" />
+               </div>
+            </div>
+            <div className="mobile-sox">
+            <div className="sox-img">
+                  <img className='fig' src={ditrans} alt="out" />
+               </div>
+               <div className='sox-text'>
+                   <p>Cloud Computing <br /> Solutions</p>
+               </div>
+               <div className="sox-images">
+                  <img  src={array} alt="" />
+               </div>
+            </div>
+        </div>
         </div>
     </>
   )

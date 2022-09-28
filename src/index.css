@@ -3219,6 +3219,11 @@ footer .another-footer-section {
  flex-direction: column;
  max-height: 100%;
 }
+
+.offer-box-1:hover{
+  background: linear-gradient(to right, #9300D2, #6B00A6,#4B0082) border-box;
+  transition: 0.5s;
+}
 .offer-box-1 .offer-img img{
   display: block;
   width: 38px;
@@ -3249,6 +3254,11 @@ footer .another-footer-section {
   margin-top: 35px;
 }
 
+.offer-box-2:hover{
+  background: linear-gradient(to right, #1E2670, #A83466) border-box;
+  transition: 0.5s;
+}
+
 .offer-box-2 .offer-img1 img{
   width: 38px;
   max-width: 100%;
@@ -3276,6 +3286,10 @@ footer .another-footer-section {
   justify-content: center;
   flex-direction: column;
   max-height: 100%;
+}
+
+.offer-box-3:hover{
+  background: linear-gradient(to right, #2D9CE0, #2872CD,#032148) border-box;
 }
 
 .offer-box-3 .offer-img2 img{
@@ -3308,6 +3322,11 @@ footer .another-footer-section {
   margin-top: 35px;
 }
 
+.offer-box-4:hover{
+  background: linear-gradient(to right, #185A9D, #A3CB81) border-box;
+  transition: 0.5s;
+}
+
 .offer-box-4 .offer-img3 img{
   width: 38px;
   max-width: 100%;
@@ -3327,5 +3346,77 @@ footer .another-footer-section {
 .eltimate-box{
   margin: -60px 0px;
 }
+
+.bara-section{
+  background-color: #0E0E0E;
+  padding: 30px 135px;
+  width: 100%;
+}
+
+.mobility-solution{
+  margin: 42px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.mobility-solution .mobile-sox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #111D22;
+  width: 300px;
+  max-width: 100%;
+  height: 220px;
+  max-height: 100%;
+  border-radius: 15px;
+  position: relative;
+  z-index: 100;
+}
+
+.mobility-solution .mobile-sox:hover{
+  background: linear-gradient(to right, #9300D2, #6B00A6,#4B0082) border-box;
+  transition: 0.5s;
+}
+
+.sox-img{
+  margin: 10px 25px;
+}
+
+.sox-img .fig{
+  width: 40px;
+  max-width: 100%;
+}
+
+.sox-img img{
+  width: 50px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.sox-text{
+  margin: 10px 25px;
+}
+
+.sox-text p{
+  color: #ffffff;
+  font-size: 14.5px;
+  font-family: "Raleway";
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.sox-images{
+  margin: 10px 25px;
+}
+
+.sox-images img{
+  width: 38px;
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* =======================================css of solution end=================== */
 
