@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react';
 import solution from '../components/images/Solutions.png';
 import fillo from '../components/images/fillo.png';
 import fillo2 from '../components/images/fillo2.png';
@@ -12,7 +12,22 @@ import ops from '../components/images/ops.png';
 import doublehand from '../components/images/doubleHand.png';
 import setting from '../components/images/setting.png';
 import ditrans from '../components/images/ditrans.png';
+import industryApi from './industryApi/industryApi';
+import logoa from '../components/images/logoa.png';
+import mobile from '../components/images/mobile.png';
+import putkia from '../components/images/putkia.png';
 const Solution = () => {
+
+   const [start,setStart] = useState(false);
+   
+   const handleMouseOver = () =>{
+      setStart(true);
+   }
+
+   const handleMouseOut = () =>{
+      setStart(false);
+   }
+
   return (
     <>
         <div className='kushel-solution'>
@@ -152,6 +167,128 @@ const Solution = () => {
             </div>
         </div>
         </div>
+       
+       {/* ==============tech div================= */}
+       <div className="technology">
+        <div className="tech-div sol-tef">
+          <h2>Let’s Discuss Your Project</h2>
+          <div className="tech-para">
+            <p>
+              Get free consultation and let us know your project idea to turn it
+              into{" "}
+            </p>
+            <p>an amazing digital product.</p>
+          </div>
+          <Link to="/about">
+            <button className="tech-btn">About us</button>
+          </Link>
+        </div>
+        </div>
+
+
+{/* ======================industry code=============== */}
+
+<div className="industry" style={{backgroundColor:'#0E0E0E'}}>
+        <h2>Our Industry wise</h2>
+        <img src={solution} alt="nothing" />
+
+        <div className="industry-system">
+          <div className="small-fintech">
+            <span>Fintech</span>
+            <div className="fintech-para">
+              {industryApi.map((val) => {
+                return <p>{val.Name}</p>;
+              })}
+            </div>
+          </div>
+          <div className="big-fintech">
+            <span>Fintech</span>
+            <div className="big-fintch-para">
+              <p>Make your customers digital banking and investing </p>
+              <p>
+                experience smooth without irritation like banking long queue.
+              </p>
+            </div>
+            <div className="disc">
+              <ul style={{ listStyle: "none" }}>
+                <li>Easy Money Transfer</li>
+                <li>Easy Investment & Guides</li>
+                <li>Manage Daily Expences And Offers</li>
+              </ul>
+            </div>
+
+            <div className="img-techa">
+              <img src={logoa} alt="" />
+            </div>
+          </div>
+
+          <div className="fin-portfolio">
+            <button className="fin-btn">View Portfolio</button>
+            <div className="fin-image">
+              <img src={mobile} alt="hter" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ========ondeman=============== */}
+
+      <div className="on-demand">
+         <div className="demans-group">
+            <h2>On-demand Solutions</h2>
+            <p className='on-demans-para'>At MindInventory, we provide wide range of on-demand services using the most advanced technology and proficiency of our team of veteran on demand app developers. Followings are some of the trending on-demand services.</p>
+
+            <div className="demans-section">
+                <div className='demans-first'>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Grocery Delivery</p>
+                </div>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Laundry App</p>
+                </div>
+
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Home Repair App</p>
+                </div>
+
+                </div>
+
+                <div className='demans-second'>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Courier & Logistics</p>
+                </div>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Car Booking</p>
+                </div>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Beauty & Salon</p>
+                </div>
+                </div>
+                <div className='demans-third'>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Courier & Logistics</p>
+                </div>
+                <div className="im-de">
+                    <img src={putkia} alt="ok" />
+                    <p>Car Booking</p>
+                </div>
+                </div>
+            </div>
+
+           <Link to="/about"><button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+              {start ? "About Us" : "Explore More"}
+             </button></Link> 
+             
+         </div>
+      </div>
+      
     </>
   )
 }
