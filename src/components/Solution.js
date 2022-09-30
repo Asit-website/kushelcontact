@@ -16,6 +16,7 @@ import industryApi from './industryApi/industryApi';
 import logoa from '../components/images/logoa.png';
 import mobile from '../components/images/mobile.png';
 import putkia from '../components/images/putkia.png';
+import log from '../components/images/log.png'
 const Solution = () => {
 
    const [start,setStart] = useState(false);
@@ -287,8 +288,49 @@ const Solution = () => {
              </button></Link> 
              
          </div>
+         <div className="two-div two-di">
+          <div style={{width:'570px',maxWidth:'100%'}}  className="one-color one-col">
+            <div className="span-group">
+              <span>Can’t find a service you are </span>
+              <span>looking for?</span>
+            </div>
+            <button>Explore All Services</button>
+          </div>
+          <div style={{width:'570px',maxWidth:'100%'}} className="ano-color ano-col">
+            <div className="ano-group">
+              <span>Want to hire a resource to </span>
+              <span>work with you?</span>
+            </div>
+            <button>Hire team</button>
+          </div>
+        </div>
+
+        <div className="busta sortinga">
+        <h2>BUSINESS MODELS</h2>
+        <div className="three-business">
+          <p className="first-b">Time & Material</p>
+          <p className="second-p">Hire Team</p>
+          <p className="third-p">Fix Scope Model</p>
+        </div>
+
+        <div className="pic-para">
+          <div className="pic-imagea">
+            <img src={log} alt="logo" />
+          </div>
+          <div className="head-pa">
+            <h2 >Time & Material</h2>
+            <p>
+              We welcome the obscure vision through Time and Material Model that
+              supports the Agile Development Process. This is a model where the
+              client only pays for the time and resources spent on the project.
+            </p>
+          </div>
+        </div>
+
       </div>
-      
+      </div>
+     
+
     </>
   )
 }

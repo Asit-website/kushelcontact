@@ -3360,6 +3360,7 @@ footer .another-footer-section {
   border-radius: 15px;
   position: relative;
   z-index: 100;
+  /* margin:0px 5px; */
 }
 
 .mobility-solution .mobile-sox:hover{
@@ -3440,7 +3441,7 @@ footer .another-footer-section {
 
 .demans-section{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-right: 8rem;
   
@@ -3486,8 +3487,170 @@ footer .another-footer-section {
   background-color: #0e66f9;
   border: none;
   transition: 0.5s;
-  content: 'ans';
 }
+.two-di{
+  margin-top: 80px;
+}
+
+.sortinga{
+  background-color: #0A0F16;
+}
+
+.sortinga h2{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+/* ======================services media query============ */
+
+@media only screen and (max-width:620px) {
+  .solution-img h2{
+    font-size: 40px;
+  }
+
+  .head-para-offer h2{
+    font-size: 18px;
+  }
+
+  .solution-offer-first button{
+    font-size: 13px;
+  }
+  .head-para-offer p{
+    font-size: 13px;
+  }
+
+  .offer-para p{
+    font-size: 13px;
+  }
+
+  .offer-para1 p{
+    font-size: 13px;
+  }
+  .offer-para2 p{
+    font-size: 13px;
+  }
+  .offer-para3 p{
+    font-size: 13px;
+  }
+  .sox-text p{
+    font-size: 13px;
+  }
+
+ .mobility-solution .mobile-sox{
+  display: flex;
+  align-items: center;
+ }
+ .sox-text{
+    text-align: center;
+ }
+ .sox-img{
+  margin: 10px 0px;
+ }
+ .demans-group h2{
+  font-size: 18px;
+ }
+ .demans-group .on-demans-para{
+  font-size: 13px;
+  line-height: 20px;
+ }
+ .im-de p{
+  font-size: 13px;
+ }
+ .demans-group button{
+  font-size: 13px;
+ }
+}
+
+@media only screen and (max-width:924px){
+  .solution-offer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .solution-offer-second{
+    margin-right: 0px;
+    margin-top: 35px;
+  }
+
+  .eltimate-box{
+    margin: 35px 0px;
+  }
+
+  .solution-offer-first{
+    text-align: center;
+  }
+
+  .head-para-offer h2{
+    width: 100%;
+  }
+
+  .head-para-offer p{
+    width: 100%;
+  }
+ 
+}
+
+@media only screen and (max-width:1160px){
+  .kushel-solution{
+    padding: 80px 20px;
+  }
+  .bara-section{
+    padding: 30px 20px;
+  }
+
+  .on-demand{
+    padding: 70px 20px;
+  }
+}
+
+@media only screen and (max-width:1188px){
+  .mobility-solution .mobile-sox{
+    margin: 0px 4px;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .mobility-solution{
+    flex-direction: column;
+  }
+
+  .mobility-solution .mobile-sox{
+     margin: 10px 0px;
+  }
+
+  .mobility-solution{
+    margin: 0px 0px;
+  }
+
+  .demans-section{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:850px){
+  .demans-section{
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .demans-group{
+    padding: 50px 25px;
+  }
+  .demans-group .on-demans-para{
+    width: 100%;
+  }
+}
+
+
+
+/* ============services media query end====================== */
+
+
+
 
 /* =======================================css of solution end=================== */
 
