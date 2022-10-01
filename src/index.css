@@ -3066,6 +3066,7 @@ footer .another-footer-section {
   @media only screen and (max-width:620px) {
     .kushel-img h2{
       font-size: 40px;
+      text-align: center;
     }
     .kushel-first-content h2{
       font-size: 18px;
@@ -3568,6 +3569,7 @@ footer .another-footer-section {
   .solution-offer{
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 
   .solution-offer-second{
@@ -3590,6 +3592,12 @@ footer .another-footer-section {
   .head-para-offer p{
     width: 100%;
   }
+
+  .solution-img h2{
+    text-align: center;
+  }
+
+ 
  
 }
 
