@@ -118,7 +118,7 @@ const Contact = () => {
                   
                 </div>
 
-                {/* <button class="btn">Send Message</button> */}
+                <button class="btn-form-contact">Send Message</button>
               </div>
             </div>
           </div>
