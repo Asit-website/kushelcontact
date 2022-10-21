@@ -288,7 +288,7 @@ const Home = () => {
         <span>Our Reviews</span>
         <h2>Why do people praise about Technogenius?</h2>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                <SwiperSlide className="big-div">
+           <SwiperSlide className="big-div">
             <div className="swift-js">
               <div className="swifter-js">
                 <img src={man2} />
