@@ -1,9 +1,73 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import line1 from "./images/line1.png";
 import line2 from "./images/line2.png";
 import map from "./images/map.png";
 const Contact = () => {
+  const [tabIndex, setTabIndex] = useState(1);
+
+  var css = {
+    background: "#0e66f9",
+    maxWidth: "230px",
+    width: "100%",
+    height: "40px",
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center",
+    border:"none"
+  };
+
+  var secondCss = {
+    background:"transparent",
+    maxWidth: "230px",
+    width: "100%",
+    height: "40px",
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center",
+    border:"2px solid #ffffff"
+  };
+
+  const tabChange = (e) =>{
+    e.preventDefault();
+    setTabIndex(1);
+    for (var prop in secondCss) {
+      document.getElementById("camp").style[prop] = secondCss[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("tamp").style[prop] = secondCss[prop];
+    }
+    for (var prop in css) {
+      document.getElementById("barier").style[prop] = css[prop];
+    }
+  }
+  const tabChange1 = (e) =>{
+    e.preventDefault();
+    setTabIndex(2);
+    for (var prop in css) {
+      document.getElementById("camp").style[prop] = css[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("barier").style[prop] = secondCss[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("tamp").style[prop] = secondCss[prop];
+    }
+  }
+
+  const tabChange2 = (e) =>{
+    e.preventDefault();
+    setTabIndex(3);
+    for (var prop in css) {
+      document.getElementById("tamp").style[prop] = css[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("barier").style[prop] = secondCss[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("camp").style[prop] = secondCss[prop];
+    }
+  }
   return (
     <>
       <div className="cont">
@@ -39,16 +103,16 @@ const Contact = () => {
       <div className="contact_us">
         <p className="contact_para">What would you like to Contact Us for ?</p>
         <div className="diff_btn">
-          <Link className="first_link" to="#!">
+          <Link id="barier" onClick={tabChange} className="first_link" to="#!">
             NEW PROJECT
           </Link>
-          <Link className="second_link" to="#!">
+          <Link id="camp" onClick={tabChange1} className="second_link" to="#!">
             CONSULTING
           </Link>
-          <Link className="third_link" to="#!">
+          <Link id="tamp" onClick={tabChange2}  className="third_link" to="#!">
             JOINING US
           </Link>
-          <Link className="fourth_link" to="#!">
+          <Link  className="fourth_link" to="#!">
             JUST SAY HI
           </Link>
         </div>
@@ -74,39 +138,51 @@ const Contact = () => {
 
           <div className="form_cont">
             <div class="wrapper">
-              <div class="form">
+            {
+              tabIndex === 1 && (
+                <>
+                <div class="form">
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="COMPANY NAME*" />
+                    <input type="text" placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="NAME*" />
+                    <input type="text" placeholder="Company Name*" />
                   </div>
                  
                 </div>
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="JOB TITLE*" />
+                    <input type="text" placeholder="Website*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="COUNTRY*" />
+                    <input type="text" placeholder="Designation*" />
                   </div>
                  
                 </div>
 
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="EMAIL*" />
+                    <input type="text" placeholder="Email Address*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="COUNTRY*" />
+                    <input type="text" placeholder="Location*" />
                   </div>
                  
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea placeholder="PLEASE SELECT PRODUCT OF INTEREST*"></textarea>
+                    <textarea placeholder="Estimated Budget*">
+                     
+                    </textarea>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea className="second_area" placeholder="Phone"></textarea>
                   </div>
                   
                 </div>
@@ -120,6 +196,130 @@ const Contact = () => {
 
                 <button class="btn-form-contact">Send Message</button>
               </div>
+                </>
+              )
+            }
+
+            {
+              tabIndex === 2 && (
+                <>
+                <div class="form">
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Full Name*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Company Name*" />
+                  </div>
+                 
+                </div>
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Website*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Designation*" />
+                  </div>
+                 
+                </div>
+
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Email Address*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Location*" />
+                  </div>
+                 
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea placeholder="Service*">
+                     
+                    </textarea>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea className="second_area" placeholder="Phone"></textarea>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                  </div>
+                  
+                </div>
+
+                <button class="btn-form-contact">Send Message</button>
+              </div>
+                </>
+              )
+            }
+            {
+                 tabIndex === 3 && (
+                  <div class="form">
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Full Name*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Company Name*" />
+                  </div>
+                 
+                </div>
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Website*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Designation*" />
+                  </div>
+                 
+                </div>
+
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Email Address*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Location*" />
+                  </div>
+                 
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea placeholder="Estimated Budget*">
+                     
+                    </textarea>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea className="second_area" placeholder="Phone"></textarea>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                  </div>
+                  
+                </div>
+
+                <button class="btn-form-contact">Send Message</button>
+              </div>
+                 )
+            }
             </div>
           </div>
 

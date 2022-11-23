@@ -9,6 +9,7 @@ import Solution from './components/Solution';
 import Service from './components/Service';
 import Contact from './components/Contact';
 import Footer from './components/footer/Footer';
+import NotFound from './components/NotFound';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
                 <Route exact path='/service' element={<Service/>}/>
                 <Route exact path='/solution' element={<Solution/>}/>
                 <Route exact path='/contact' element={<Contact/>}/>
+                <Route exact path="*" element={<NotFound/>} />
             </Routes>
             <Footer/>
        </Router>
