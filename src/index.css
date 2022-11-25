@@ -2025,7 +2025,13 @@ footer .another-footer-section {
   .section-image{
     flex-direction: column;
   }
-
+ .cloud-container .other-services{
+  margin-left: 0px !important;
+ }
+ .digital-marketing{
+  margin-left: 0px !important;
+  margin-top: 80px;
+ }
   .section-image-first{
     width: 350px;
     max-width: 100%;
@@ -2427,7 +2433,7 @@ footer .another-footer-section {
 .kushel-first-content h2{
   color: #ffffff;
   font-family: "Raleway";
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   white-space: nowrap;
  
@@ -2559,7 +2565,7 @@ footer .another-footer-section {
 .first-cl h2{
   color: #ffffff;
   font-family: "Raleway";
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -2573,12 +2579,12 @@ footer .another-footer-section {
 .button-flex button{
   background: transparent;
   border: 1.32px solid #ffffff ;
-  padding: 7px 12px;
+  padding: 6px 12px;
   border-radius: 5px;
   font-family: "Raleway";
   outline: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 11.5px;
   color: #ffffff;
   font-weight: 500;
   white-space: nowrap;
@@ -2601,8 +2607,9 @@ footer .another-footer-section {
   margin-left: -80px;
 }
 .line-first-flex .dev{
-  font-size: 26px;
- opacity: 0.5;
+  font-size: 21px;
+ /* opacity: 0.5; */
+ cursor: pointer;
  
 }
 
@@ -2612,8 +2619,10 @@ footer .another-footer-section {
   
 }
 .line-first-flex .anot-dev{
-  font-size: 26px;
+  font-size: 21px;
   margin-left: -60px;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .second-cl img{
@@ -2635,19 +2644,22 @@ footer .another-footer-section {
   margin-top: 60px;
 }
 
-.resarch-flex .first-res img{
-  width: 60px;
-}
 
-.resarch-flex .first-res .ant-int{
-  width: 65px;
-}
-
-.resarch-flex .first-res .big-int{
-  width: 45px;
-}
 
 .resarch-flex .first-res .ant-st{
+  width: 50px;
+ margin: 0 10px;
+}
+.resarch-flex .ant-sta{
+  width: 40px;
+}
+.resarch-flex .ant-status{
+  margin-left: 10px;
+}
+.resarch-flex .antcolony{
+  width: 60px;
+}
+.resarch-flex .ant-big{
   width: 65px;
 }
 
@@ -2675,8 +2687,10 @@ footer .another-footer-section {
   
 }
 .web-app .line-first-flex .anot-dev{
-  font-size: 26px;
+  font-size: 21px;
   margin-left: -15px;
+  opacity: 0.5;
+  cursor: pointer;
 }
 .web-app .resarch-flex{
   margin-left: -12px;
@@ -2688,14 +2702,22 @@ footer .another-footer-section {
 .cloud-container{
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 80px;
 }
-
+.cloud-container .other-services{
+  margin-left: 60px;
+}
+.exom .other-services{
+  margin-left: 0px;
+}
+.digital-marketing{
+  margin-left: 60px;
+}
 .cloud-computing{
   background: linear-gradient(to right, #185A9D, #A3CB81) border-box;
   border-radius: 30px;
-  height: 510px;
+  height: auto;
   max-height: 100%;
  
 }
@@ -2750,43 +2772,69 @@ footer .another-footer-section {
 .kot-images-first{
   margin-top: 28px;
 }
-.kot-images-first img{
-  width: 95px;
+.kot-images-first .firstIm img{
+  width: 65px;
+  margin: 15px 0px;
+}
+.kot-images-first .firstIm1 img{
+  width: 45px;
+}
+.kot-images-first .secondIm1 img{
+  width: 45px;
+}
+.kot-images-first .secondIm img{
+  width: 90px;
+  margin: 15px 0px;
+}
+.kot-images-first .thirdIm img{
+  width: 55px;
   margin: 15px 0px;
 }
 .kot-images-second{
-  margin-top: 60px;
+  margin-top: 28px;
+  position: relative;
+  right: 40px;
 }
 
-.kot-images-second img{
-  width: 105px;
+.kot-images-second .fourth img{
+  width: 65px;
   margin-bottom: 60px;
 }
-.thirdIm img{
-  width: 110px;
+.kot-images-second .fourth1 img{
+  width: 45px;
+  margin: 15px 0px;
 }
 
-.other-services{
-  /* margin: 0px 4px; */
+.kot-images-second .fifth img{
+  width: 55px;
+  margin-bottom: 60px;
 }
+.kot-images-second .fifth1 img{
+  width: 65px;
+  /* margin-bottom: 60px; */
+  margin: 15px 0px;
+}
+
+
 
 .iot{
   display: flex;
   align-items: center;
   width: 360px;
   max-width: 100%;
-  padding: 35px 40px;
+  padding: 32px 40px;
   border-radius: 30px;
   height: auto;
   justify-content: space-between;
   background: linear-gradient(to right, #4A6BB6, #3A5592, #182848) border-box;
 }
-.iot .first-iot p{
-   color: #ffffff;
-   font-family: "Raleway";
-   font-size: 15px;
-   font-weight: 600;
-   line-height: 24px;
+.fiot{
+  background: linear-gradient(to right, #4A6BB6, #3A5592, #182848) border-box;
+}
+
+.iot .first-iot img{
+  width: 100px;
+  max-width: 100%;
 }
 .iot .second-iot img{
   width: 35px;
@@ -2799,19 +2847,19 @@ footer .another-footer-section {
   align-items: center;
   width: 360px;
   max-width: 100%;
-  padding: 35px 40px;
+  padding: 32px 40px;
   border-radius: 30px;
   justify-content: space-between;
   background: linear-gradient(to right, #604385, #5F4486, #516294) border-box;
   margin-top: 78px;
 }
+.wearhouse{
+  background: linear-gradient(to right, #407A95, #3C7796, #92BD85) border-box;
+}
 
-.wearable-app .first-wear p{
-  color: #ffffff;
-  font-family: "Raleway";
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 24px;
+.wearable-app .first-wear img{
+ width: 100px;
+ max-width: 100%;
 }
 
 .wearable-app .second-wear img{
@@ -2825,25 +2873,35 @@ footer .another-footer-section {
   align-items: center;
   max-width: 360px;
   width: 100%;
-  padding: 35px 40px;
+  padding: 32px 40px;
   border-radius: 30px;
   justify-content: space-between;
   background: linear-gradient(to left, #4A6BB6, #3A5592, #182848) border-box;
   margin-top: 78px;
 }
+.is{
+  background: linear-gradient(to left, #4A6BB6, #3A5592, #182848) border-box;
+}
 
-.ibeacon .first-i p{
-  color: #ffffff;
-  font-family: "Raleway";
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 24px;
+.ibeacon .first-i img{
+  width: 125px;
+  max-width: 100%;
 }
 
 .ibeacon .second-i img{
   width: 35px;
   max-width: 100%;
   height: auto;
+}
+
+
+/* ===================digital marketing============= */
+
+.digital-marketing{
+  background: linear-gradient(to right, #3E5A9A, #1B2D50) border-box;
+  border-radius: 30px;
+  height: 475px;
+  max-height: 100%;  
 }
 
 .head-pa h2{
@@ -2948,6 +3006,10 @@ footer .another-footer-section {
       flex-direction: column;
       margin-left: auto;
     }
+    .kot-images-second{
+      position: relative;
+      right: 0px;
+    }
     .button-flex{
       flex-direction: column;
     }
@@ -2993,6 +3055,10 @@ footer .another-footer-section {
     
     .resarch-flex .first-res .ant-st{
       width: 50px;
+    }
+
+    .resarch-flex .first-res .ant-sta{
+      width: 100px;
     }
 
     .resarch-flex .first-res .ant-int{
@@ -3524,6 +3590,91 @@ footer .another-footer-section {
   font-family: "Raleway";
   font-weight: bolder;
   font-size: 26px;
+}
+
+
+
+/* =====================privacy css=============================== */
+.privacy{
+  width: 100%;
+  background: linear-gradient(to right, #3E5A9A, #1B2D50) border-box;
+  position: relative;
+  height: 60vh;
+}
+.privacy .privacy-content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.privacy-content h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.privacy-system{
+  background-color: #0B0E13;
+  padding: 40px 10px;
+}
+.privacy-system .para-privacy p{
+  color: #fff;
+  opacity: 0.75;
+  font-size: 18px;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.privacy-system ul li {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Raleway";
+  opacity: 0.75;
+  list-style-type: disc;
+  margin: 10px 0px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.ol-sys{
+  padding: 5px 40px;
+  /* margin: 0 20px; */
+  background-color: #10161f;
+  margin-top: 15px;
+  border-bottom: 1px solid rgb(214, 208, 208);
+  opacity: 0.7;
+}
+
+.refund{
+  width: 100%;
+  background: linear-gradient(to right, #3E5A9A, #1B2D50) border-box;
+  position: relative;
+  height: 60vh;
+}
+.refund-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.refund-content h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.refund-para{
+  background-color: #10161f;
+  padding: 30px 10px;
+}
+.refund-para p {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 20px 0px;
 }
 
 /* ======================services media query============ */

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import services from '../components/images/services.png';
 import kushelArrow from '../components/images/kushelArrow.png';
 import kusta from '../components/images/kusta.png';
@@ -7,24 +7,125 @@ import game from '../components/images/game.png';
 import app from '../components/images/app.png';
 import dagi from '../components/images/dagi.png'
 import chota from '../components/images/chota.png'
-import research from '../components/images/research.png';
-import ui from '../components/images/ui.png'
-import int from '../components/images/int.png';
-import prot from '../components/images/prot.png'
 import web from '../components/images/web.png';
-import js from '../components/images/js.png';
-import webui from '../components/images/webui.png';
-import go from '../components/images/go.png';
-import webProt from '../components/images/webProt.png';
 import ly from '../components/images/ly.png';
-import aws from '../components/images/aws.png';
-import ku from '../components/images/ku.png';
-import gc from '../components/images/gc.png';
-import digital from '../components/images/digital.png';
-import aza from '../components/images/aza.png';
 import rightArrow from '../components/images/rightArrow.png';
 import log from "../components/images/log.png";
+import reactJs from '../components/images/reactjs.png';
+import nodejs from '../components/images/nodejs.png'
+import angular from '../components/images/angular.png';
+import html from '../components/images/html.png';
+import sql from '../components/images/sql.png';
+import php from '../components/images/php.png'
+import nodsa from '../components/images/nodsa.png';
+import laravel from '../components/images/laravel.png';
+import mongodb from '../components/images/mongodb.png';
+import mysql from '../components/images/mysql.png';
+import xdas from '../components/images/xdas.png';
+import figma from '../components/images/figma.png'
+import sketch from '../components/images/sketch.png';
+import photosop from '../components/images/photosop.png';
+import illus from '../components/images/illus.png';
+import wordpress from '../components/images/wordpress.png';
+import commerce from '../components/images/commerce.png';
+import shopify from '../components/images/shopify.png';
+import magneto from '../components/images/magneto.png';
+import lara from '../components/images/lara.png';
+import mag from '../components/images/mag.png';
+import word from '../components/images/word.png';
+import bigcom from '../components/images/bigcom.png';
+import seo from '../components/images/seo.png';
+import ads from '../components/images/ads.png';
+import meta from '../components/images/meta.png';
+import ins from '../components/images/ins.png';
+import ios from '../components/images/ios.png';
+import android from '../components/images/android.png';
+import hybrid from '../components/images/hybrid.png';
 const Service = () => {
+   const [tabIndex, setTabIndex] = useState(1);
+
+   const [tab,setTab] = useState(1);
+
+   var css = {
+       opacity:"1"
+    };
+  
+    var secondCss = {
+       opacity:"0.5"
+    };
+
+    var css1 = {
+      opacity:"1"
+    }
+
+    var secondCss1 = {
+      opacity:"0.5"
+    }
+
+   const tabChange = (e) =>{
+      e.preventDefault();
+      setTabIndex(1);
+      for (var prop in secondCss) {
+         document.getElementById("camp").style[prop] = secondCss[prop];
+       }
+       for (var prop in secondCss) {
+         document.getElementById("tamp").style[prop] = secondCss[prop];
+       }
+       for (var prop in css) {
+         document.getElementById("barier").style[prop] = css[prop];
+       }
+   }
+
+   const tabChange2 = (e) =>{
+      e.preventDefault();
+      setTabIndex(2);
+      for (var prop in css) {
+         document.getElementById("camp").style[prop] = css[prop];
+       }
+       for (var prop in secondCss) {
+         document.getElementById("barier").style[prop] = secondCss[prop];
+       }
+       for (var prop in secondCss) {
+         document.getElementById("tamp").style[prop] = secondCss[prop];
+       }
+   }
+
+   const tabChange3 = (e) =>{
+        e.preventDefault();
+        setTabIndex(3);
+
+        for (var prop in css) {
+         document.getElementById("tamp").style[prop] = css[prop];
+       }
+       for (var prop in secondCss) {
+         document.getElementById("barier").style[prop] = secondCss[prop];
+       }
+       for (var prop in secondCss) {
+         document.getElementById("camp").style[prop] = secondCss[prop];
+       }
+   }
+
+   const tabChang4 = (e) =>{
+     e.preventDefault();
+     setTab(1);
+     for (var prop in secondCss1) {
+      document.getElementById("campus").style[prop] = secondCss1[prop];
+    }
+    for (var prop in css1) {
+      document.getElementById("bari").style[prop] = css1[prop];
+    }
+   }
+
+   const tabChange5 = (e) =>{
+     e.preventDefault();
+     setTab(2);
+     for (var prop in css1) {
+      document.getElementById("campus").style[prop] = css1[prop];
+    }
+    for (var prop in secondCss1) {
+      document.getElementById("bari").style[prop] = secondCss1[prop];
+    }
+   }
   return (
    <>
     <div className='kushel-service'>
@@ -32,6 +133,118 @@ const Service = () => {
             <h2>Our</h2>
             <img src={services} alt="services" />
         </div>
+         
+        <div className="web-app">
+           <div className="mobile-app-cl">
+              <div className="first-cl">
+                 <div className="button-flex">
+                 <div className="first-button-flex">
+                     <h2>Web Design & Development</h2>
+                     </div>
+                     <div className="second-button-flex">
+                     <button>Explore all Mobile Services</button>
+                     </div>
+                 </div>
+                  <div className="line-flex">
+                     <img className='dai' src={dagi} alt="" />
+                     <div className="line-first-flex">
+                        <h2 id='barier' onClick={tabChange} className='dev'>Front-end</h2>
+                        <img className='chota-dai' src={chota} alt="" />
+                        <h2 id='camp' onClick={tabChange2} className='anot-dev'>Back-end</h2>
+                        <img className='chota-dai' src={chota} alt="" />
+                        <h2 id='tamp' onClick={tabChange3} className='anot-dev'>Design</h2>
+                     </div>
+                     <img className='dai' src={dagi} alt="" />
+                  </div>
+                     {
+                        tabIndex === 1 && (
+                           <>
+                           <div className="resarch-flex">
+                      <div className="first-res">
+                        <img className='ant-sta' src={reactJs} alt="jsa" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-sta ant-status' src={nodejs} alt="web" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={angular} alt="goa" />
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={html} alt="prota" />
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={sql} alt="prota" />
+                      </div>
+                  </div>
+                           </>
+                        )
+                     }
+
+                     {
+                        tabIndex === 2 && (
+                           <>
+                           <div className="resarch-flex">
+                      <div className="first-res">
+                        <img className='ant-sta' src={php} alt="jsa" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-sta ant-status' src={nodsa} alt="web" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={laravel} alt="goa" />
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-big'  src={mongodb} alt="prota" />
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={mysql} alt="prota" />
+                      </div>
+                  </div>
+                           </>
+                        )
+                     }
+
+                     {
+                        tabIndex === 3 &&  (
+                           <>
+                           <div className="resarch-flex">
+                      <div className="first-res">
+                        <img className='ant-sta' src={xdas} alt="jsa" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-sta ant-status' src={figma} alt="web" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={sketch} alt="goa" />
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-big'  src={photosop} alt="prota" />
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-big'  src={illus} alt="prota" />
+                      </div>
+                  </div>
+                           </>
+                        )
+                     }
+                 
+               
+              </div>
+
+              <div className="second-cl">
+                 <img src={web} alt="" />
+              </div>
+             
+           </div>
+           
+        </div>
+
 
         <div className="first-kushel">
            <div className='kushel-first-content'>
@@ -86,6 +299,182 @@ const Service = () => {
            <div className="kusta-img">
               <img src={kusta} alt="" />
            </div>
+        </div>
+
+        <div className="mobile-app">
+           <div className="mobile-app-cl">
+              <div className="first-cl">
+                 <div className="button-flex">
+                 <div className="first-button-flex">
+                     <h2>Mobile App Design & <br /> Development</h2>
+                     </div>
+                     <div className="second-button-flex">
+                     <button>Explore all Mobile Services</button>
+                     </div>
+                 </div>
+                  <div className="line-flex">
+                     <img className='dai' src={dagi} alt="" />
+                     <div className="line-first-flex">
+                        <h2 onClick={tabChang4} id='bari' className='dev'>Development</h2>
+                        <img className='chota-dai' src={chota} alt="" />
+                        <h2 onClick={tabChange5} id='campus' className='anot-dev'>Design</h2>
+                     </div>
+                     <img className='dai' src={dagi} alt="" />
+                  </div>
+                  {
+                     tab === 1 && (
+                        <>
+                        <div className="resarch-flex">
+                      <div className="first-res">
+                        <img className='ant-sta' src={ios} alt="jsa" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-sta ant-status antcolony' src={android} alt="web" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={hybrid} alt="goa" />
+                      </div>
+                      <div  className="first-res">
+                        <img style={{visibility:'hidden'}} className='ant-big'  src={photosop} alt="prota" />
+                      </div>
+                      <div className="first-res">
+                        <img style={{visibility:'hidden'}} className='ant-big'  src={illus} alt="prota" />
+                      </div>
+                  </div>
+                        </>
+                     )
+                  }
+
+                  {
+                     tab === 2 && (
+                        <>
+                        <div className="resarch-flex">
+                      <div className="first-res">
+                        <img className='ant-sta' src={xdas} alt="jsa" />
+                       
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-sta ant-status' src={figma} alt="web" />
+                      
+                      </div>
+                      <div className="first-res">
+                        <img className='ant-st'  src={sketch} alt="goa" />
+                      </div>
+                      <div  className="first-res">
+                        <img style={{visibility:'hidden'}} className='ant-big'  src={photosop} alt="prota" />
+                      </div>
+                      <div className="first-res">
+                        <img style={{visibility:'hidden'}} className='ant-big'  src={illus} alt="prota" />
+                      </div>
+                  </div>
+                        </>
+                     )
+                  }
+                  
+              </div>
+
+              <div className="second-cl">
+                 <img src={app} alt="" />
+              </div>
+             
+           </div>
+           
+        </div>
+
+         
+        <div className="cloud-container">
+        <div className="cloud-computing">
+            <div className="first-cloud">
+               <div className="cloud-button-flex">
+                    <div className="cloud-first-button-flex">
+                       <h2>E-commerce</h2>
+                    </div>
+                    <div className="cloud-second-button-flex">
+                       <button>Explore Cloud Services</button>
+                    </div>
+               </div>
+
+               <div className="hr-cloud">
+                  <img  src={ly} alt="" />
+               </div>
+
+               <div className="flex-kot">
+                   <div className='kot'>
+                   <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Wordpress</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p>magento</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Big commerce</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Shopify</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p>laravel</p>
+                </div>
+                   </div>
+
+
+
+                   <div className='kot-images-first'>
+                       <div className="firstIm">
+                          <img  src={wordpress} alt="awsa" />
+                       </div>
+                       <div className="secondIm">
+                          <img  src={commerce} alt="kus" />
+                       </div>
+                       <div className="thirdIm">
+                          <img src={shopify} alt="gca" />
+                       </div>
+                   </div>
+                   <div className='kot-images-second'>
+                        <div className="fourth">
+                           <img className='aza' style={{opacity:0.9}} src={magneto} alt="mag" />
+                           {/* <p>Microsoft Azure</p> */}
+                        </div>
+                        <div className="fifth">
+                           <img src={lara} alt="" />
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div className="other-services">
+             <div className="iot">
+                 <div className='first-iot'>
+                     <img src={mag} alt="" />
+                 </div>
+                 <div className="second-iot">
+                   <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+             <div className="wearable-app">
+                 <div className="first-wear">
+                   <img src={word} alt="" />
+                 </div>
+                 <div className="second-wear">
+                   <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+             <div className="ibeacon">
+                 <div className="first-i">
+                    <img src={bigcom} alt="" />
+                 </div>
+                 <div className="second-i">
+                 <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+        </div>
         </div>
 
         <div className="gem-dev">
@@ -147,107 +536,38 @@ const Service = () => {
            </div>
         </div>
 
-        <div className="mobile-app">
-           <div className="mobile-app-cl">
-              <div className="first-cl">
-                 <div className="button-flex">
-                 <div className="first-button-flex">
-                     <h2>Mobile App</h2>
-                     </div>
-                     <div className="second-button-flex">
-                     <button>Explore all Mobile Services</button>
-                     </div>
+        <div className="cloud-container exom">
+        <div className="other-services">
+             <div className="iot fiot">
+                 <div className='first-iot'>
+                     <img src={mag} alt="" />
                  </div>
-                  <div className="line-flex">
-                     <img className='dai' src={dagi} alt="" />
-                     <div className="line-first-flex">
-                        <h2 className='dev'>Development</h2>
-                        <img className='chota-dai' src={chota} alt="" />
-                        <h2 className='anot-dev'>Design</h2>
-                     </div>
-                     <img className='dai' src={dagi} alt="" />
-                  </div>
-
-                  <div className="resarch-flex">
-                      <div className="first-res">
-                        <img src={research} alt="" />
-                       
-                      </div>
-                      <div className="first-res">
-                        <img className='big-int' src={ui} alt="" />
-                      
-                      </div>
-                      <div className="first-res">
-                        <img className='ant-int'  src={int} alt="" />
-                      </div>
-                      <div className="first-res">
-                        <img src={prot} alt="" />
-                      </div>
-                  </div>
-              </div>
-
-              <div className="second-cl">
-                 <img src={app} alt="" />
-              </div>
-             
-           </div>
-           
-        </div>
-
-        <div className="web-app">
-           <div className="mobile-app-cl">
-              <div className="first-cl">
-                 <div className="button-flex">
-                 <div className="first-button-flex">
-                     <h2>Web</h2>
-                     </div>
-                     <div className="second-button-flex">
-                     <button>Explore all Mobile Services</button>
-                     </div>
+                 <div className="second-iot">
+                   <img src={rightArrow} alt="rightcheck" />
                  </div>
-                  <div className="line-flex">
-                     <img className='dai' src={dagi} alt="" />
-                     <div className="line-first-flex">
-                        <h2 className='dev'>Front-end</h2>
-                        <img className='chota-dai' src={chota} alt="" />
-                        <h2 className='anot-dev'>Back-end</h2>
-                        <img className='chota-dai' src={chota} alt="" />
-                        <h2 className='anot-dev'>Design</h2>
-                     </div>
-                     <img className='dai' src={dagi} alt="" />
-                  </div>
-
-                  <div className="resarch-flex">
-                      <div className="first-res">
-                        <img src={js} alt="jsa" />
-                       
-                      </div>
-                      <div className="first-res">
-                        <img className='big-int' src={webui} alt="web" />
-                      
-                      </div>
-                      <div className="first-res">
-                        <img className='ant-int'  src={go} alt="goa" />
-                      </div>
-                      <div className="first-res">
-                        <img className='ant-st'  src={webProt} alt="prota" />
-                      </div>
-                  </div>
-              </div>
-
-              <div className="second-cl">
-                 <img src={web} alt="" />
-              </div>
-             
-           </div>
-           
+             </div>
+             <div className="wearable-app wearhouse">
+                 <div className="first-wear">
+                   <img src={word} alt="" />
+                 </div>
+                 <div className="second-wear">
+                   <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+             <div className="ibeacon is">
+                 <div className="first-i">
+                    <img src={bigcom} alt="" />
+                 </div>
+                 <div className="second-i">
+                 <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
         </div>
-        <div className="cloud-container">
-        <div className="cloud-computing">
+        <div className="cloud-computing digital-marketing">
             <div className="first-cloud">
                <div className="cloud-button-flex">
                     <div className="cloud-first-button-flex">
-                       <h2>Cloud Computing</h2>
+                       <h2>Digital Marketing</h2>
                     </div>
                     <div className="cloud-second-button-flex">
                        <button>Explore Cloud Services</button>
@@ -262,82 +582,55 @@ const Service = () => {
                    <div className='kot'>
                    <div className="kot-a">
                    <img  src={put} alt="" />
-                   <p >Cloud App Development</p>
+                   <p >SEO</p>
                 </div>
                 <div className="kot-a">
                    <img  src={put} alt="" />
-                   <p >Cloud Configuration</p>
+                   <p>Meta</p>
                 </div>
                 <div className="kot-a">
                    <img  src={put} alt="" />
-                   <p >Cloud Integration</p>
+                   <p >Google ADS</p>
                 </div>
                 <div className="kot-a">
                    <img  src={put} alt="" />
-                   <p >Cloud Security</p>
+                   <p >Instagram</p>
                 </div>
-                <div className="kot-a">
+                {/* <div className="kot-a">
                    <img  src={put} alt="" />
-                   <p >Cloud Server Solutions</p>
-                </div>
-                <div className="kot-a">
-                   <img  src={put} alt="" />
-                   <p >Cloud Migration</p>
-                </div>
+                   <p>laravel</p>
+                </div> */}
                    </div>
 
 
 
                    <div className='kot-images-first'>
-                       <div className="firstIm">
-                          <img src={aws} alt="awsa" />
+                       <div className="firstIm firstIm1">
+                          <img  src={seo} alt="awsa" />
                        </div>
-                       <div className="secondIm">
-                          <img src={ku} alt="kus" />
+                       <div className="secondIm secondIm1">
+                          <img  src={ads} alt="kus" />
                        </div>
-                       <div className="thirdIm">
-                          <img src={gc} alt="gca" />
-                       </div>
+                      
                    </div>
                    <div className='kot-images-second'>
-                        <div className="thirdIm">
-                           <img className='aza' style={{opacity:0.9}} src={aza} alt="" />
+                        <div className="fourth fourth1">
+                           <img className='aza' style={{opacity:0.9}} src={meta} alt="mag" />
                            {/* <p>Microsoft Azure</p> */}
                         </div>
-                        <div className="fourthIm">
-                           <img src={digital} alt="" />
+                        <div className="fifth fifth1">
+                           <img src={ins} alt="" />
                         </div>
                    </div>
                </div>
             </div>
         </div>
-        <div className="other-services">
-             <div className="iot">
-                 <div className='first-iot'>
-                     <p>IOT App <br /> Development</p>
-                 </div>
-                 <div className="second-iot">
-                   <img src={rightArrow} alt="rightcheck" />
-                 </div>
-             </div>
-             <div className="wearable-app">
-                 <div className="first-wear">
-                    <p>Wearable App <br /> Development</p>
-                 </div>
-                 <div className="second-wear">
-                   <img src={rightArrow} alt="rightcheck" />
-                 </div>
-             </div>
-             <div className="ibeacon">
-                 <div className="first-i">
-                    <p>iBeacon App <br /> Development</p>
-                 </div>
-                 <div className="second-i">
-                 <img src={rightArrow} alt="rightcheck" />
-                 </div>
-             </div>
+    
         </div>
-        </div>
+
+
+      
+       
 
      <div className="submodel">
      <div className="two-div">

@@ -7,6 +7,8 @@ import ResourcesApi from './ResourcesApi';
 import location from '../images/location.png';
 import phone from '../images/phone.png';
 import gmail from '../images/gmail.png';
+import Privacy from '../Privacy';
+import { NavLink } from 'react-router-dom';
 
 import lowerFooterApi from './lowerFooterApi';
 import AddressAvatarApi from './AddressAvatarApi';
@@ -106,13 +108,10 @@ const Footer = () => {
               <p>Copyrights © 2021 Naresh Varma Design. All rights reserved.</p>
             </div>
             <div className="section-another-para">
-              {
-                lowerFooterApi.map(val=>{
-                  return(
-                    <p key={val.id}>{val.Name}</p>
-                  )
-                })
-              }
+                <NavLink to="/privacy"><p>Privacy Policy</p></NavLink>
+               <NavLink to="/refund"> <p>Refund Policy</p></NavLink>
+                <p>Sitemap</p>
+                <p>Terms of Use</p>
             </div>
          </div>
          </div>

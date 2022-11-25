@@ -10,7 +10,8 @@ import Service from './components/Service';
 import Contact from './components/Contact';
 import Footer from './components/footer/Footer';
 import NotFound from './components/NotFound';
-
+import Privacy from './components/Privacy';
+import Refund from './components/Refund';
 const App = () => {
   return (
        <Router>
@@ -23,6 +24,8 @@ const App = () => {
                 <Route exact path='/service' element={<Service/>}/>
                 <Route exact path='/solution' element={<Solution/>}/>
                 <Route exact path='/contact' element={<Contact/>}/>
+                <Route exact path='/privacy' element={<Privacy/>}/>
+                <Route exact path='/refund' element={<Refund/>}/>
                 <Route exact path="*" element={<NotFound/>} />
             </Routes>
             <Footer/>
