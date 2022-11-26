@@ -1,47 +1,47 @@
 const industryApi = [
     {
         id:1,
-        Name:'E-Commerce'
+        Name:'E-Commerce',
     },
     {
         id:2, 
-        Name:'Healthcare'
+        Name:'Healthcare',
     },
     {
         id:3, 
-        Name:'Fitness'
+        Name:'Fitness',
     },
     {
         id:4,
-        Name:'Food Delivery'
+        Name:'Food Delivery',
     },
     {
         id:5,
-        Name:'Real Estate'
+        Name:'Real Estate',
     },
     {
         id:6,
-        Name:'Travel'
+        Name:'Travel',
     },
     {
         id:7,
-        Name:'Sports'
+        Name:'Sports',
     },
     {
         id:8,
-        Name:'Social Networking'
+        Name:'Social Networking',
     },
     {
         id:9, 
-        Name:'Business'
+        Name:'Business',
     },
     {
         id:10,
-        Name:'Education'
+        Name:'Education',
     },
     {
         id:11,
-        Name:'Entertainment'
+        Name:'Entertainment',
     }
 ]
 

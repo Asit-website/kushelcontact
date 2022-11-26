@@ -359,7 +359,19 @@ a {
 .section-service {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+/* ========================crausol====================== */
+
+.carousel .control-dots .dot.selected{
+  display: none !important;
+}
+.carousel .control-dots .dot{
+  display: none !important;
+}
+.carousel .carousel-status{
+  display: none !important;
 }
 
 .section-service .first-service {
@@ -370,10 +382,11 @@ a {
 .three-section-first {
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(#fdcb2c, #f9863f) 1;
+  /* border-image: linear-gradient(#fdcb2c, #f9863f) 1; */
   /* background-image:url('./components/images/Rectangle\ 18102.png') ; */
+  background: linear-gradient(to bottom, #F3670E, #F5B307) border-box;
   background-repeat: no-repeat;
-  width: 285px;
+  width: 300px;
   max-width: 100%;
   padding: 17px 30px;
   height: 100%;
@@ -404,7 +417,7 @@ a {
 }
 
 .three-section-second {
-  background: linear-gradient(to right, #f61361, #6056f1) border-box;
+  background: linear-gradient(to bottom, #0B9A44, #0A7E12) border-box;
   border-radius: 5px;
   /* background-image:url('./components/images/Rectangle\ 18103.png') ; */
   background-repeat: no-repeat;
@@ -420,7 +433,7 @@ a {
 
 .three-section-second .second-im {
   width: 100%;
-  max-width: 50px;
+  max-width: 54px;
   margin: 0 -15px;
   object-fit: cover;
 }
@@ -467,6 +480,39 @@ a {
   font-weight: 500;
 }
 
+.services .fourth-service {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.three-section-fourth{
+  border: 2px solid;
+  border-image: linear-gradient(#F752B0, #A400FF) 1;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  padding: 17px 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.three-section-fourth .fourth-im{
+  width: 100%;
+  max-width: 50px;
+  margin: 0 -15px;
+  object-fit: cover;
+}
+.three-section-fourth p{
+  margin: 0 40px;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .service-content {
   margin-top: 40px;
 }
@@ -486,8 +532,8 @@ a {
 .another-xd {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0px 30px;
+  justify-content: space-evenly;
+  padding: 0px 40px;  /* 30 tha */
   margin-top: 40px;
 }
 
@@ -1070,7 +1116,7 @@ a {
 
 .section-image-first {
   position: relative;
-  background: url("./components/images/tree.png");
+  background: url("../public/images/loro.png");
   background-repeat: no-repeat;
   width: 240px;
   object-fit: cover;
@@ -1078,13 +1124,13 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
   background-size: cover;
 }
 
 .section-image-second {
   position: relative;
-  background: url("./components/images/earth.png");
+  background: url("../public/images/ladki.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 240px;
@@ -1093,11 +1139,11 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 
 .section-image-third {
-  background: url("./components/images/camera.png");
+  background: url("../public/images/panata.png");
   background-repeat: no-repeat;
   width: 240px;
   object-fit: cover;
@@ -1106,12 +1152,12 @@ a {
   height: 170px;
   background-position: center;
   background-size: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
   object-position: bottom;
 }
 
 .section-image-fourth {
-  background: url("./components/images/pigi.png");
+  background: url("../public/images/hdfcs.png");
   background-repeat: no-repeat;
   width: 240px;
   object-fit: cover;
@@ -1119,7 +1165,7 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 .section-imagea {
   display: flex;
@@ -1140,7 +1186,7 @@ a {
   max-width: 100%;
 }
 .section-image-fifth {
-  background: url("./components/images/bottle.png");
+  background: url("../public/images/dabur.png");
   background-repeat: no-repeat;
   width: 240px;
   object-position: cover;
@@ -1148,7 +1194,7 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 .section-image-sixth {
   background: none;
@@ -1159,7 +1205,7 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 .section-image-seventh {
   background: none;
@@ -1170,7 +1216,7 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 
 .section-image-eight {
@@ -1182,7 +1228,7 @@ a {
   height: 170px;
   background-position: center;
   border: 1.5px solid white;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 /* ============our review css end =============== */
 /* business css end==================== */
