@@ -382,8 +382,6 @@ a {
 .three-section-first {
   border-width: 2px;
   border-style: solid;
-  /* border-image: linear-gradient(#fdcb2c, #f9863f) 1; */
-  /* background-image:url('./components/images/Rectangle\ 18102.png') ; */
   background: linear-gradient(to bottom, #F3670E, #F5B307) border-box;
   background-repeat: no-repeat;
   width: 300px;
@@ -417,9 +415,10 @@ a {
 }
 
 .three-section-second {
+  border-width: 2px;
+  border-style: solid;
   background: linear-gradient(to bottom, #0B9A44, #0A7E12) border-box;
   border-radius: 5px;
-  /* background-image:url('./components/images/Rectangle\ 18103.png') ; */
   background-repeat: no-repeat;
   width: 300px;
   max-width: 100%;
@@ -452,7 +451,8 @@ a {
 }
 
 .three-section-third {
-  border: 2px solid;
+  border-width: 2px;
+  border-style: solid;
   border-image: linear-gradient(#29b12b, #33ead7) 1;
   border-radius: 10px;
   width: 300px;
@@ -486,7 +486,8 @@ a {
 }
 
 .three-section-fourth{
-  border: 2px solid;
+  border-width: 1px;
+  border-style: solid;
   border-image: linear-gradient(#F752B0, #A400FF) 1;
   border-radius: 10px;
   width: 300px;
@@ -601,8 +602,26 @@ a {
 .tech-image {
   margin-top: 50px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 30px; /* pehle 20 chilo*/
 }
+
+.button-chu{
+  display: block;
+    width: 160px;
+    height: 38px;
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid #a2a2a2;
+    margin: 40px auto;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "Raleway";
+    font-size: 14px;
+}
+
+
 
 .tech-div {
   object-fit: cover;
@@ -2012,6 +2031,9 @@ footer .another-footer-section {
 @media only screen and (max-width:729px){
   .tech-image{
     flex-direction: column;
+  }
+  .tech-image img {
+    margin: 20px 0px;
   }
   .three-business{
     flex-direction: column;

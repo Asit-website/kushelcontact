@@ -1,34 +1,39 @@
 const techApi = [
     {
         id:1,
-        Name:'imagesa/docker.png',
-        width:'60px'
+        Name:'imagesa/react.png',
+        width:'50px'
     }
     ,
     {
         id:2,
-        Name:'imagesa/fluter.png',
-        width:'60px'
-    },
-    {
-        id:3,
-        Name:'imagesa/firebase.png',
-        width:'70px'
-    },
-    {
-        id:4,
-        Name:'imagesa/golang.png',
-        width:'70px'
-    },
-    {
-        id:5,
-        Name:'imagesa/react.png',
+        Name:'imagesa/php.png',
         width:'50px'
     },
     {
+        id:3,
+        Name:'imagesa/nodsa.png',
+        width:'50px'
+    },
+    {
+        id:4,
+        Name:'imagesa/laravel.png',
+        width:'60px'
+    },
+    {
+        id:5,
+        Name:'imagesa/mag2.png',
+        width:'70px'
+    },
+    {
         id:6,
+        Name:'imagesa/shopi2.png',
+        width:'60px'
+    },
+    {
+        id:7,
         Name:'imagesa/kub.png',
-        width:'100px'
+        width:'110px'
     }
 ]
 

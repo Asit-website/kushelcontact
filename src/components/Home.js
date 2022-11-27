@@ -26,7 +26,16 @@ import physics from '../components/images/physics.png';
 import anis from '../components/images/anis.png';
 import anis1 from '../components/images/anis1.png';
 import swift from '../components/images/swift.png';
-
+import seo1 from '../components/images/seo1.png';
+import meta1 from '../components/images/meta1.png';
+import insta2 from '../components/images/insta2.png';
+import adwords from '../components/images/adwords.png';
+import wordpress1 from '../components/images/wordpress1.png';
+import magento1 from '../components/images/magento1.png';
+import nipta from '../components/images/nipata.png';
+import shopify1 from '../components/images/shopify1.png';
+import nipta1 from '../components/images/nipta1.png';
+import techAnotherApi from "./technologyApi/teachAnotherApi";
 import imageApi from "./imageApi/imageApi";
 import imageAnotherApi from "./imageApi/imageAnotherApi";
 // Import Swiper React components
@@ -44,18 +53,7 @@ import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
 // import pre from '../components/pre.png';
 
-const swiperApi = [
-  {
-    id:1,
-    Para:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet velit finibus, mollis lorem non, iaculis augue. Phasellus mi urna, commodo sit amet tellus non, consectetur consequat quam. ',
-    image1:'images/man2.png',
-    image2:'images/hand.png',
-    Name1:'Harriet Mitchell',
-    Name2:'Director of Inbrew'
 
-
-  }
-]
 
 
 
@@ -64,6 +62,8 @@ const Home = () => {
 
   const [link,setLink] = useState(1);
   const [men,setMen] = useState(1);
+
+  const [save,setSaved] = useState(false);
 
   const css = {
     borderBottom:"2px solid #ffffff",
@@ -629,18 +629,40 @@ const Home = () => {
   const setChange1 = (e) =>{
     e.preventDefault();
     setGrad(2);
-    document.getElementById("bsk").style.background="linear-gradient(to bottom, #0B9A44, #0A7E12) border-box";
+    document.getElementById("bsk").style.background="linear-gradient(to bottom, #29B22D, #29B22D,#24D968) border-box";
     document.getElementById("bsk").style.borderImage="none";
     document.getElementById("ask").style.borderImage="linear-gradient(#FDCB2C, #F9863F) 1";
     document.getElementById("ask").style.background="none"
   }
 
-  const setChange2 = () =>{
-    
+  const setChange2 = (e) =>{
+      e.preventDefault();
+      setGrad(3);
+      document.getElementById("csk").style.background="linear-gradient(to bottom, #0B9A44, #0A7E12) border-box";
+      document.getElementById("csk").style.borderImage="none";
+      document.getElementById("dsk").style.borderImage="linear-gradient(#F752B0, #A400FF) 1";
+      document.getElementById("dsk").style.background="none"
   }
 
-  const setChange3 = () =>{
+  const setChange3 = (e) =>{
+     e.preventDefault();
+     setGrad(4);
+     document.getElementById("dsk").style.background="linear-gradient(to bottom, #BF00FF, #280334) border-box";
+     document.getElementById("dsk").style.borderImage="none";
+     document.getElementById("csk").style.background="none";
+     document.getElementById("csk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
 
+  }
+
+  const savedCss = {
+    display: save ? 'flex' : 'none'
+  }
+
+  const setButton = (e) =>{
+      setSaved(!save);
+      setTimeout(() => {
+         document.querySelector(".button-chu").style.display="none"
+      }, 1000);
   }
 
   return (
@@ -823,6 +845,62 @@ const Home = () => {
                 </>
               )
             }
+
+            {
+               grad === 3 && (
+                <>
+                <div>
+          <div className="service-content">
+            <p>
+              With a decade-long experience in UI/UX designing, our creative
+              team of designers offers a full range of web and mobile app design
+              services, from prototyping and graphic design to pixel-perfect UI.
+            </p>
+          </div>
+
+          <div className="another-xd">
+            {/* {XdApi.map((val) => {
+              return <img key={val.id} src={val.Name} alt="" />;
+            })} */}
+
+            <img src={seo1} alt="" />
+            <img src={meta1} alt="" />
+            <img src={insta2} alt="" />
+            <img src={adwords} alt="" />
+            
+          </div>
+          </div>
+                </>
+               )
+            }
+
+            {
+              grad === 4 && (
+                <>
+                <div>
+          <div className="service-content">
+            <p>
+              With a decade-long experience in UI/UX designing, our creative
+              team of designers offers a full range of web and mobile app design
+              services, from prototyping and graphic design to pixel-perfect UI.
+            </p>
+          </div>
+
+          <div className="another-xd">
+            {/* {XdApi.map((val) => {
+              return <img key={val.id} src={val.Name} alt="" />;
+            })} */}
+
+            <img src={wordpress1} alt="" />
+            <img src={magento1} alt="" />
+            <img src={nipta} alt="" />
+            <img src={shopify1} alt="" />
+            <img src={nipta1} alt="" />
+          </div>
+          </div>
+                </>
+              )
+            }
          
         </div>
       </div>
@@ -836,6 +914,14 @@ const Home = () => {
             return <img key={id} style={{ width: width }} src={Name} alt="" />;
           })}
         </div>
+        
+        <div style={savedCss} className="tech-image">
+          {techAnotherApi.map((val) => {
+            const { id, Name, width } = val;
+            return <img key={id} style={{ width: width }} src={Name} alt="" />;
+          })}
+        </div>
+        <button onClick={setButton} className="button-chu">see More</button>
         <div className="tech-div">
           <h2>Let’s Discuss Your Project</h2>
           <div className="tech-para">
