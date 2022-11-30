@@ -110,7 +110,9 @@ const Footer = () => {
             <div className="section-another-para">
                 <NavLink to="/privacy"><p>Privacy Policy</p></NavLink>
                <NavLink to="/refund"> <p>Refund Policy</p></NavLink>
-                <p>Sitemap</p>
+                {/* <p>Sitemap</p> */}
+                <NavLink to="/quality"> <p>Quality Policy
+</p></NavLink>
                 <p>Terms of Use</p>
             </div>
          </div>

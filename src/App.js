@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import NotFound from './components/NotFound';
 import Privacy from './components/Privacy';
 import Refund from './components/Refund';
+import Quality from './components/Quality';
 const App = () => {
   return (
        <Router>
@@ -26,6 +27,7 @@ const App = () => {
                 <Route exact path='/contact' element={<Contact/>}/>
                 <Route exact path='/privacy' element={<Privacy/>}/>
                 <Route exact path='/refund' element={<Refund/>}/>
+                <Route exact path='/quality' element={<Quality/>}/>
                 <Route exact path="*" element={<NotFound/>} />
             </Routes>
             <Footer/>
