@@ -4,7 +4,7 @@ import fillo from "../components/images/fillo.png";
 import fillo2 from "../components/images/fillo2.png";
 import fillo3 from "../components/images/fillo3.png";
 import fillo4 from "../components/images/fillo4.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import tvseries from "../components/images/tvseries.png";
 import array from "../components/images/array.png";
 import cloud from "../components/images/cloud.png";
@@ -58,10 +58,10 @@ const Solution = () => {
                     <p></p> */}
               </div>
             </div>
-            <Link to="/about">
+            <NavLink to="/about">
               {" "}
               <button>About us</button>
-            </Link>
+            </NavLink>
           </div>
           <div className="solution-offer-second">
             <div className="offer-box-1">
@@ -201,9 +201,9 @@ const Solution = () => {
             </p>
             <p>an amazing digital product.</p>
           </div>
-          <Link to="/about">
+          <NavLink to="/about">
             <button className="tech-btn">About us</button>
-          </Link>
+          </NavLink>
         </div>
       </div>
 
@@ -319,11 +319,11 @@ const Solution = () => {
                 </div> */}
           </div>
 
-          <Link to="/about">
+          <NavLink to="/about">
             <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
               {start ? "About Us" : "Explore More"}
             </button>
-          </Link>
+          </NavLink>
         </div>
         <div className="two-div two-di">
           <div

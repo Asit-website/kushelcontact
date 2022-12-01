@@ -4,13 +4,7 @@ import socialLinksApi from './socialLinksApi';
 import ArtApi from './ArtApi';
 import InvestmentApi from './InvestementApi';
 import ResourcesApi from './ResourcesApi';
-import location from '../images/location.png';
-import phone from '../images/phone.png';
-import gmail from '../images/gmail.png';
-import Privacy from '../Privacy';
 import { NavLink } from 'react-router-dom';
-
-import lowerFooterApi from './lowerFooterApi';
 import AddressAvatarApi from './AddressAvatarApi';
 const Footer = () => {
   return (
@@ -107,13 +101,19 @@ const Footer = () => {
             <div className='section-para'>
               <p>Copyrights © 2021 Naresh Varma Design. All rights reserved.</p>
             </div>
+            <div>
             <div className="section-another-para">
                 <NavLink to="/privacy"><p>Privacy Policy</p></NavLink>
                <NavLink to="/refund"> <p>Refund Policy</p></NavLink>
                 {/* <p>Sitemap</p> */}
                 <NavLink to="/quality"> <p>Quality Policy
 </p></NavLink>
-                <p>Terms of Use</p>
+                {/* <p>Terms of Use</p> */}
+            </div>
+            <div className="section-another-para section-sm-ft">
+                <NavLink to="/nda"><p>NDA Policy</p></NavLink>
+                <NavLink to="/term"><p>Terms of Use</p></NavLink>
+            </div>
             </div>
          </div>
          </div>

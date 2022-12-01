@@ -1621,6 +1621,9 @@ footer {
   /* padding: 100px 130px; */
   padding-top: 50px;
 }
+.section-sm-ft{
+  margin-top: 15px;
+}
 
 .footer {
   display: flex;
@@ -3788,6 +3791,320 @@ footer .another-footer-section {
 }
 /* ================quality css end ================= */
 
+/* =================nda css start=========================== */
+.Nda-policy{
+  padding: 80px 60px;
+  background-color: #10161f;
+}
+.Nda-policy .pol{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px; 
+  text-align: center;
+  margin-top: 40px;
+}
+.protect-nda{
+  margin-top: 40px;
+  padding: 0 60px;
+}
+.protect-nda .primary-nda{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.protect-nda .secondary-nda{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.protect-nda .third-nda{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.protect-nda .fourth-nda{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.overview-nda{
+  padding: 0 60px;
+  margin-top: 50px;
+}
+.overview-nda .over-pol{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px; 
+}
+.protect-overview{
+  margin-top: 20px;
+}
+.protect-overview .primary-overview{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.protect-overview .secondary-overview{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.key-clause{
+  padding: 0 60px;
+  margin-top: 25px;
+}
+.key-clause .key-pol{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.key-clause ul {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+.key-clause ul li {
+  list-style-type: disc;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.keep-idea-safe{
+  padding: 0 60px;
+  margin-top: 50px;
+}
+.keep-idea-safe .keep-idea{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px; 
+}
+.keep-idea-para{
+  margin-top: 20px;
+}
+.keep-idea-para .primary-idea{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.keep-idea-para .secondary-idea{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.keep-idea-para .third-idea{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.keep-idea-para .fourth-idea{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.general-security{
+  padding: 0 60px;
+  margin-top: 50px;
+}
+.general-security h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px; 
+}
+.general-security ul{
+  padding: 0 40px;
+  margin-top: 20px;
+}
+.general-security ul li{
+  list-style-type: disc;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* ========================term and condition css====================== */
+.term-condition{
+  width: 100%;
+  background: linear-gradient( to bottom, #68f510, #116ce6) border-box;
+  position: relative;
+  height: 60vh;
+}
+.term-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.term-content h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.conditionst{
+  padding: 40px 10px;
+  background-color: #0B0E13;
+}
+.conditionst .terms-h2{
+    color: #ffffff;
+    font-size: 26px;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+.terms-para{
+  margin-top: 10px;
+}
+.terms-para p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.terms-para .terms-secondary{
+   margin-top: 15px;
+}
+.terms-lisence {
+  margin-top: 25px;
+}
+.terms-lisence h2{
+  color: #ffffff;
+    font-size: 26px;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+.terms-lisence p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.third-party-content{
+  margin-top: 25px;
+}
+.third-party-content h2{
+  color: #ffffff;
+    font-size: 26px;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+.third-party-para{
+  margin-top: 10px;
+}
+.third-party-para p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.third-party-para .para-party-second{
+  margin-top: 15px;
+}
+.third-party-para .para-party-third{
+  margin-top: 15px;
+}
+.third-party-para .para-party-fourth{
+  margin-top: 15px;
+}
+.once-you-agree{
+  margin-top: 25px;
+}
+.once-you-agree h2{
+  color: #ffffff;
+  font-size: 26px;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.once-you-agree ul li{
+  color: #ffffff;
+    font-size: 18px;
+    font-family: "Raleway";
+    opacity: 0.75;
+    list-style-type: disc;
+    margin: 12px 0px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.once-you-agree-first{
+  margin-top: 50px;
+}
+.once-you-agree-first h2{
+  font-size: 24px;
+  font-weight: 400;
+}
+.once-hr hr{
+  width: 60px;
+  border: 2px solid #0e66f9;
+  max-width: 100%;
+}
+.cancel{
+  margin-top: 20px;
+}
+.cancel ul .can-li {
+   color: white;
+   opacity: 1;
+   font-size: 18px;
+   font-family: "Raleway";
+   font-weight: bold;
+}
+.sys-uls{
+   background-color: #0b0d13;
+   padding: 2px 30px;
+   margin: 10px 0px;
+}
+.cancel-first{
+  margin-top: 20px;
+}
+.once-you-agree .payments-terms{
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/* ===========================term and condition css end================== */
+
+/* =======================nda css end============================ */
+
 /* ======================services media query============ */
 
 @media only screen and (max-width:620px) {
@@ -3971,4 +4288,3 @@ footer .another-footer-section {
 
 
 /* =======================================css of solution end=================== */
-

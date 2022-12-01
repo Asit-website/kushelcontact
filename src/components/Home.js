@@ -50,7 +50,7 @@ import "swiper/css/navigation";
 
 import "./styles.css";
 import { Navigation } from "swiper";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import pre from '../components/pre.png';
 
 
@@ -704,9 +704,9 @@ const Home = () => {
               requirements and catering a wide spectrum of projects.
             </p>
 
-            <Link to="/about">
+            <NavLink to="/about">
               <button className="who_btn">About us</button>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -931,9 +931,9 @@ const Home = () => {
             </p>
             <p>an amazing digital product.</p>
           </div>
-          <Link to="/about">
+          <NavLink to="/about">
             <button className="tech-btn">About us</button>
-          </Link>
+          </NavLink>
         </div>
       </div>
 
@@ -949,10 +949,10 @@ const Home = () => {
           <img src={dash} alt="das" />
           <img src={coin} alt="con" />
         </div>
-        <Link to="#!">
+        <NavLink to="#!">
           {" "}
           <button className="project-btn">View Portfolio</button>
-        </Link>
+        </NavLink>
       </div>
 
       {/* ============industry wise============= */}

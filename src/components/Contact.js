@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import line1 from "./images/line1.png";
 import line2 from "./images/line2.png";
 import map from "./images/map.png";
@@ -103,18 +103,18 @@ const Contact = () => {
       <div className="contact_us">
         <p className="contact_para">What would you like to Contact Us for ?</p>
         <div className="diff_btn">
-          <Link id="barier" onClick={tabChange} className="first_link" to="#!">
+          <NavLink id="barier" onClick={tabChange} className="first_link" to="#!">
             NEW PROJECT
-          </Link>
-          <Link id="camp" onClick={tabChange1} className="second_link" to="#!">
+          </NavLink>
+          <NavLink id="camp" onClick={tabChange1} className="second_link" to="#!">
             CONSULTING
-          </Link>
-          <Link id="tamp" onClick={tabChange2}  className="third_link" to="#!">
+          </NavLink>
+          <NavLink id="tamp" onClick={tabChange2}  className="third_link" to="#!">
             JOINING US
-          </Link>
-          <Link  className="fourth_link" to="#!">
+          </NavLink>
+          <NavLink  className="fourth_link" to="#!">
             JUST SAY HI
-          </Link>
+          </NavLink>
         </div>
 
         <div className="form_map">

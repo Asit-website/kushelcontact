@@ -13,6 +13,8 @@ import NotFound from './components/NotFound';
 import Privacy from './components/Privacy';
 import Refund from './components/Refund';
 import Quality from './components/Quality';
+import Nda from './components/Nda';
+import TermCondition from './components/TermCondition';
 const App = () => {
   return (
        <Router>
@@ -28,6 +30,8 @@ const App = () => {
                 <Route exact path='/privacy' element={<Privacy/>}/>
                 <Route exact path='/refund' element={<Refund/>}/>
                 <Route exact path='/quality' element={<Quality/>}/>
+                <Route exact path='/nda' element={<Nda/>}/>
+                <Route exact path='/term' element={<TermCondition/>}/>
                 <Route exact path="*" element={<NotFound/>} />
             </Routes>
             <Footer/>
