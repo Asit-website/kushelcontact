@@ -37,6 +37,11 @@ const Contact = () => {
     for (var prop in secondCss) {
       document.getElementById("tamp").style[prop] = secondCss[prop];
     }
+
+    for (var prop in secondCss) {
+      document.getElementById("samp").style[prop] = secondCss[prop];
+    }
+
     for (var prop in css) {
       document.getElementById("barier").style[prop] = css[prop];
     }
@@ -53,6 +58,10 @@ const Contact = () => {
     for (var prop in secondCss) {
       document.getElementById("tamp").style[prop] = secondCss[prop];
     }
+
+    for (var prop in secondCss) {
+      document.getElementById("samp").style[prop] = secondCss[prop];
+    }
   }
 
   const tabChange2 = (e) =>{
@@ -67,6 +76,32 @@ const Contact = () => {
     for (var prop in secondCss) {
       document.getElementById("camp").style[prop] = secondCss[prop];
     }
+
+    for (var prop in secondCss) {
+      document.getElementById("samp").style[prop] = secondCss[prop];
+    }
+  }
+
+  const tabChange3 = (e) =>{
+     e.preventDefault();
+     setTabIndex(4);
+     for (var prop in secondCss) {
+      document.getElementById("tamp").style[prop] = secondCss[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("barier").style[prop] = secondCss[prop];
+    }
+    for (var prop in secondCss) {
+      document.getElementById("camp").style[prop] = secondCss[prop];
+    }
+
+    for (var prop in css) {
+      document.getElementById("samp").style[prop] = css[prop];
+    }
+  }
+
+  const submitForm = (e) =>{
+    e.preventDefault();
   }
   return (
     <>
@@ -112,7 +147,7 @@ const Contact = () => {
           <NavLink id="tamp" onClick={tabChange2}  className="third_link" to="#!">
             JOINING US
           </NavLink>
-          <NavLink  className="fourth_link" to="#!">
+          <NavLink id="samp"  onClick={tabChange3} className="fourth_link" to="#!">
             JUST SAY HI
           </NavLink>
         </div>
@@ -138,6 +173,7 @@ const Contact = () => {
 
           <div className="form_cont">
             <div class="wrapper">
+            <form onSubmit={submitForm}>
             {
               tabIndex === 1 && (
                 <>
@@ -173,16 +209,16 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea placeholder="Estimated Budget*">
-                     
-                    </textarea>
+                     <select name="" id="">
+                      <option value="">Estimated Budget</option>
+                     </select>
                   </div>
                   
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="Phone"></textarea>
+                    <input className="inus" placeholder="Phone"></input>
                   </div>
                   
                 </div>
@@ -193,8 +229,6 @@ const Contact = () => {
                   </div>
                   
                 </div>
-
-                <button class="btn-form-contact">Send Message</button>
               </div>
                 </>
               )
@@ -235,16 +269,16 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea placeholder="Service*">
-                     
-                    </textarea>
+                     <select name="" id="oldsel">
+                        <option value="">Service</option>
+                     </select>
                   </div>
                   
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="Phone"></textarea>
+                  <input className="inus" placeholder="Phone"></input>
                   </div>
                   
                 </div>
@@ -256,7 +290,7 @@ const Contact = () => {
                   
                 </div>
 
-                <button class="btn-form-contact">Send Message</button>
+                
               </div>
                 </>
               )
@@ -269,7 +303,7 @@ const Contact = () => {
                     <input type="text" placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Company Name*" />
+                    <input type="text" placeholder="Ecperience in Years*" />
                   </div>
                  
                 </div>
@@ -278,7 +312,7 @@ const Contact = () => {
                     <input type="text" placeholder="Website*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Designation*" />
+                    <input type="text" placeholder="Phone*" />
                   </div>
                  
                 </div>
@@ -295,16 +329,41 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea placeholder="Estimated Budget*">
-                     
-                    </textarea>
+                     <select name="" id="oldsel">
+                        <option value="">Current State</option>
+                     </select>
                   </div>
                   
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="Phone"></textarea>
+                     <select name="" id="oldsel">
+                        <option value="">Highest Qualification</option>
+                     </select>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                     <select name="" id="oldsel">
+                        <option value="">Post Applied For</option>
+                     </select>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                  <input className="inus" placeholder="Domain Work On*"></input>
+                  </div>
+                  
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                  <input type="file" className="inus" placeholder="Domain Work On*"></input>
                   </div>
                   
                 </div>
@@ -315,12 +374,51 @@ const Contact = () => {
                   </div>
                   
                 </div>
-
-                <button class="btn-form-contact">Send Message</button>
               </div>
                  )
             }
+            {
+              tabIndex === 4 && (
+                <>
+                <div class="form">
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Full Name*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Company Name*" />
+                  </div>
+                 
+                </div>
+                <div class="top-form">
+                  <div class="inner-form">
+                    <input type="text" placeholder="Email Address*" />
+                  </div>
+                  <div class="inner-form">
+                    <input type="text" placeholder="Phone*" />
+                  </div>
+                 
+                </div>
+
+                <div class="bottom-form">
+                  <div class="inner-form">
+                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                  </div>
+                  
+                </div>
+
+              </div>
+                </>
+              )
+            }
+
+            <button class="btn-form-contact">Send Message</button>
+            </form>
             </div>
+
+            
+
+            {/* ============asit=========== */}
           </div>
 
         </div>

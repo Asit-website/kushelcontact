@@ -46,6 +46,8 @@ const Service = () => {
 
    const [tab,setTab] = useState(1);
 
+   const [link,setLink] = useState(1);
+
    var css = {
        opacity:"1"
     };
@@ -126,6 +128,57 @@ const Service = () => {
       document.getElementById("bari").style[prop] = secondCss1[prop];
     }
    }
+
+
+   const css3 = {
+      opacity:"1"
+    }
+   
+    const secondCss4 = {
+      opacity:"0.6"
+    }
+    const time = (e) =>{
+      e.preventDefault();
+      setLink(1);
+      for (var prop in secondCss4) {
+        document.getElementById("b").style[prop] = secondCss4[prop];
+      }
+      for (var prop in secondCss4) {
+        document.getElementById("c").style[prop] = secondCss4[prop];
+      }
+      for (var prop in css3) {
+        document.getElementById("a").style[prop] = css3[prop];
+      }
+   }
+   
+   const hired = (e) =>{
+     e.preventDefault();
+     setLink(2);
+     for (var prop in css3) {
+      document.getElementById("b").style[prop] = css3[prop];
+    }
+    for (var prop in secondCss4) {
+      document.getElementById("a").style[prop] = secondCss4[prop];
+    }
+    for (var prop in secondCss4) {
+      document.getElementById("c").style[prop] = secondCss4[prop];
+    }
+   }
+   
+   const fix = (e) =>{
+     e.preventDefault();
+     setLink(3);
+     for (var prop in css3) {
+      document.getElementById("c").style[prop] = css3[prop];
+    }
+    for (var prop in secondCss4) {
+      document.getElementById("a").style[prop] = secondCss4[prop];
+    }
+    for (var prop in secondCss4) {
+      document.getElementById("b").style[prop] = secondCss4[prop];
+    }
+   }
+  
   return (
    <>
     <div className='kushel-service'>
@@ -654,12 +707,15 @@ const Service = () => {
         <h2>BUSINESS MODELS</h2>
         </div>
         <div className="three-business">
-          <p className="first-b">Time & Material</p>
-          <p className="second-p">Hire Team</p>
-          <p className="third-p">Fix Scope Model</p>
+          <p id="a" onClick={time} className="first-b">Time & Material</p>
+          <p id="b" onClick={hired} className="second-p">Hire Team</p>
+          <p id="c" onClick={fix} className="third-p">Fix Scope Model</p>
         </div>
 
-        <div className="pic-para">
+        {
+         link === 1 && (
+            <>
+            <div className="pic-para">
           <div className="pic-imagea">
             <img src={log} alt="" />
           </div>
@@ -672,6 +728,49 @@ const Service = () => {
             </p>
           </div>
         </div>
+            </>
+         )
+        }
+
+      {
+         link === 2 && (
+            <>
+            <div className="pic-para">
+          <div className="pic-imagea">
+            <img src={log} alt="" />
+          </div>
+          <div className="head-pa">
+            <h2>Hire Team</h2>
+            <p>
+              We welcome the obscure vision through Time and Material Model that
+              supports the Agile Development Process. This is a model where the
+              client only pays for the time and resources spent on the project.
+            </p>
+          </div>
+        </div>
+            </>
+         )
+      }
+
+      {
+         link === 3 && (
+            <>
+            <div className="pic-para">
+          <div className="pic-imagea">
+            <img src={log} alt="" />
+          </div>
+          <div className="head-pa">
+            <h2>Fix Scope Model</h2>
+            <p>
+              We welcome the obscure vision through Time and Material Model that
+              supports the Agile Development Process. This is a model where the
+              client only pays for the time and resources spent on the project.
+            </p>
+          </div>
+        </div>
+            </>
+         )
+      }
 </div>
      </div>
 

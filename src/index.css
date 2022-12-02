@@ -5,6 +5,10 @@
 /* just drop the last if not like  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@600&family=Raleway&family=Red+Hat+Display:wght@500;700&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap");
 
+/* ======================700=============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Poppins&family=Raleway:wght@700&display=swap');
+/* =====================700 end================================== */
 /* ==========poppins===================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;600&family=Raleway&family=Red+Hat+Display:wght@500;700&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap");
 
@@ -1503,8 +1507,9 @@ a {
 .torm_map .map img {
   max-width: 100%;
   width: 360px;
-  height: auto;
+  height: 360px;
   object-fit: cover;
+  object-position: center;
 }
 
 /* ==========.contact css================ */
@@ -1567,16 +1572,55 @@ a {
   opacity: 0.8;
 }
 
+.form select{
+  font-weight: bold;
+  width: 100%;
+  max-width: 880px;
+  resize: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  object-fit: cover;
+  max-height: 100%;
+  font-family: "Red Hat Display", serif;
+  font-size: 13px;
+  opacity: 0.6;
+  height: 50px;
+}
+#oldsel *{
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: "Red Hat Display", serif;
+  font-weight: bold;
+}
 .form textarea::placeholder {
   color: #ffffff;
   font-family: "Red Hat Display", serif;
   font-weight: bold;
   opacity: 0.8;
 }
-
+.form .inus{
+  height: 50px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 880px;
+  resize: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  object-fit: cover;
+  max-height: 100%;
+  font-family: "Red Hat Display", serif;
+  font-size: 13px;
+  opacity: 0.8;
+}
 .form .second_area {
   max-height: 100%;
-  height: 60px;
+  height: 50px;
 }
 
 /* top-contact */
@@ -4104,6 +4148,282 @@ footer .another-footer-section {
 /* ===========================term and condition css end================== */
 
 /* =======================nda css end============================ */
+
+
+/* =========================hire-team css======================= */
+.hire-team{
+  background-color: #0A0F16;
+  width: 100%;
+  padding: 100px 60px;
+}
+.hire-developers{
+  margin-top: 30px;
+}
+.hire-developers h1{
+   color: #ffffff;
+   font-weight: bolder;
+   font-size: 70px;
+   font-family: "Raleway";
+}
+.hire-developers .hire-img{
+   max-width: 830px;
+   width: 100%;
+   margin-top: 15px;
+}
+
+.ui-ux{
+ margin-top: 90px;
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+}
+.tir-ui{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:30px 60px;
+}
+.tir-ui h2{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Raleway";
+  color: #ffffff;
+}
+.tir-ui img{
+  width:35px;
+}
+.group-ui img{
+  max-width: 525px;
+  width: 100%;
+ position: relative;
+ top: 5px;
+}
+.ui-ux-first{
+  background: linear-gradient(to right,#1E2671,#BE3765);
+ border-radius: 10px;
+ margin-right: 40px;
+ /* margin: 0 80px; */
+}
+.hire-game-dev{
+  background: linear-gradient(to right, #42CDA2, #185A9D);
+  position: relative;
+  height: 380px;
+  border-radius: 10px;
+  width: 525px;
+  max-width: 100%;
+  margin-left: 40px;
+  margin-top: 95px;
+  /* margin: 0 80px; */
+}
+.game-d{
+  position: relative;
+ top: -160px;
+ left: 70px;
+}
+.game-d img{
+  max-width: 350px;
+  width: 100%;
+}
+.game-cons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 60px;
+  position: relative;
+  top: -160px;
+}
+.game-cons h2{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Raleway";
+  color: #ffffff;
+}
+.game-cons img{
+  width:35px;
+}
+
+.hire-mobile-app-dev{
+  margin-top: 80px;
+}
+.hire-things{
+  background-color: #141921;
+  border-radius: 10px;
+  padding: 40px 30px;
+  /* filter: brightness(.9); */
+}
+.hire-things1{
+  margin-top: 65px;
+}
+.hire-mobile-app{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hire-mobile-app h2{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 25px;
+}
+.hire-mobile-app button{
+  width: 95px;
+    height: 25px;
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid #a2a2a2;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "Raleway";
+    font-size: 8.5px;
+}
+.hire-mobile-app button:hover{
+  background-color: #0e66f9;
+  border: none;
+  transition: 0.5s;
+}
+.hire-mobile-app img{
+  width: 7px;
+  margin: 0px 5px;
+}
+.hire-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.hire-fard{
+  margin-top: 26px;
+  text-align: center;
+}
+.hire-fard .first-sard-im{
+  width: 40px;
+}
+
+.hire-fard h2{
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 14.5px;
+  margin-top: 15px;
+  color: #ffffff;
+  line-height: 22px;
+}
+.hire-fard .second-sard-im{
+  width: 25px;
+  margin-top: 15px;
+}
+.hire-sard{
+  border: 0.5px solid #8400E2;
+  border-radius: 10px;
+  width: 145px;
+  /* opacity: 0.9; */
+  height: 200px;
+}
+
+.hire-sard:hover{
+  background: linear-gradient(to right, #9300D2, #6B00A6,#4B0082) border-box;
+  transition: 0.5s;
+}
+
+.hire-sard1{
+  border: 0.5px solid #206BCE;
+}
+.hire-sard1:hover{
+  background: linear-gradient(to right, #2D9CE0, #276DCB) border-box;;
+}
+.hiring-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+}
+.hiring-box1{
+  background: linear-gradient(to right, #2D9DE0, #024FB6);
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 30px;
+  margin-right: 36px;
+  border-radius: 10px;
+}
+.hiring-box1 h2{
+  font-family: "Raleway";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.hiring-box1 img{
+  width: 35px;
+}
+.hiring-box2{
+  max-width: 800px;
+  width: 100%;
+  background-color: #0F131B;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 30px;
+  border-radius: 10px;
+ border: 0.2px solid #2d2b2b;
+ margin-left: 36px;
+}
+.hiring-box2 h2{
+  font-family: "Raleway";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.hiring-box2 img{
+  width: 35px;
+}
+.how-we-r{
+  margin-top: 80px;
+}
+.how-we-r span{
+ color: #0E66F9;
+ font-weight: 500;
+ font-size: 15px;
+ font-family: "Raleway";
+}
+.how-we-r h2{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: "Raleway";
+    font-weight: bolder;
+}
+.how-we-r .bahut{
+  margin-top: 20px;
+}
+.headd p{
+  font-size: 18.5px;
+  font-family: "Raleway";
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 25px;
+}
+.how-para{
+  margin-top: 18px;
+}
+.how-para p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 14.5px;
+  font-weight: 400;
+  opacity: 0.95;
+  line-height: 30px;
+  width: 56%;
+}
+.hows-para p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 14.5px;
+  font-weight: 400;
+  opacity: 0.95;
+  line-height: 30px;
+  width: 56%;
+}
+/* hire team css end=============================================== */
 
 /* ======================services media query============ */
 
