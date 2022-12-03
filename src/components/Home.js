@@ -672,7 +672,7 @@ const Home = () => {
           <img src={girl} alt="notGirl" />
           </div>
         <div class="content">
-          <strong>Welcome to Kushel Digi</strong>
+          <span>Welcome to Kushel Digi</span>
           <h2>
             IT Consulting Services For <br /> Your Buisiness
           </h2>
