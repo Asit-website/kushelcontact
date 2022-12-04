@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {  NavLink } from "react-router-dom";
 import dev4 from "../components/images/dev4.png";
 import tiers from "../components/images/tiers.png";
@@ -32,6 +32,56 @@ import NoPath from '../components/images/NoPath.png';
 import dashboard from '../components/images/dashboard.png';
 import log from "../components/images/log.png";
 const HireTeam = () => {
+  const [index,setIndex] = useState(1);
+  const css = {
+    opacity:"1"
+  }
+ 
+  const secondCss = {
+    opacity:"0.6"
+  }
+
+  const time = (e) =>{
+   e.preventDefault();
+   setIndex(1);
+   for (var prop in secondCss) {
+     document.getElementById("camp").style[prop] = secondCss[prop];
+   }
+   for (var prop in secondCss) {
+     document.getElementById("tamp").style[prop] = secondCss[prop];
+   }
+   for (var prop in css) {
+     document.getElementById("barier").style[prop] = css[prop];
+   }
+  }
+
+  const hired = (e) =>{
+    e.preventDefault();
+    setIndex(2);
+    for (var prop in css) {
+     document.getElementById("camp").style[prop] = css[prop];
+   }
+   for (var prop in secondCss) {
+     document.getElementById("barier").style[prop] = secondCss[prop];
+   }
+   for (var prop in secondCss) {
+     document.getElementById("tamp").style[prop] = secondCss[prop];
+   }
+  }
+
+  const fix = (e) =>{
+    e.preventDefault();
+    setIndex(3);
+    for (var prop in css) {
+     document.getElementById("tamp").style[prop] = css[prop];
+   }
+   for (var prop in secondCss) {
+     document.getElementById("barier").style[prop] = secondCss[prop];
+   }
+   for (var prop in secondCss) {
+     document.getElementById("camp").style[prop] = secondCss[prop];
+   }
+  }
   return (
     <div className="hire-team">
       <div className="hire-developers">
@@ -364,10 +414,13 @@ const HireTeam = () => {
         <h2>BUSINESS MODELS</h2>
         </div>
         <div className="three-business">
-          <p  className="first-b">Time & Material</p>
-          <p  className="second-p">Hire Team</p>
-          <p  className="third-p">Fix Scope Model</p>
+          <p id="barier" onClick={time}  className="first-b first-m">Time & Material</p>
+          <p id="camp" onClick={hired}  className="second-p">Hire Team</p>
+          <p id="tamp" onClick={fix}  className="third-p">Fix Scope Model</p>
         </div>
+        {
+          index === 1 && (
+            <>
             <div className="pic-para">
           <div className="pic-imagea">
             <img src={log} alt="" />
@@ -381,6 +434,49 @@ const HireTeam = () => {
             </p>
           </div>
         </div>
+            </>
+          )
+        }
+
+        {
+          index === 2 && (
+            <>
+            <div className="pic-para">
+          <div className="pic-imagea">
+            <img src={log} alt="" />
+          </div>
+          <div className="head-pa">
+            <h2>Hire Team</h2>
+            <p>
+              We welcome the obscure vision through Time and Material Model that
+              supports the Agile Development Process. This is a model where the
+              client only pays for the time and resources spent on the project.
+            </p>
+          </div>
+        </div>
+            </>
+          )
+        }
+        {
+          index === 3 && (
+            <>
+            <div className="pic-para">
+          <div className="pic-imagea">
+            <img src={log} alt="" />
+          </div>
+          <div className="head-pa">
+            <h2>Fix Scope Model</h2>
+            <p>
+              We welcome the obscure vision through Time and Material Model that
+              supports the Agile Development Process. This is a model where the
+              client only pays for the time and resources spent on the project.
+            </p>
+          </div>
+        </div>
+            </>
+          )
+        }
+      
 </div>
 
     </div>

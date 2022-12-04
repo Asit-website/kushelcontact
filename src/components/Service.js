@@ -387,10 +387,10 @@ const Service = () => {
                       
                       </div>
                       <div className="first-res">
-                        <img className='ant-st'  src={hybrid} alt="goa" />
+                        <img className='ant-st antserim'  src={hybrid} alt="goa" />
                       </div>
                       <div  className="first-res">
-                        <img style={{visibility:'hidden'}} className='ant-big'  src={photosop} alt="prota" />
+                        <img style={{visibility:'hidden'}} className='ant-big '  src={photosop} alt="prota" />
                       </div>
                       <div className="first-res">
                         <img style={{visibility:'hidden'}} className='ant-big'  src={illus} alt="prota" />

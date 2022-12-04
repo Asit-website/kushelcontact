@@ -198,7 +198,7 @@ a {
 }
 
 .banner .content span {
-  font-size: 13.5px;
+  font-size: 14.5px;
   color: #0e66f9;
   font-weight: 500;
   font-family: "Raleway";
@@ -264,6 +264,7 @@ a {
   font-family: "Raleway";
   font-weight: 600;
   font-size: 14px;
+  opacity: 0.95;
 }
 
 .second_partner .second_all {
@@ -332,6 +333,7 @@ a {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 600;
+  opacity: 0.95;
 }
 
 .services .heading-service {
@@ -698,6 +700,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   margin-top: 30px;
+  opacity: 0.95;
 }
 .project .project-heading {
   margin-top: 10px;
@@ -785,6 +788,7 @@ a {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
+  opacity: 0.95;
 }
 .industry-system .fintech-para p {
   margin-top: 32px;
@@ -792,6 +796,8 @@ a {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+  opacity: 0.95;
 }
 .big-fintech {
   /* margin-right: 50px; */
@@ -900,14 +906,18 @@ a {
   font-family: "Raleway";
   font-weight: bold;
   border-bottom: 2px solid #ffffff;
+  cursor: pointer;
 }
-
+.three-business .first-m{
+  border: none;
+}
 .three-business .second-p {
   color: #ffffff;
   opacity: 0.6;
   font-size: 18px;
   font-family: "Raleway";
   font-weight: bold;
+  cursor: pointer;
 }
 
 .three-business .third-p {
@@ -916,6 +926,7 @@ a {
   font-size: 18px;
   font-family: "Raleway";
   font-weight: bold;
+  cursor: pointer;
 }
 .pic-para {
   display: flex;
@@ -1047,6 +1058,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   margin-top: 30px;
+  opacity: 0.95;
 }
 
 .reviews h2 {
@@ -2082,6 +2094,10 @@ footer .another-footer-section {
   .services{
     padding: 100px 20px;
   }
+  /* ==============media of hire teem============== */
+  .hire-team{
+    padding: 100px 20px !important;
+  }
 }
 @media only screen and (max-width:729px){
   .tech-image{
@@ -2147,6 +2163,9 @@ footer .another-footer-section {
 @media only screen and (max-width:973px){
   .section-image{
     flex-direction: column;
+  }
+  .submodel .ans-color{
+    margin-top: 20px;
   }
  .cloud-container .other-services{
   margin-left: 0px !important;
@@ -2245,6 +2264,9 @@ footer .another-footer-section {
   .contact_us .contact_para{
     font-size: 15px;
   }
+  .button-chu {
+    font-size: 13px;
+  }
   .banner{
     height: 80vh;
   }
@@ -2325,7 +2347,7 @@ footer .another-footer-section {
     font-size: 18px;
   }
   .head-pa h2{
-    font-size: 18px;
+    font-size: 18px !important;
   }
    .three-business .first-b{
     font-size: 14px;
@@ -2428,8 +2450,22 @@ footer .another-footer-section {
     height: 170px;
   }
 
+  .carousel.carousel-slider .control-arrow {
+    position: absolute;
+    top:-95% !important;
+    z-index: 100;
+  }
+
   .three-section-first{
     flex-direction: column;
+  }
+  .three-section-fourth{
+    flex-direction: column;
+  }
+  .three-section-fourth p{
+    margin: 15px 0px;
+    font-size: 13px;
+    text-align: center;
   }
   .three-section-first p{
     margin: 15px 0px;
@@ -2511,6 +2547,9 @@ footer .another-footer-section {
     width: 200px;
   }
   .three-section-third{
+    width: 200px;
+  }
+  .three-section-fourth{
     width: 200px;
   }
 }
@@ -3094,6 +3133,7 @@ footer .another-footer-section {
     }
     .first-kushel{
       height: auto;
+      flex-direction: column;
     }
   }
 
@@ -3131,7 +3171,19 @@ footer .another-footer-section {
     }
     .kot-images-second{
       position: relative;
-      right: 0px;
+      right: 7px;
+    }
+    .kot-images-second .fifth img{
+       margin-bottom: 0px;
+    }
+    .iot .second-iot img{
+      width: 25px;
+    }
+    .wearable-app .second-wear img{
+      width: 25px;
+    }
+    .ibeacon .second-i img{
+      width: 25px;
     }
     .button-flex{
       flex-direction: column;
@@ -3144,8 +3196,14 @@ footer .another-footer-section {
       margin-left: 0px;
     }
     .resarch-flex .first-res img{
-      width: 50px;
+      /* width: 50px; */
       margin: 15px 15px;
+    }
+    .resarch-flex .first-res .antcolony{
+      width: 50px !important;
+    }
+    .resarch-flex .first-res .antserim{
+      width: 40px !important;
     }
 
     .line-first-flex .anot-dev{
@@ -3181,7 +3239,7 @@ footer .another-footer-section {
     }
 
     .resarch-flex .first-res .ant-sta{
-      width: 100px;
+      width: 40px;
     }
 
     .resarch-flex .first-res .ant-int{
@@ -3215,6 +3273,24 @@ footer .another-footer-section {
       margin: 40px auto;
     }
     
+  }
+
+  @media only screen and (max-width:410px){
+    .resarch-flex .first-res .ant-st{
+      width: 25px;
+    }
+    .resarch-flex .first-res .ant-sta{
+      width: 20px;
+    }
+    .resarch-flex .first-res .ant-big{
+      width: 32px;
+    }
+    .resarch-flex .first-res .antcolony{
+      width: 30px !important;
+    }
+    .resarch-flex .first-res .antserim{
+      width: 25px !important;
+    }
   }
 
 
@@ -3281,6 +3357,15 @@ footer .another-footer-section {
     .kushel-first-content h2{
       font-size: 18px;
     }
+    .kot-a p{
+      font-size: 13px;
+    }
+    .cloud-second-button-flex button{
+      font-size: 13px;
+    }
+    .kus-img img{
+        width: 25px;
+    }
 
     .kushel-second-content h2{
       font-size: 18px;
@@ -3317,6 +3402,145 @@ footer .another-footer-section {
 /* ===========================media query of services end============ */
 /* =====================css of services end======================== */
 
+/* ====================media query of about start================== */
+@media only screen and (max-width:1160px){
+  .how-we-r1{
+    padding: 0 20px !important;
+  }
+
+  .techas{
+    padding: 0 20px !important;
+  }
+  .drible3{
+    padding:0 20px !important;
+  }
+
+ }
+
+ @media only screen and (max-width:850px){
+   .drible{
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+   }
+   .drible-first{
+    margin-right: 0px !important;
+   }
+   .drible-second{
+    margin-left: 0px !important;
+   }
+ }
+
+ @media only screen and (max-width:620px){
+    .how-we-r h2{
+      font-size: 18px !important;
+    }
+    .headd P{
+      font-size: 16px !important;
+    }
+    .how-para p{
+      font-size: 13px !important;
+      width: 100% !important;
+    }
+    .about-container{
+      padding: 40px 0px !important;
+    }
+    .project-deliver h2{
+      font-size: 20px !important;
+    }
+    .project-deliver p{
+      font-size: 14px !important;
+    }
+    .happy-clients h2{
+      font-size: 20px !important;
+    }
+    .happy-clients p{
+      font-size: 14px !important;
+    }
+    .multi P{
+      font-size: 20px !important;
+      line-height: 28px !important;
+    }
+    .multi1 p{
+      font-size: 14px !important;
+    }
+    .multi1 button{
+      font-size: 13px !important;
+    }
+ }
+
+ @media only screen and (max-width:461px){
+  .multi1{
+    flex-direction: column;
+  }
+  .multi1 button{
+    margin-top: 20px ;
+  }
+ }
+
+ /* ====================media query of about end===================== */
+
+ /* =======================media query of our work teem start================== */
+  @media only screen and (max-width:1024px){
+    .work-flex{
+      padding: 0 20px;
+    }
+
+  }
+
+ /* =============================media query our work end=================== */
+
+ /* ================= hire time css start========================= */
+  @media only screen and (max-width:1270px){
+    .ui-ux{
+      flex-direction: column;
+      align-items: center !important;
+    }
+    .hire-game-dev{
+      margin-top: 200px !important;
+      margin-left: 0px !important;
+    }
+    .ui-ux-first{
+      margin-right: 0px !important;
+    }
+  }
+
+  @media only screen and (max-width:1176px){
+    .hire-sard{
+      margin: 0 5px;
+    }
+  }
+
+  @media only screen and (max-width:920px){
+    .hire-card{
+      flex-direction: column;
+    }
+    .hire-sard{
+      max-width: 400px;
+      width: 100% !important;
+      margin: 10px 0px;
+    }
+  }
+
+  @media only screen and (max-width:1140px){
+    .hiring-box{
+      flex-direction: column;
+    }
+    .hiring-box1{
+      margin-right: 0px !important;
+    }
+    .hiring-box2{
+      margin-left: 0px !important;
+      margin-top: 20px !important;
+    }
+  }
+
+  @media only screen and (max-width:676px){
+    .game-d{
+      left: 0px !important;
+    }
+  }
+ /* ===================hire teem css end============================== */
 /* ===================================css of solution=========================== */
 .kushel-solution{
   background-color: #0A0F16;
@@ -3845,7 +4069,7 @@ footer .another-footer-section {
 
 /* =================nda css start=========================== */
 .Nda-policy{
-  padding: 80px 60px;
+  padding: 80px 120px;
   background-color: #10161f;
 }
 .Nda-policy .pol{
@@ -3861,14 +4085,14 @@ footer .another-footer-section {
   padding: 0 60px;
 }
 .protect-nda .primary-nda{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
   line-height: 24px;
 }
 .protect-nda .secondary-nda{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
@@ -3876,7 +4100,7 @@ footer .another-footer-section {
   margin-top: 15px;
 }
 .protect-nda .third-nda{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
@@ -3884,7 +4108,7 @@ footer .another-footer-section {
   margin-top: 15px;
 }
 .protect-nda .fourth-nda{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
@@ -3905,7 +4129,7 @@ footer .another-footer-section {
   margin-top: 20px;
 }
 .protect-overview .primary-overview{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
@@ -3913,11 +4137,11 @@ footer .another-footer-section {
   margin-top: 15px;
 }
 .protect-overview .secondary-overview{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 26px;
   margin-top: 15px;
 }
 .key-clause{
@@ -3937,11 +4161,12 @@ footer .another-footer-section {
 }
 .key-clause ul li {
   list-style-type: disc;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
   margin-top: 10px;
+  line-height: 26px;
 }
 
 .keep-idea-safe{
@@ -3958,34 +4183,34 @@ footer .another-footer-section {
   margin-top: 20px;
 }
 .keep-idea-para .primary-idea{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 26px;
 }
 .keep-idea-para .secondary-idea{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 26px;
   margin-top: 15px;
 }
 .keep-idea-para .third-idea{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 26px;
   margin-top: 15px;
 }
 .keep-idea-para .fourth-idea{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 26px;
   margin-top: 15px;
 }
 .general-security{
@@ -4004,11 +4229,12 @@ footer .another-footer-section {
 }
 .general-security ul li{
   list-style-type: disc;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Raleway";
+  line-height: 26px;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* ========================term and condition css====================== */
@@ -4049,7 +4275,7 @@ footer .another-footer-section {
   font-family: "Raleway";
   font-size: 18px;
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 29px;
 }
 .terms-para .terms-secondary{
    margin-top: 15px;
@@ -4068,7 +4294,7 @@ footer .another-footer-section {
   font-family: "Raleway";
   font-size: 18px;
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 29px;
   margin-top: 10px;
 }
 .third-party-content{
@@ -4088,7 +4314,7 @@ footer .another-footer-section {
   font-family: "Raleway";
   font-size: 18px;
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 29px;
 }
 .third-party-para .para-party-second{
   margin-top: 15px;
@@ -4116,7 +4342,7 @@ footer .another-footer-section {
     list-style-type: disc;
     margin: 12px 0px;
     letter-spacing: 1px;
-    line-height: 24px;
+    line-height: 29px;
 }
 .once-you-agree-first{
   margin-top: 50px;
@@ -4142,7 +4368,7 @@ footer .another-footer-section {
 }
 .sys-uls{
    background-color: #0b0d13;
-   padding: 2px 30px;
+   padding: 10px 30px;
    margin: 10px 0px;
 }
 .cancel-first{
@@ -4153,11 +4379,131 @@ footer .another-footer-section {
   font-size: 23px;
 }
 
+
+
 /* ===========================term and condition css end================== */
 
 /* =======================nda css end============================ */
 
-
+/* ====================media for other services======================== */
+  @media only screen and (max-width:750px){
+    .Nda-policy{
+      padding: 80px 20px;
+    }
+    .protect-nda{
+      padding: 0px 0px;
+    }
+    .overview-nda{
+      padding: 0px 0px;
+    }
+    .key-clause{
+      padding: 0px 0px;
+    }
+    .keep-idea-safe{
+      padding: 0px 0px;
+    }
+    .general-security{
+      padding: 0px 0px;
+    }
+  }
+   @media only screen and (max-width:503px){
+    .privacy .privacy-content{
+      top: 65%;
+    }
+    .privacy-content h2{
+      text-align: center;
+    }
+    .privacy-system .para-privacy p{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .privacy-system ul li {
+      line-height: 26px;
+      font-size: 14px;
+    }
+    .refund-content{
+      top: 65%;
+    }
+    .refund-content h2{
+      text-align: center;
+    }
+    .refund-para p{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .information-quality{
+      padding: 40px 20px;
+    }
+    .quality-header{
+      top: 65%;
+    }
+    .quality-header h2{
+      text-align: center;
+    }
+    .quality-substance h2{
+      font-size: 20px;
+    }
+    .quality-substance p{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .protect-overview .primary-overview{
+      font-size: 14px;
+    }
+    .overview-nda .over-pol{
+       font-size: 20px;
+    }
+    .keep-idea-safe .keep-idea{
+      font-size: 20px;
+    }
+    .general-security h2{
+      font-size: 20px;
+    }
+    .general-security ul{
+      padding: 0 20px;
+    }
+    .term-content{
+      top: 65%;
+    }
+    .term-content h2{
+      text-align: center;
+    }
+    .conditionst .terms-h2{
+      font-size: 20px;
+    }
+    .terms-para p{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .terms-lisence h2{
+      font-size: 20px;
+    }
+    .terms-lisence p{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .third-party-content h2{
+      font-size: 20px;
+    }
+    .third-party-content p{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .once-you-agree h2{
+      font-size: 20px;
+    }
+    .once-you-agree ul li{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    .ol-sys{
+      padding: 5px 30px;
+    }
+    .once-you-agree .payments-terms{
+     font-size: 20px;
+    }
+   }
+/* ==================media for other services end========================= */
 /* =========================hire-team css======================= */
 .hire-team{
   background-color: #0A0F16;
@@ -4438,9 +4784,12 @@ footer .another-footer-section {
   line-height: 30px;
   width: 56%;
 }
+.techas{
+  padding: 0 60px;
+}
 .tech-div2{
-  width: 1150px;
-  max-width: 100%;
+ max-width: 1150px;
+ width: 100%;
   margin-top: 80px;
 }
 .drible{
@@ -4585,6 +4934,7 @@ footer .another-footer-section {
   align-items: flex-start;
   justify-content: center;
 }
+
 .first-work-flex{
   margin-right: 20px;
 }
@@ -4601,7 +4951,6 @@ footer .another-footer-section {
  .second-work-flex img{
   max-width: 460px;
   width: 100%;
-  
  }
  .work-head h2{
    color: #ffffff;
@@ -4635,7 +4984,7 @@ footer .another-footer-section {
   margin-top: 10px;
  }
  .work-head4{
-    visibility: none;
+    visibility: hidden ;
  }
 /* ====================our work css end========================= */
 
@@ -4646,9 +4995,67 @@ footer .another-footer-section {
     font-size: 40px;
   }
 
+  /* ==========work css in service============= */
+
+  .work-head h2{
+    font-size: 18px;
+  }
+  .work-head p{
+    font-size: 13px;
+  }
+  .work1-head h2{
+    font-size: 18px;
+  }
+  .work1-head p{
+    font-size: 13px;
+  }
+  .work-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-head4{
+    visibility: visible;
+    display: none;
+  }
+  .second-work-flex{
+    margin-left: 0px;
+   margin: 20px 0px;
+  }
+  .first-work-flex{
+    margin-right: 0px;
+  }
+
+  /* ================work css end ===================== */
+
+  /* =============hire team css================ */
+  .hire-developers h1{
+    font-size: 40px;
+  }
+  .tir-ui h2{
+   font-size: 18px;
+  }
+  .game-cons h2{
+    font-size: 18px;
+  }
+  .hire-mobile-app h2{
+    font-size: 18px;
+  }
+  .hiring-box1 h2{
+    font-size: 18px;
+  }
+  .hiring-box2 h2{
+    font-size: 18px;
+  }
+  .ui-ux{
+    margin-top: 50px;
+  }
+  /* ================hire-team css end================= */
+
+
   .head-para-offer h2{
     font-size: 18px;
   }
+
 
   .solution-offer-first button{
     font-size: 13px;
@@ -4745,6 +5152,15 @@ footer .another-footer-section {
 
   .on-demand{
     padding: 70px 20px;
+  }
+  /* ============about us ================ */
+
+  
+}
+
+@media only screen and (max-width:1172px){
+  .project-images{
+    flex-direction: column;
   }
 }
 

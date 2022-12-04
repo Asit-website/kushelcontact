@@ -5,7 +5,7 @@ const Refund = () => {
     <>
     <div className='refund'>
        <div className="refund-content">
-          <h2>EZ RANKINGS REFUND POLICY</h2>
+          <h2>REFUND POLICY</h2>
        </div>
     </div>
     <div className='refund-para'>

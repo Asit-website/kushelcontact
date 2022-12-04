@@ -75,7 +75,7 @@ const Navbar = () => {
                         <NavLink to="/about" style={nav} onClick={closeMenu}>About us</NavLink>
                     </li>
                     <li  className='nav-item'>
-                        <NavLink to="/brand" style={nav} onClick={closeMenu}>Our Brands</NavLink>
+                        <NavLink to="/brand" style={nav} onClick={closeMenu}>Our Work</NavLink>
                     </li>
                     <li  className='nav-item'>
                         <NavLink  to="/hiring" style={nav}  onClick={closeMenu}>Hire Team</NavLink>

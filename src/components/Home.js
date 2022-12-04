@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import XdApi from "./serviceApi/XdApi";
+import React, {useState } from "react";
 import techApi from "./technologyApi/techApi";
 import mask from "../components/images/mask.png";
 import apple from "../components/images/apple.png";
