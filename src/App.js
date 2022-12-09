@@ -1,9 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import Navbar from './components/headers/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-// import Blog from './components/Blog';
 import Brands from './components/Brands';
 import Solution from './components/Solution';
 import Service from './components/Service';
@@ -16,7 +15,21 @@ import Quality from './components/Quality';
 import Nda from './components/Nda';
 import TermCondition from './components/TermCondition';
 import HireTeam from './components/HireTeam';
+import Seo from './components/Seo';
 const App = () => {
+  //    const [mode, setMode] = useState("dark");
+  // const [value, setValue] = useState("Enable Dark Mode");
+  
+  // const toggleMode = () => {
+  //   if (mode == "light") {
+  //     setMode("dark");
+  //     document.body.style.backgroundColor = "#222";
+  //   } else {
+  //     setMode("light");
+  //     document.body.style.backgroundColor = "white";
+  //     setValue("Enable Light Mode");
+  //   }
+  // };
   return (
        <Router>
             <Navbar/>
@@ -33,6 +46,7 @@ const App = () => {
                 <Route exact path='/quality' element={<Quality/>}/>
                 <Route exact path='/nda' element={<Nda/>}/>
                 <Route exact path='/term' element={<TermCondition/>}/>
+                <Route exact path='/seo' element={<Seo/>}/>
                 <Route exact path="*" element={<NotFound/>} />
             </Routes>
             <Footer/>

@@ -113,6 +113,7 @@ const Footer = () => {
             <div className="section-another-para section-sm-ft">
                 <NavLink to="/nda"><p>NDA Policy</p></NavLink>
                 <NavLink to="/term"><p>Terms of Use</p></NavLink>
+                <NavLink to="/seo"><p>Seo Audit</p></NavLink>
             </div>
             </div>
          </div>

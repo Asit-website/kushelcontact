@@ -58,12 +58,10 @@ import { NavLink } from "react-router-dom";
 
 
 const Home = () => {
-
   const [link,setLink] = useState(1);
   const [men,setMen] = useState(1);
-
   const [save,setSaved] = useState(false);
-
+  
   const css = {
     borderBottom:"2px solid #ffffff",
     opacity:"1"
@@ -690,7 +688,7 @@ const Home = () => {
         <div className="second_partner">
           <div className="second_all">
             <span>Who we are</span>
-            <h2>
+            <h2 >
               Your digital partner to create inspirational design and robust
               solution for Web, Mobile & <br /> Cloud.
             </h2>
@@ -704,7 +702,7 @@ const Home = () => {
             </p>
 
             <NavLink to="/about">
-              <button className="who_btn">About us</button>
+              <button  className="who_btn">About us</button>
             </NavLink>
           </div>
         </div>

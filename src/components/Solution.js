@@ -762,7 +762,6 @@ const menu12 = (e) =>{
       <div className="industry" style={{ backgroundColor: "#0E0E0E" }}>
         <h2>Our Industry wise</h2>
         <img src={solution} alt="nothing" />
-
         <div className="industry-system">
           <div className="small-fintech">
             <span id="bar" onClick={menu1}>Fintech</span>

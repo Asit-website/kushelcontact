@@ -2098,6 +2098,18 @@ footer .another-footer-section {
   .hire-team{
     padding: 100px 20px !important;
   }
+
+  /* =================media of seo audit============== */
+  .what-seo{
+    padding: 50px 20px !important;
+  }
+  .tech-seo{
+    padding: 60px 20px !important;
+  }
+  .global-seo{
+    padding: 50px 20px !important;
+  }
+  /* =============end media of seo audit============= */
 }
 @media only screen and (max-width:729px){
   .tech-image{
@@ -5025,6 +5037,7 @@ footer .another-footer-section {
     margin-right: 0px;
   }
 
+ 
   /* ================work css end ===================== */
 
   /* =============hire team css================ */
@@ -5230,11 +5243,386 @@ footer .another-footer-section {
   text-decoration: underline;
 }
 
-
-
 /* ============services media query end====================== */
 
+/* ===================seo audit css start==================== */
+.seo-audit{
+  height: 80vh;
+  background-color:#020e19 ;
+}
+.what-seo{
+  padding: 50px 70px;
+  background-color: #021228;
+}
+.what-seo h2{
+  font-size: 52px;
+  text-align: center;
+  font-family: "Raleway";
+  color: #ffffff;
+}
+.seo-big-para{
+  margin-top: 10px;
+}
+.seo-big-para p{
+  font-size: 32px;
+  font-family: "Raleway";
+  text-align: center;
+  font-weight: 600;
+  margin: 6px 0px;
+  color: #cc1e1f;
+}
+.seo-small-para{
+  margin-top: 50px;
+}
+.seo-small-para p{
+  font-family: "Raleway";
+  text-align: center;
+  font-weight: 400;
+  margin: 6px 0px;
+  font-size: 15px;
+  color: #ffffff;
+  opacity: 0.95;
+  /* line-height: 26px; */
+  /* letter-spacing: 1px; */
+}
+.seo-small-para .seo-small-para5{
+  margin-top: 12px;
+}
+.seo-images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seo-images img{
+  max-width: 550px;
+  width: 100%;
+  margin-top: 70px;
+}
+.u-know{
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+.u-know h2{
+  font-size: 52px;
+  text-align: center;
+  font-family: "Raleway";
+ color: #000000;
+}
+.u-know img{
+  max-width: 1200px;
+  width: 100%;
+  display: block;
+  margin: 30px auto;
+}
+.tech-seo{
+  background-color: #010910;
+  padding: 60px 70px;
+}
+.tech-seo h2{
+   color: #ffffff;
+   font-size: 45px;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 500;
+}
+.seo-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 42px;
+}
+.seo-sox{
+  border: 0.1px solid #474747;
+  margin: 0px 15px;
+  max-width: 320px;
+  width: 100%;
+  padding: 30px 0px;
+}
+.seo-sox1{
+  visibility: hidden;
+}
+.seo-sox img{
+  width: 180px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.seo-sox h3{
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 23px;
+  font-weight: 500;
+}
+.flex-box{
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  margin-top: 20px;
+}
+.box-para p{
+  color: #ffffff;
+  opacity: 0.9;
+  font-family: "Raleway";
+  font-size: 15px;
+  margin-left:10px;
+}
+.box-para i{
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 12px;
+}
+.global-seo{
+  background-color: #021228;
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+ padding: 50px 60px;
+}
+.global-seo1{
+  margin: 0 30px;
+}
+.global-seo2{
+  margin: 0 30px;
+}
+.global-seo3{
+  margin: 0 30px;
+}
+.global-seo4{
+  margin: 0 30px;
+}
+.global-seo1 img{
+  max-width: 200px;
+  width: 100%;
+}
+.global-seo1{
+  margin-top: 20px;
+}
+.global-seo1 h2{
+  color: #cc1e1f;
+  font-family: "Raleway";
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+}
+.global-seo2-hedaer{
+  margin: 60px 0px;
+}
+.global-seo2-hedaer h2{
+  color: #cc1e1f;
+  font-weight: 600;
+  font-size: 20.5px;
+  font-family: "Raleway";
+}
+.global-seo2-hedaer p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 15px;
+  margin: 6px 0px;
+  font-weight: 500;
+}
+.book-your-consulation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  background-color: #010910;
+}
+.book-your-consulation h2{
+  font-size: 28px;
+  font-family: "Raleway";
+  color: #ffffff;
+}
+.book-your1 {
+  margin-right: 25px;
+}
+.book-your2{
+  margin-left: 25px;
+}
+.book-your-consulation button{
+  color: #ffffff;
+  width: 330px;
+  max-width: 100%;
+  height: 65px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Raleway";
+  background: linear-gradient(to right, #F3670E, #F5B307) border-box;
+}
+.book-your-consulation button:hover{
+  text-decoration: underline;
+  background: linear-gradient(to left, #F3670E, #F5B307) border-box;
+}
 
+/* ==========================seo audit media query============= */
+@media only screen and (max-width:1188px){
+  .book-your-consulation{
+    flex-direction: column;
+  }
+  .book-your-consulation button{
+    margin-top: 40px;
+  }
+  .book-your-consulation h2{
+     text-align: center;
+  }
+  .book-your1{
+    margin-right: 0px;
+  }
+  .book-your2{
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width:1123px){
+  .seo-images{
+    flex-direction: column;
+  }
+  .seo-images{
+    margin-top: 70px;
+  }
+  .seo-images img{
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width:948px){
+  .seo-box{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .fso{
+    margin-top: 30px;
+  }
+  .seo-sox{
+    margin: 20px 0px;
+  }
+  .seo-sox1{
+    visibility: visible;
+    display: none;
+  }
+}
+
+@media only screen and (max-width:828px){
+  .global-seo{
+    flex-direction: column;
+    align-items: center;
+  }
+  .global-seo2-hedaer{
+    text-align: center;
+  }
+  .global-seo2{
+    margin: 0px 0px;
+  }
+  .global-seo3{
+    margin: -60px 0px;
+  }
+  .global-seo4{
+    margin: 0px 0px;
+  }
+}
+/* ===================seo audit media query end=============== */
+
+/* .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch .chock { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.chock:checked + .slider {
+  background-color: #f0f321;
+}
+
+.chock:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.chock:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} */
+
+@media only screen and (max-width:620px){
+   /* =============seo audit css in media=========== */
+   .what-seo h2{
+    font-size: 30px ;
+  }
+  .seo-big-para{
+    margin-top: 20px;
+  }
+  .seo-big-para p{
+    font-size: 18px;
+  }
+  .seo-small-para p{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .u-know h2{
+    font-size: 30px;
+  }
+  .tech-seo h2{
+    font-size: 30px;
+  }
+  .seo-sox h3{
+    font-size: 18px;
+  }
+  .box-para p{
+    font-size: 13px;
+  }
+ .book-your-consulation{
+  padding: 40px 20px;
+ }
+  .book-your-consulation h2{
+    font-size: 20px;
+  }
+  .book-your-consulation button{
+    font-size: 18px;
+    width: 250px;
+    max-width: 100%;
+  }
+ /* ==================seo audit css end================= */
+}
+/* ======================seo audit css end====================== */
 
 
 /* =======================================css of solution end=================== */

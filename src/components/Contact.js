@@ -157,12 +157,12 @@ const Contact = () => {
             <div className="sorm_map">
               <div className="sorm_map1">
                 <h4>SUPPORT <span>EMAIL</span></h4>
-                <p >support@aratek.co</p>
+                <p>info@kusheldigi.com</p>
                 <div className="border"></div>
               </div>
               <div className="sorm_map2">
-                <h4>SUPPORT <span>EMAIL</span></h4>
-                <p>support@aratek.co</p>
+                <h4>SUPPORT <span>PHONE</span></h4>
+                <p>9045301702</p>
                 <div className="sorder"></div>
               </div>
             </div>

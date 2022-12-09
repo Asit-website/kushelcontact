@@ -47,18 +47,13 @@ const Navbar = () => {
 
    
 
-    window.addEventListener('scroll' ,changeNavColor);
-
    
 
-    
-  
-
-
+    window.addEventListener('scroll' ,changeNavColor);
 
     return (
         <div className={navColor ? 'header activeH' : 'header' }>
-            <nav className='navbar'>
+            <nav  className='navbar'>
                 <NavLink exact  to="/"   className='logo'>
                     <img src={logo} alt='logo' />
                 </NavLink>
@@ -93,6 +88,10 @@ const Navbar = () => {
                     <li  className='nav-item'>
                         <NavLink  to="/contact" style={navContact}   className="btn-primary"  onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </li>
+                    {/* <label class="switch">
+          <input onClick={toggleMode} className="chock" type="checkbox" />
+          <span class="slider round"></span>
+        </label> */}
                 </ul>
             </nav>
         </div>
