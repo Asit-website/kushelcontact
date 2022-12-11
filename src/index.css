@@ -15,6 +15,9 @@
 /* =============nunio sans====================== */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway");
+
+/* ===========poppins=========== */
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Poppins:ital,wght@0,400;0,500;0,600;1,500&family=Raleway:wght@400;500;600;700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -98,7 +101,7 @@ body {
 
 .header .nav-item a:hover {
   padding-bottom: 12px;
-  border-bottom: 3px solid white;
+  /* border-bottom: 3px solid white; */
 }
 
 .hamburger {
@@ -127,7 +130,7 @@ a {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 999px) {
   .header {
     max-width: 100%;
     background-color: black;
@@ -161,6 +164,19 @@ a {
 
   .header .navbar img {
     width: 150px;
+  }
+}
+
+@media only screen and (max-width:722px){
+  .banner1{
+    flex-direction: column;
+  }
+  .banner-content{
+    text-align: center;
+  }
+  .banner-content p{
+    text-align: center;
+    width: 100% !important;
   }
 }
 
@@ -241,6 +257,75 @@ a {
   border: none;
   transition: 0.5s;
 }
+
+
+.banner1{
+  background-image:url('./components/images/Banner.png') ;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 45px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-content{
+  margin-top: 70px;
+}
+.banner-content span{
+  font-size: 14.5px;
+  color: #0e66f9;
+  font-weight: 500;
+  font-family: "Raleway";
+}
+.banner-content h2{
+  margin-top: 12px;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway";
+  font-weight: bolder;
+}
+.banner-content p{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  width: 65%;
+  max-width: 100%;
+  margin-top: 15px;
+}
+.banner-content button{
+  width: 160px;
+  height: 40px;
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid #a2a2a2;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "Raleway";
+  font-size: 14px;
+}
+.banner-content button:hover{
+  background-color: #0e66f9;
+  border: none;
+  transition: 0.5s;
+}
+.banner-images{
+  position: relative;
+}
+.banner-images img{
+  width: 100%;
+  max-width: 400px;
+  top: 49px;
+  position: relative;
+}
+
 
 /* ============partner css================ */
 
@@ -554,7 +639,7 @@ a {
 
 /* Mobile View */
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 999px) {
   .banner .bg1 {
     position: relative;
     width: 100% !important;
@@ -1499,6 +1584,7 @@ a {
   font-family: "Red Hat Display", serif;
   font-size: 12px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .sorm_map .sorm_map2 p {
@@ -1516,7 +1602,7 @@ a {
   background-color: #ffffff;
   opacity: 0.7;
   margin-top: 3px;
-  width: 103px;
+  width: 70px;  /* 103px */
   max-width: 100%;
 }
 
@@ -1551,7 +1637,8 @@ a {
   margin: 10px 0;
 }
 
-.form input[type="text"] {
+.form input[type="text"],
+.form input[type="email"] {
   height: 50px;
   background: none;
   border: none;
@@ -2075,7 +2162,9 @@ footer .another-footer-section {
   .project{
     padding: 50px 20px;
   }
- 
+ .busta2{
+  padding:0px 20px !important;
+ }
   .partner{
     padding: 100px 20px;
   }
@@ -2277,6 +2366,19 @@ footer .another-footer-section {
     font-size: 15px;
   }
   .button-chu {
+    font-size: 13px;
+  }
+  .banner1{
+    padding: 45px 20px;
+  }
+  .banner-content h2{
+    font-size: 20px;
+  }
+  .banner-content p{
+    font-size: 13px;
+    width: 100%;
+  }
+  .banner-content button{
     font-size: 13px;
   }
   .banner{
@@ -3175,6 +3277,7 @@ footer .another-footer-section {
   @media only screen and (max-width:572px){
     .web-app .line-first-flex{
       flex-direction: column;
+      margin-left: 0px;
     }
 
     .line-first-flex{
@@ -5624,5 +5727,222 @@ footer .another-footer-section {
 }
 /* ======================seo audit css end====================== */
 
+/* =================about ka css =============== */
+.success-ab{
+  background-color: #0A0F16;
+  padding: 60px 60px;
+}
+.success-ab-img img{
+  max-width: 600px;
+  width: 100%;
+  margin-top: 80px;
+}
+.who-suc{
+  margin-top: 50px;
+}
+.who-suc span{
+  color: #0E66F9;
+  opacity: 0.95;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 14px;
+}
+.head-para-suc h2{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  line-height: 42px;
+  font-size: 27px;
+  font-weight: 500;
+  width: 85%;
+  margin-top: 10px;
+}
+.head-para-suc p{
+  color: #ffffff;
+  font-family: "Raleway";
+  opacity: 0.9;
+  font-weight: 400;
+  line-height: 26px;
+  width: 85%;
+  margin-top: 18px;
+}
+
+.vision-succ{
+  background-color: #0E0E0E;
+  padding: 80px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.vision img{
+  width: 80px;
+  display: block;
+  margin: auto;
+}
+.vision h2{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.vision-para p{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Raleway";
+  opacity: 0.5;
+  line-height: 28px;
+  text-align: center;
+}
+.mission img{
+  width: 80px;
+  display: block;
+  margin: auto;
+}
+.mission h2{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.mision-para p{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Raleway";
+  opacity: 0.5;
+  line-height: 28px;
+  text-align: center;
+}
+.now-2022{
+  background-color: #707070;
+}
+
+.about-mega {
+  background-color: #0f181c;
+   position: fixed;
+   top: 80px;
+   border-width: 30px;
+   border-top-width: 1px;
+  right: 12%;
+ border-radius: 5px;
+}
+.border-mega{
+  width: 100px;
+  display: block;
+  margin: auto;
+  border:1px solid #0E66F9 ;
+  background-color:#0E66F9 ;
+}
+.hr-mega{
+  margin-top: -5;
+  margin: -10px 0px;
+  height: 134px;
+  background-color: #ffffff;
+  border: 0.5px solid #ffffff;
+  opacity: 0.1;
+}
+.about-mega .flex-abus{
+  display: flex;
+  margin-top: 5px;
+  margin: 10px 0px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.first-mega p{
+   font-size: 11.5px;
+   font-family: "Poppins", sans-serif;
+   opacity: 0.3;
+   font-weight: 500;
+   color: #fff;
+}
+.mega-cir{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0px;
+}
+.mega-cir img{
+  width: 12px !important;
+  display: inline !important;
+  margin: 0px 0px !important;
+}
+.mega-cir li .tryies{
+  font-size: 11px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400 !important;
+  margin-left: 8px !important;
+}
+.first-mega{
+  padding: 0px 15px;
+}
+.second-mega{
+  padding: 0px 15px;
+  width: 160px;
+}
+.second-mega p{
+  font-size: 11.5px;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.3;
+  font-weight: 500;
+  color: #fff;
+}
+.variety-mega{
+ background: linear-gradient(to left, #67F411,#1674DB);
+ padding: 8px 15px;
+  border-radius: 5px;
+}
+.variety-mega img{
+  display: inline !important;
+  width: 18px !important;
+  margin: 0px 0px !important;
+}
+.carers-ab{
+  display: flex;
+  align-items: center;
+}
+.carers-ab p{
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 6px;
+  font-weight: 400;
+}
+.para-mega{
+  display: flex;
+  justify-content: space-between;
+}
+.para-mega img{
+  width: 26px !important;
+  position: relative;
+  z-index: 10001;
+  height: 26px !important;
+}
+.first-para-mega{
+  padding-left: 22px;
+  margin-top: 10px;
+}
+.first-para-mega p{
+  font-size: 11.5px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.success-message{
+  display : none;
+  margin : 5% 0%;
+}
+.text-error {
+  color: red;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* ==============about css end===================== */
 
 /* =======================================css of solution end=================== */

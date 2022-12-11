@@ -664,7 +664,7 @@ const Home = () => {
 
   return (
     <>
-      <div class="banner">
+      {/* <div class="banner">
       <div className="imgs">
           <img src={girl} alt="notGirl" />
           </div>
@@ -679,6 +679,23 @@ const Home = () => {
           </p>
           <button className="home_btn">Read more</button>
         </div>
+      </div> */}
+
+      <div className="banner1">
+          <div className="banner-content">
+          <span>Welcome to Kushel Digi</span>
+          <h2>
+            IT Consulting Services For <br /> Your Buisiness
+          </h2>
+          <p>
+            We are leading technology solutions providing company all over the
+            world doing over 40 years.
+          </p>
+          <button className="home_btn">Read more</button>
+          </div>
+          <div className="banner-images">
+              <img src={girl} alt="" />
+          </div>
       </div>
       {/* // ==========more info section=============== */}
       <div className="partner">

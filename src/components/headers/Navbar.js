@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import {NavLink} from 'react-router-dom';
 import logo from '../images/logo.png';
+import mega from '../images/mega.png';
+import bega from '../images/bega.png';
+import imf from '../images/72.png';
 // import './NavBars.css'
 
 const Navbar = () => {
@@ -9,7 +12,23 @@ const Navbar = () => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
     const closeMenu = () => setClick(false)
-    const [navColor,setNavColor]=useState(false)
+    const [navColor,setNavColor]=useState(false);
+    const [start,setStart] = useState(false);
+
+    const handleMouseOver = () => {
+        setStart(true);
+      };
+
+      const handleMouseOut = () => {
+        setTimeout(() => {
+            setStart(false); 
+        }, 3000);
+       
+      };
+
+      const stylish = {
+        display: start ? 'block' : 'none'
+      }
     
     const nav = ({ isActive }) => {
         return {
@@ -45,10 +64,6 @@ const Navbar = () => {
 
     }
 
-   
-
-   
-
     window.addEventListener('scroll' ,changeNavColor);
 
     return (
@@ -66,9 +81,7 @@ const Navbar = () => {
                     <li  className='nav-item'>
                         <NavLink exact to="/" style={nav} onClick={closeMenu}>Home</NavLink>
                     </li>
-                    <li  className='nav-item'>
-                        <NavLink to="/about" style={nav} onClick={closeMenu}>About us</NavLink>
-                    </li>
+                   
                     <li  className='nav-item'>
                         <NavLink to="/brand" style={nav} onClick={closeMenu}>Our Work</NavLink>
                     </li>
@@ -79,6 +92,58 @@ const Navbar = () => {
 
                     <li   className='nav-item'>
                         <NavLink to="/service" style={nav}  onClick={closeMenu}>Services</NavLink>
+                    </li>
+                    <li   className='nav-item'>
+                        <NavLink to="/success" style={nav}  onClick={closeMenu}>Success Story</NavLink>
+                    </li>
+                    <li  className='nav-item '>
+                        <NavLink onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}  to="/about" style={nav} onClick={closeMenu}>About us</NavLink>
+                        <div  style={stylish} className='about-mega fabout-mega'>
+                        <div className='border-mega'></div>
+                        <div className="flex-abus">
+                      <ul className='first-mega' >
+                      <p>About Us</p>
+                        <div className='mega-cir'>
+                           <img src={mega} alt="" /> 
+                           <li><a className='tryies' href="#!">Company Overview</a></li>
+                        </div>
+                        <div className='mega-cir'>
+                           <img src={mega} alt="" /> 
+                           <li><a className='tryies' href="#!">Client Testimonials</a></li>
+                        </div>
+                        <div className='mega-cir'>
+                           <img src={mega} alt="" /> 
+                           <li><a className='tryies' href="#!">Contact Us</a></li>
+                        </div>
+                      </ul>
+                      {/* <hr className='hr-mega' /> */}
+                      <div className='hr-mega'></div>
+                      <ul className='second-mega'>
+                      <p>Others</p>
+                      <div className='mega-cir'>
+                           <img src={mega} alt="" /> 
+                           <li><a className='tryies' href="#!">Life@Kusheldigi</a></li>
+                        </div>
+                        <div className='mega-cir'>
+                           <img src={mega} alt="" /> 
+                           <li><a className='tryies' href="#!">FAQ</a></li>
+                        </div>
+                      </ul>
+                      </div>
+                      <div className='variety-mega'>
+                      <div className='carers-ab'>
+                          <img src={bega} alt="" />
+                          <p>Careers</p>
+                          </div>
+                          <div className="para-mega">
+                          <div className="first-para-mega">
+                             <p>We have always vacancies open for</p>
+                             <p>skilled developers & designers!</p>
+                             </div>
+                             <img style={{width:'15px'}} className='trir' src={imf} alt="" />
+                          </div>
+                      </div>
+                      </div>
                     </li>
 
                     <li   className='nav-item'>

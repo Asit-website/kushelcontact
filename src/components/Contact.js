@@ -1,9 +1,211 @@
-import React,{useState} from "react";
-import { NavLink } from "react-router-dom";
+import React,{useReducer, useState} from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import axios from "axios";
 import line1 from "./images/line1.png";
 import line2 from "./images/line2.png";
 import map from "./images/map.png";
+import Alert from '@mui/material/Alert';
+
 const Contact = () => {
+const drop = [
+  {
+    id:1,
+    name:"yes"
+  }
+]
+  const navigate = useNavigate();
+  // const [user,setUser] = useState({})
+  const [user, setUser] = useState({
+    pName:"",
+          pCompanyName:"",
+          pWebsite:"",
+          pDesiginition:"",
+          pEmailAddress:"",
+          pLocation:"",
+          pEstimatedBudget:"",
+          pPhone:"",
+          pMessage:"",
+          cName:"",
+          cCompanyName:"",
+          cWebsite:"",
+          cDesiginition:"",
+          cEmailAddress:"",
+          cLocation:"",
+          cService:"",
+          cPhone:"",
+          cMessage:"",
+          jName:"",
+          jExperience:"",
+          jWebsite:"",
+          jPhone:"",
+          jEmailAddress:"",
+          jLocation:"",
+          jCurrentState:"",
+          jHighestQualification:"",
+          jPostAppliedFor:"",
+          jDomainWorkOn:"",
+          jMessage:"",
+          hName:"",
+          hCompanyName:"",
+          hEmailAddress:"",
+          hPhone:"",
+          hMessage:""
+  });
+
+  const handleInputs = (e) => {
+    if (document.getElementsByName(e.target.name)[0].nextElementSibling) {
+      document.getElementsByName(e.target.name)[0].nextElementSibling.remove();
+    }
+    setUser({...user, [e.target.name]:e.target.value});
+  }
+
+
+
+  const submitForm = async(e)=>{
+    e.preventDefault();
+    let flag = true;
+    for (let i of document.querySelectorAll(".alertEle")) {
+      i.remove();
+    }
+    for (let i of Object.keys(user)) {
+      let t = document.getElementsByName(i);
+      if (user[i] === "" && t.length !== 0) {
+        flag = false;
+        let nc = document.createElement("div");
+        nc.setAttribute("class", "alertEle");
+        nc.innerHTML = `<small class="text-error">${i} is required</small>`;
+        t[0].parentNode.appendChild(nc);
+      }
+    }
+
+    if(flag){
+      const {
+        pName,
+        pCompanyName,
+        pWebsite,
+        pDesiginition,
+        pEmailAddress,
+        pLocation,
+        pEstimatedBudget,
+        pPhone,
+        pMessage,
+        cName,
+        cCompanyName,
+        cWebsite,
+        cDesiginition,
+        cEmailAddress,
+        cLocation,
+        cService,
+        cPhone,
+        cMessage,
+        jName,
+        jExperience,
+        jWebsite,
+        jPhone,
+        jEmailAddress,
+        jLocation,
+        jCurrentState,
+        jHighestQualification,
+        jPostAppliedFor,
+        jDomainWorkOn,
+        // jFileUpload,
+        jMessage,
+        hName,
+        hCompanyName,
+        hEmailAddress,
+        hPhone,
+        hMessage
+    } = user;
+          axios.post('http://localhost:5000/api/contact', {
+              pName,
+              pCompanyName,
+              pWebsite,
+              pDesiginition,
+              pEmailAddress,
+              pLocation,
+              pEstimatedBudget,
+              pPhone,
+              pMessage,
+              cName,
+              cCompanyName,
+              cWebsite,
+              cDesiginition,
+              cEmailAddress,
+              cLocation,
+              cService,
+              cPhone,
+              cMessage,
+              jName,
+              jExperience,
+              jWebsite,
+              jPhone,
+              jEmailAddress,
+              jLocation,
+              jCurrentState,
+              jHighestQualification,
+              jPostAppliedFor,
+              jDomainWorkOn,
+              jMessage,
+              hName,
+              hCompanyName,
+              hEmailAddress,
+              hPhone,
+              hMessage
+    
+          })
+          .then(function (response) {
+                document.getElementById("success-msg").style.display = "block";
+                setTimeout(() => {
+                    document.getElementById("success-msg").style.display="none";
+                }, 2000);   
+
+          })
+         
+          .catch(function (error) {        
+            console.log(error);
+          });
+          
+         setUser({
+          pName:"",
+          pCompanyName:"",
+          pWebsite:"",
+          pDesiginition:"",
+          pEmailAddress:"",
+          pLocation:"",
+          pEstimatedBudget:"",
+          pPhone:"",
+          pMessage:"",
+          cName:"",
+          cCompanyName:"",
+          cWebsite:"",
+          cDesiginition:"",
+          cEmailAddress:"",
+          cLocation:"",
+          cService:"",
+          cPhone:"",
+          cMessage:"",
+          jName:"",
+          jExperience:"",
+          jWebsite:"",
+          jPhone:"",
+          jEmailAddress:"",
+          jLocation:"",
+          jCurrentState:"",
+          jHighestQualification:"",
+          jPostAppliedFor:"",
+          jDomainWorkOn:"",
+          jMessage:"",
+          hName:"",
+          hCompanyName:"",
+          hEmailAddress:"",
+          hPhone:"",
+          hMessage:""
+         })
+    }
+  
+
+   
+  }
   const [tabIndex, setTabIndex] = useState(1);
 
   var css = {
@@ -100,9 +302,6 @@ const Contact = () => {
     }
   }
 
-  const submitForm = (e) =>{
-    e.preventDefault();
-  }
   return (
     <>
       <div className="cont">
@@ -161,8 +360,8 @@ const Contact = () => {
                 <div className="border"></div>
               </div>
               <div className="sorm_map2">
-                <h4>SUPPORT <span>PHONE</span></h4>
-                <p>9045301702</p>
+                <h4>SUPPORT <span>Phone</span></h4>
+                <p>info@kusheldigi.com</p>
                 <div className="sorder"></div>
               </div>
             </div>
@@ -173,44 +372,83 @@ const Contact = () => {
 
           <div className="form_cont">
             <div class="wrapper">
-            <form onSubmit={submitForm}>
+            <form id="form" onSubmit={submitForm}>
             {
               tabIndex === 1 && (
                 <>
                 <div class="form">
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Full Name*" />
+                    <input type="text" 
+                      id="pName" 
+                      name="pName" 
+                      value={user?.pName}  
+                      onChange={handleInputs}
+                      placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Company Name*" />
+                    <input type="text" 
+                      id="pCompanyName" 
+                      name="pCompanyName" 
+                      value={user?.pCompanyName}  
+                      onChange={handleInputs}
+                      placeholder="Company Name*" />
                   </div>
                  
                 </div>
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Website*" />
+                    <input type="text" 
+                      id="pWebsite" 
+                      name="pWebsite" 
+                      value={user?.pWebsite}  
+                      onChange={handleInputs}
+                      placeholder="Website*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Designation*" />
+                    <input type="text" 
+                      id="pDesiginition" 
+                      name="pDesiginition" 
+                      value={user?.pDesiginition}  
+                      onChange={handleInputs}
+                      placeholder="Designation*" />
                   </div>
                  
                 </div>
 
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Email Address*" />
+                    <input type="email"
+                      id="pEmailAddress" 
+                      name="pEmailAddress" 
+                      value={user?.pEmailAddress }  
+                      onChange={handleInputs}
+                      placeholder="Email Address*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Location*" />
+                    <input type="text" 
+                      id="pLocation" 
+                      name="pLocation" 
+                      value={user?.pLocation}  
+                      onChange={handleInputs}
+                      placeholder="Location*" />
                   </div>
                  
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="" id="">
-                      <option value="">Estimated Budget</option>
+                     <select onChange={handleInputs} name="pEstimatedBudget" id="pEstimatedBudget" value={user?.pEstimatedBudget}>
+                      <option 
+                        value=""
+                        >Estimated Budget*</option>
+                       {
+                        drop.map(val=>{
+                          return(
+                            <option key={val.id} value={val.id}>{val.name}</option>
+                          )
+                        })
+                       }
                      </select>
                   </div>
                   
@@ -218,14 +456,24 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <input className="inus" placeholder="Phone"></input>
+                    <input type="tel"
+                      id="pPhone" 
+                      name="pPhone" 
+                      value={user?.pPhone}  
+                      onChange={handleInputs}
+                      className="inus" placeholder="Phone"></input>
                   </div>
                   
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                    <textarea className="second_area"
+                      id="pMessage" 
+                      name="pMessage" 
+                      value={user?.pMessage}  
+                      onChange={handleInputs}
+                      placeholder="MESSAGE"></textarea>
                   </div>
                   
                 </div>
@@ -240,36 +488,66 @@ const Contact = () => {
                 <div class="form">
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Full Name*" />
+                    <input 
+                      id="cName"
+                      name="cName"
+                      value={user?.cName}
+                      onChange={handleInputs}
+                      type="text" placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Company Name*" />
+                    <input 
+                      id="cCompanyName"
+                      name="cCompanyName"
+                      value={user?.cCompanyName}
+                      onChange={handleInputs}
+                      type="text" placeholder="Company Name*" />
                   </div>
                  
                 </div>
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Website*" />
+                    <input 
+                      id="cWebsite"
+                      name="cWebsite"
+                      value={user?.cWebsite}
+                      onChange={handleInputs}
+                      type="text" placeholder="Website*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Designation*" />
+                    <input 
+                      id="cDesiginition"
+                      name="cDesiginition"
+                      value={user?.cDesiginition}
+                      onChange={handleInputs}
+                      type="text" placeholder="Designation*" />
                   </div>
                  
                 </div>
 
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Email Address*" />
+                    <input type="text" 
+                      id="cEmailAddress"
+                      name="cEmailAddress"
+                      value={user?.cEmailAddress}
+                      onChange={handleInputs}
+                      placeholder="Email Address*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Location*" />
+                    <input 
+                      id="cLocation"
+                      name="cLocation"
+                      value={user?.cLocation}
+                      onChange={handleInputs}
+                      type="text" placeholder="Location*" />
                   </div>
                  
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="" id="oldsel">
+                     <select name="cService" id="oldsel" value={user?.cService}>
                         <option value="">Service</option>
                      </select>
                   </div>
@@ -278,14 +556,24 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                  <input className="inus" placeholder="Phone"></input>
+                  <input 
+                    id="cPhone"
+                    name="cPhone"
+                    value={user?.cPhone}
+                    onChange={handleInputs}
+                    type="number" className="inus" placeholder="Phone"></input>
                   </div>
                   
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                    <textarea 
+                      id="cMessage"
+                      name="cMessage"
+                      value={user?.cMessage}
+                      onChange={handleInputs}
+                      className="second_area" placeholder="MESSAGE"></textarea>
                   </div>
                   
                 </div>
@@ -300,36 +588,66 @@ const Contact = () => {
                   <div class="form">
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Full Name*" />
+                    <input 
+                      id="jName"
+                      name="jName"
+                      value={user?.jName}
+                      onChange={handleInputs}
+                      type="text" placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Ecperience in Years*" />
+                    <input 
+                      id="jExperience"
+                      name="jExperience"
+                      value={user?.jExperience}
+                      onChange={handleInputs}
+                      type="text" placeholder="Ecperience in Years*" />
                   </div>
                  
                 </div>
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Website*" />
+                    <input 
+                      id="jWebsite"
+                      name="jWebsite"
+                      value={user?.jWebsite}
+                      onChange={handleInputs}
+                      type="text" placeholder="Website*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Phone*" />
+                    <input 
+                      id="jPhone"
+                      name="jPhone"
+                      value={user?.jPhone}
+                      onChange={handleInputs}
+                      type="text" placeholder="Phone*" />
                   </div>
                  
                 </div>
 
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Email Address*" />
+                    <input 
+                      id="jEmailAddress"
+                      name="jEmailAddress"
+                      value={user?.jEmailAddress}
+                      onChange={handleInputs}
+                      type="text" placeholder="Email Address*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Location*" />
+                    <input 
+                      id="jLocation"
+                      name="jLocation"
+                      value={user?.jLocation}
+                      onChange={handleInputs}
+                      type="text" placeholder="Location*" />
                   </div>
                  
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="" id="oldsel">
+                     <select name="jCurrentState" id="oldsel" value={user?.jCurrentState}>
                         <option value="">Current State</option>
                      </select>
                   </div>
@@ -338,7 +656,7 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="" id="oldsel">
+                     <select name="jHighestQualification" id="oldsel" value={user?.jHighestQualification}>
                         <option value="">Highest Qualification</option>
                      </select>
                   </div>
@@ -347,7 +665,7 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="" id="oldsel">
+                     <select name="jPostAppliedFor" id="oldsel" value={user?.jPostAppliedFor}>
                         <option value="">Post Applied For</option>
                      </select>
                   </div>
@@ -356,21 +674,31 @@ const Contact = () => {
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                  <input className="inus" placeholder="Domain Work On*"></input>
+                  <input 
+                    id="jDomainWorkOn"
+                    name="jDomainWorkOn"
+                    value={user?.jDomainWorkOn}
+                    onChange={handleInputs}
+                    type="text" className="inus" placeholder="Domain Work On*"></input>
                   </div>
                   
                 </div>
 
-                <div class="bottom-form">
+                {/* <div class="bottom-form">
                   <div class="inner-form">
                   <input type="file" className="inus" placeholder="Domain Work On*"></input>
                   </div>
                   
-                </div>
+                </div> */}
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                    <textarea 
+                      id="jMessage"
+                      name="jMessage"
+                      value={user?.jMessage}
+                      onChange={handleInputs}
+                      className="second_area" placeholder="MESSAGE"></textarea>
                   </div>
                   
                 </div>
@@ -383,26 +711,51 @@ const Contact = () => {
                 <div class="form">
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Full Name*" />
+                    <input 
+                      id="hName"
+                      name="hName"
+                      value={user?.hName}
+                      onChange={handleInputs}
+                      type="text" placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Company Name*" />
+                    <input 
+                      id="hCompanyName"
+                      name="hCompanyName"
+                      value={user?.hCompanyName}
+                      onChange={handleInputs}
+                      type="text" placeholder="Company Name*" />
                   </div>
                  
                 </div>
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" placeholder="Email Address*" />
+                    <input 
+                      id="hEmailAddress"
+                      name="hEmailAddress"
+                      value={user?.hEmailAddress}
+                      onChange={handleInputs}
+                      type="text" placeholder="Email Address*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" placeholder="Phone*" />
+                    <input 
+                      id="hPhone"
+                      name="hPhone"
+                      value={user?.hPhone}
+                      onChange={handleInputs}
+                      type="text" placeholder="Phone*" />
                   </div>
                  
                 </div>
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area" placeholder="MESSAGE"></textarea>
+                    <textarea 
+                      id="hMessage"
+                      name="hMessage"
+                      value={user?.hMessage}
+                      onChange={handleInputs}
+                      className="second_area" placeholder="MESSAGE"></textarea>
                   </div>
                   
                 </div>
@@ -412,8 +765,19 @@ const Contact = () => {
               )
             }
 
-            <button class="btn-form-contact">Send Message</button>
+            <button 
+              type="submit"
+              name="contact_btn"
+              id="contact_btn"
+              // onClick={postData}
+              className="btn-form-contact">Send Message</button>
             </form>
+
+            <div className="success-message" id="success-msg">
+              <Alert severity="success">Your form has been submitted sucessfully... We will get back to you shortly.</Alert>
+            </div>
+
+
             </div>
 
             
