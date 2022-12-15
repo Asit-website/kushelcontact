@@ -41,6 +41,7 @@ import ins from '../components/images/ins.png';
 import ios from '../components/images/ios.png';
 import android from '../components/images/android.png';
 import hybrid from '../components/images/hybrid.png';
+import { NavLink } from 'react-router-dom';
 const Service = () => {
    const [tabIndex, setTabIndex] = useState(1);
 
@@ -321,9 +322,11 @@ const Service = () => {
                    <p>Prototyping</p>
                 </div>
               </div>
+              <NavLink to="/uiux">
               <div className="kus-img">
                 <img src={kushelArrow} alt="kus" />
               </div>
+              </NavLink>
            </div>
            <div className='kushel-second-content'>
               <h2>Graphic Design</h2>

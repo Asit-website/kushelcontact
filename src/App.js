@@ -17,6 +17,8 @@ import TermCondition from './components/TermCondition';
 import HireTeam from './components/HireTeam';
 import Seo from './components/Seo';
 import Success from './components/Success';
+import Insights from './components/Insights';
+import Uix from './components/Uix';
 const App = () => {
   //    const [mode, setMode] = useState("dark");
   // const [value, setValue] = useState("Enable Dark Mode");
@@ -43,6 +45,8 @@ const App = () => {
                 <Route exact path='/solution' element={<Solution/>}/>
                 <Route exact path='/success' element={<Success/>}/>
                 <Route exact path='/contact' element={<Contact/>}/>
+                <Route exact path='/insight' element={<Insights/>}/>
+                <Route exact path='/uiux' element={<Uix/>}/>
                 <Route exact path='/privacy' element={<Privacy/>}/>
                 <Route exact path='/refund' element={<Refund/>}/>
                 <Route exact path='/quality' element={<Quality/>}/>
