@@ -9,8 +9,12 @@ import tvWatch from "../components/images/tvWatch.png";
 import mut from '../components/images/mutation.png';
 import check from '../components/images/check.png';
 import uiList from '../components/images/uiList.png';
-import scroll from '../components/images/Scroll.png';
-import scroll1 from '../components/images/scroll1.png';
+import scroll001 from '../components/images/scroll001.png'
+import scroll01 from '../components/images/scroll01.png'
+import scroll02 from '../components/images/scroll02.png'
+import scroll11 from '../components/images/scroll11.png'
+// import scroll from '../components/images/Scroll.png';
+// import scroll1 from '../components/images/scroll1.png';
 import personal from '../components/images/personal.png';
 import selection from '../components/images/selection.png';
 const Uix = () => {
@@ -51,9 +55,9 @@ const Uix = () => {
           <div className="more-work-on">
             <p>More work on</p>
             <div className="git">
-              <img src={drible} alt="" />
-              <img src={behnce} alt="" />
-              <img src={github} alt="" />
+              <p>DRRIBLE</p>
+              <p>BEHNCE</p>
+              <p>GITHUB</p>
             </div>
           </div>
         </div>
@@ -187,8 +191,13 @@ const Uix = () => {
             </div>
             <div className="ye">
             <div className="second-ui-ux-services">
-                 <img src={scroll} alt="" />
-                 <img src={scroll} alt="" />
+                 <div className="image-section">
+                    <img className="right-img" src={scroll001} alt="" />
+                    <img className="left-img" src={scroll02} alt="" />
+
+                    <img className="right-img" src={scroll001} alt="" />
+                    <img className="left-img" src={scroll02} alt="" />
+                 </div>
                  {/* <div className="img-ui-group">
                     <img className="personal"  src={personal} alt="" />
                     <img className="selection" src={selection} alt="" />
@@ -227,12 +236,19 @@ const Uix = () => {
             </div>
             <div className="ye">
             <div className="second-ui-ux-services">
-                 <img src={scroll1} alt="" />
-                 <img src={scroll1} alt="" />
+            <div className="second-ui-ux-services">
+                 <div className="image-section">
+                    <img className="right-img" src={scroll11} alt="" />
+                    <img className="left-img" src={scroll01} alt="" />
+
+                    <img className="right-img" src={scroll11} alt="" />
+                    <img className="left-img" src={scroll01} alt="" />
+                 </div>
                  {/* <div className="img-ui-group">
                     <img className="personal"  src={personal} alt="" />
                     <img className="selection" src={selection} alt="" />
                  </div> */}
+            </div>
             </div>
             </div>
       </div>

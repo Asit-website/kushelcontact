@@ -6765,12 +6765,26 @@ footer .another-footer-section {
    .git{
     margin-top: 20px;
    }
-   .git img{
-    max-width: 120px;
-    width: 100%;
-    display: block;
-    margin: 20px 0px;
-    filter: brightness(100%);
+  
+   .git p{
+    color: black;
+    font-size: 32px;
+    letter-spacing : 2px;
+    font-weight : bolder;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    transition : font-size .2s;
+    line-height : 50px;
+
+   }
+
+   .git p:hover{
+    font-size : 48px;
+    color: white;
+    font-weight : bolder;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: none;
+    /* transform : scale(1.2); */
    }
    .ui-help{
     display: flex;
@@ -6959,6 +6973,8 @@ footer .another-footer-section {
   }
   .first-ui-ux-services{
     margin-right: 30px;
+    max-width : 100%;
+    width : 80%;
   }
   .second-ui-ux-services{
     margin-left: 30px;
@@ -6969,17 +6985,29 @@ footer .another-footer-section {
     height: 600px;
     max-height: 100%;
     position: relative;
+    
    
   }
   .second-ui-ux-services::-webkit-scrollbar {
     width: 10px;
     display: none;
   }
+
   .second-ui-ux-services img{
     max-width: 480px;
     /* max-width: 400px; */
-    width: 100%;
+    width: 80%;
     display: block;
+  }
+  .image-section{
+    /* max-width : 80%; */
+  }
+  .left-img{
+    float : left;
+  }
+
+  .left-img{
+    float : right;
   }
   /* .second-ui-ux-services .selection{
     position: relative;
