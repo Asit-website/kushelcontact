@@ -19,6 +19,7 @@ import Seo from './components/Seo';
 import Success from './components/Success';
 import Insights from './components/Insights';
 import Uix from './components/Uix';
+import Environement from './components/Environement';
 const App = () => {
   //    const [mode, setMode] = useState("dark");
   // const [value, setValue] = useState("Enable Dark Mode");
@@ -53,6 +54,7 @@ const App = () => {
                 <Route exact path='/nda' element={<Nda/>}/>
                 <Route exact path='/term' element={<TermCondition/>}/>
                 <Route exact path='/seo' element={<Seo/>}/>
+                <Route exact path='/environment' element={<Environement/>}/>
                 <Route exact path="*" element={<NotFound/>} />
             </Routes>
             <Footer/>

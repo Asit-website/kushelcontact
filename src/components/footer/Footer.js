@@ -114,6 +114,7 @@ const Footer = () => {
                 <NavLink to="/nda"><p>NDA Policy</p></NavLink>
                 <NavLink to="/term"><p>Terms of Use</p></NavLink>
                 <NavLink to="/seo"><p>Seo Audit</p></NavLink>
+                <NavLink to="/environment"><p>Environment</p></NavLink>
             </div>
             </div>
          </div>
