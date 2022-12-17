@@ -2084,8 +2084,11 @@ footer .another-footer-section {
   }
 
   .form_map{
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+  }
+  .torm_map{
+    margin-top: 30px;
   }
 
   .second-line{
@@ -2332,6 +2335,10 @@ footer .another-footer-section {
     height: 250px;
   }
 
+  .two-div .ano-color{
+    margin-top: 20px;
+  }
+
   .section-imagea{
     flex-direction: column;
   }
@@ -2399,6 +2406,8 @@ footer .another-footer-section {
   }
   .btn-form-contact{
     font-size: 13px;
+    display: block;
+    margin: 30px auto;
   }
   .banner .content p{
     font-size: 13px;
@@ -2411,6 +2420,7 @@ footer .another-footer-section {
   }
   .second_partner p{
     font-size: 13px;
+    line-height: 24px;
   }
   .second_partner .who_btn{
     font-size: 13px;
@@ -2430,6 +2440,7 @@ footer .another-footer-section {
     font-size: 13px;
     letter-spacing: normal;
     padding: 0px 10px;
+    line-height: 24px;
   }
   .tech-div .tech-btn{
     font-size: 13px;
@@ -3589,6 +3600,7 @@ footer .another-footer-section {
     .how-para p{
       font-size: 13px !important;
       width: 100% !important;
+      line-height: 24px !important;
     }
     .about-container{
       padding: 40px 0px !important;
@@ -5211,6 +5223,7 @@ footer .another-footer-section {
   }
   .head-para-offer p{
     font-size: 13px;
+    line-height: 24px;
   }
 
   .offer-para p{
@@ -6554,6 +6567,7 @@ footer .another-footer-section {
     width: 100%;
     text-align: center;
     font-size: 13px;
+    line-height: 24px;
   }
   .vision h2{
     font-size: 20px;
@@ -6584,6 +6598,7 @@ footer .another-footer-section {
   .years-para p{
     font-size: 14px;
     white-space: normal;
+    line-height: 24px;
   }
   .years-button .first-yr-bt{
      font-size: 14px;

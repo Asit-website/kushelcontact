@@ -361,7 +361,7 @@ const drop = [
               </div>
               <div className="sorm_map2">
                 <h4>SUPPORT <span>Phone</span></h4>
-                <p>info@kusheldigi.com</p>
+                <p>9045301702</p>
                 <div className="sorder"></div>
               </div>
             </div>
