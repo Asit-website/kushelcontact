@@ -714,10 +714,13 @@ a {
     font-weight: 600;
     font-family: "Raleway";
     font-size: 14px;
+    cursor: pointer;
 }
-
-
-
+.button-chu:hover{
+  background-color: #0e66f9;
+  border: none;
+  transition: 0.5s;
+}
 .tech-div {
   object-fit: cover;
   border-radius: 10px;
@@ -2792,7 +2795,7 @@ footer .another-footer-section {
   padding: 40px 0px;
   border-radius: 30px;
   margin-top: 90px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .first-game h2{
@@ -3252,6 +3255,7 @@ footer .another-footer-section {
     .first-kushel{
       height: auto;
       flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -3263,7 +3267,13 @@ footer .another-footer-section {
       .other-services{
         margin-top: 80px;
       }
+      .gem-dev{
+        flex-direction: column;
+        align-items: center;
+      }
   }
+
+
 
   @media only screen and (max-width:845px){
     .mobile-app-cl{
@@ -3499,6 +3509,7 @@ footer .another-footer-section {
 
     .first-cl h2{
       font-size:18px;
+     text-align: center;
     }
 
     .line-first-flex .dev{
@@ -3516,6 +3527,24 @@ footer .another-footer-section {
     }
     .bus-mod h2{
       font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width:450px){
+    .second-cl img {
+      display: none;
+    }
+    .kusta-img img{
+      display: none;
+    }
+    .game-img img{
+      display: none;
+    }
+    .button-flex button{
+      margin-top: 15px;
+    }
+    .first-cl h2{
+      white-space: normal;
     }
   }
 /* ===========================media query of services end============ */
@@ -6618,9 +6647,11 @@ footer .another-footer-section {
   }
   .aug-para p{
     display: none;
+    line-height: 24px;
   }
   .years-para p{
     display: none;
+    line-height: 24px;
   }
   .aug-ek-para{
     display: block !important;
@@ -6766,7 +6797,7 @@ footer .another-footer-section {
     margin-top: 20px;
    }
   
-   .git p{
+   .git .gira{
     color: black;
     font-size: 32px;
     letter-spacing : 2px;
@@ -6778,7 +6809,7 @@ footer .another-footer-section {
 
    }
 
-   .git p:hover{
+   .git .gira:hover{
     font-size : 48px;
     color: white;
     font-weight : bolder;
@@ -6946,7 +6977,7 @@ footer .another-footer-section {
     font-family: "Raleway";
     font-weight: 400;
     opacity: 0.55;
-    font-size: 16.5px;
+    font-size: 16px;
     line-height: 27px;
     letter-spacing: .5px;
   }
@@ -6994,7 +7025,7 @@ footer .another-footer-section {
   }
 
   .second-ui-ux-services img{
-    max-width: 480px;
+    max-width: 440px;
     /* max-width: 400px; */
     width: 80%;
     display: block;
@@ -7024,5 +7055,184 @@ footer .another-footer-section {
   .tech-div3{
     margin-top: -10px;
   }
+
+  .pori{
+    display: none;
+  }
   
 /* ===========================ui ux inner page css end=================== */
+
+/* =============================ui ux inner page css with media================= */
+@media only screen and (max-width:1160px){
+  .ui-sir{
+    padding: 60px 20px;
+  }
+  .ui-work1{
+    padding: 0 20px;
+  }
+  .ui-help{
+    padding: 0 20px;
+  }
+  .expect-not{
+    padding: 40px 20px;
+  }
+  .ui-ux-services{
+    padding: 80px 20px;
+  }
+  .discus-project{
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width:930px){
+  .ui-help{
+    flex-direction: column;
+    align-items: center;
+  }
+  .ui-help1{
+    margin-right: 0px;
+  }
+  .ui-help2{
+    margin-left: 0px;
+  }
+  .ui-help-h{
+    margin: 30px 0px;
+  }
+  .ui-help-h h2{
+    text-align: center;
+  }
+  .help-img img{
+    display: block;
+    margin: auto;
+  }
+  .tv-watch img{
+    margin:  auto;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width:1000px){
+  .ui-work{
+    flex-direction: column;
+    align-items: center;
+  }
+  .ui-work img{
+    margin-top: 30px;
+  }
+  .ui-work2{
+    margin: 0 20px;
+  }
+  .ui-work1 .ui-work1-small-para{
+    text-align: center;
+  }
+  .ui-work1 .ui-work1-first-head{
+     text-align: center;
+  }
+  .more-work-on p{
+    text-align: center;
+  }
+  .ui-work1 .deliver-para{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .expect-not{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .second-ex{
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .ui-ux-services{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-ui-ux-services{
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+  .second-ui-ux-services{
+    margin-left: 0px;
+  }
+  .image-section{
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width:620px){
+  .ui-sir .ui-sir-head {
+    font-size: 25px;
+    text-align: center;
+  }
+  .ui-what-head h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  .ui-what-para p{
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+  }
+  .ui-what .do-ui{
+    text-align: center;
+  }
+  .ui-work1 .ui-work1-first-head{
+    font-size: 25px;
+  }
+  .ui-work1 .deliver-para{
+    font-size: 14px;
+  }
+  .ui-help-h h2{
+    text-align: center;
+    font-size: 25px;
+  }
+  .first-ex h2{
+    font-size: 22px;
+  }
+  .second-ex h2{
+    font-size: 22px;
+  }
+  .crosover p{
+    font-size: 13px;
+  }
+  .first-ui-ux-services h2{
+    font-size: 20px;
+  }
+  .ui-ux-par P{
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .ui-ux-list p{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width:437px){
+  .pori{
+    display: block !important;
+  }
+  .first-par{
+    display: none;
+  }
+  .help-img img{
+    max-width: 250px;
+    width: 100%;
+  }
+  .tv-watch img{
+    max-width: 250px;
+    width: 100%;
+  }
+  .first-ex{
+    padding: 30px 30px;
+  }
+  .crosover{
+    padding: 0px 0px;
+  }
+}
+/* ======================end====================================== */

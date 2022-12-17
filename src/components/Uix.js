@@ -55,9 +55,9 @@ const Uix = () => {
           <div className="more-work-on">
             <p>More work on</p>
             <div className="git">
-              <p>DRRIBLE</p>
-              <p>BEHNCE</p>
-              <p>GITHUB</p>
+              <p className="gira">DRRIBLE</p>
+              <p className="gira">BEHNCE</p>
+              <p className="gira">GITHUB</p>
             </div>
           </div>
         </div>
@@ -169,6 +169,9 @@ const Uix = () => {
                  <div className="ui-ux-par">
                   <p className="first-par">We follow industry standards and create UI/UX based on</p>
                   <p className="first-par">design guidelines. UI/UX design services we offer include:</p>
+                  <p className="first-par pori">
+                  We follow industry standards and create UI/UX based on design guidelines. UI/UX design services we offer include:
+                  </p>
                  </div>
                  <div className="uturn">
                  <div className="ui-ux-list">
@@ -214,6 +217,7 @@ const Uix = () => {
                  <div className="ui-ux-par">
                   <p className="first-par">We create engaging content and meaningful experience</p>
                   <p className="first-par">for your target audience. Graphic design services we offer</p>
+                  <p className="pori first-par">We create engaging content and meaningful experience for your target audience. Graphic design services we offe</p>
                  </div>
                  <div className="uturn">
                  <div className="ui-ux-list">
