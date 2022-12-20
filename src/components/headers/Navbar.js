@@ -7,7 +7,7 @@ import bega from '../images/bega.png';
 import imf from '../images/72.png';
 // import './NavBars.css'
 
-const Navbar = () => {
+const Navbar = ({toggleMode,mode}) => {
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -33,13 +33,14 @@ const Navbar = () => {
     const nav = ({ isActive }) => {
         return {
             fontWeight: isActive ? 'bold' : 'normal',
-            color: isActive ? 'rgb(9, 104, 247)' : '#ffffff',
+            color: isActive ? 'rgb(9, 104, 247)' : `${mode === "dark" ? "white" : "black"}`,
             transition: isActive ? '0.8s' : '',
             backgroundColor: isActive ? 'black' : 'transparent',
             padding: isActive ? '5px' : '0px',
             opacity: isActive ? '0.8' : '1',
             borderRadius: isActive ? '2px' : '0px',
-            overflow:'hidden'
+            overflow:'hidden',
+            
         }
     }
 
@@ -63,14 +64,17 @@ const Navbar = () => {
         }
 
     }
-
     window.addEventListener('scroll' ,changeNavColor);
 
+    const stylis = {
+        filter: mode === "dark" ? "invert(0)" : "invert(1)"
+    }
+
     return (
-        <div className={navColor ? 'header activeH' : 'header' }>
+        <div className={navColor ? `header ${mode === "dark" ? "activeH" : "factive"}` : 'header' }>
             <nav  className='navbar'>
                 <NavLink exact  to="/"   className='logo'>
-                    <img src={logo} alt='logo' />
+                    <img style={stylis} src={logo} alt='logo' />
                 </NavLink>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<i class="fa-solid fa-xmark"></i>)
@@ -79,7 +83,7 @@ const Navbar = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li  className='nav-item'>
-                        <NavLink exact to="/" style={nav} onClick={closeMenu}>Home</NavLink>
+                        <NavLink  exact to="/" style={nav} onClick={closeMenu}>Home</NavLink>
                     </li>
                    
                     <li  className='nav-item'>
@@ -155,10 +159,16 @@ const Navbar = () => {
                     <li  className='nav-item'>
                         <NavLink  to="/contact" style={navContact}   className="btn-primary"  onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </li>
-                    {/* <label class="switch">
-          <input onClick={toggleMode} className="chock" type="checkbox" />
-          <span class="slider round"></span>
-        </label> */}
+                    <li className='nav-item'>
+                    <div >
+    <input onClick={toggleMode} type="checkbox" class="checkbox" id="checkbox"/>
+  <label for="checkbox" class="label">
+    <i class='fas fa-sun'></i>
+    <i class="fas fa-moon"></i>
+    <div class='ball'/>
+  </label>
+</div>
+                    </li>
                 </ul>
             </nav>
         </div>

@@ -51,13 +51,7 @@ import "./styles.css";
 import { Navigation } from "swiper";
 import { NavLink } from "react-router-dom";
 // import pre from '../components/pre.png';
-
-
-
-
-
-
-const Home = () => {
+const Home = ({mode}) => {
   const [link,setLink] = useState(1);
   const [men,setMen] = useState(1);
   const [save,setSaved] = useState(false);
@@ -71,6 +65,50 @@ const Home = () => {
     borderBottom:"none",
     opacity:"0.6"
   }
+
+  const tiger = {
+    color: mode === "dark" ? "white" : "#000000",
+    backgroundColor: mode === "dark" ? "#0a0f16" : "white",
+  }
+  const tiger1 = {
+    backgroundColor: mode === "dark" ? "#0e0e0e" : "#ffffff",
+  }
+  const tiger2 = {
+    color: mode === "dark" ? "#ffffff" : "#000000"
+  }
+
+  const techfast = {
+    color: mode === "dark" ? "white" : "#000000",
+    backgroundColor: mode === "dark" ? "#0a0f16" : "white",
+  }
+
+  const filterCss = {
+    filter: mode === "dark" ? "invert(0)" : "invert(1)"
+  }
+
+  const latestPro = {
+    backgroundColor: mode === "dark" ? "#0e0e0e" : "#ffffff"
+  }
+
+  const industrywise = {
+    backgroundColor: mode === "dark" ? "#0a0f16" : "#ffffff"
+  }
+
+  const businesswise = {
+    backgroundColor: mode === "dark" ? "#0e0e0e" : "#ffffff"
+  }
+
+  const borderStyless = {
+    borderBottom: mode === "dark" ? "2px solid #ffffff" : "2px solid #000000"
+  }
+
+  const reviewCss = {
+     backgroundColor: mode === "dark" ? "#0a0f16" : "#ffffff"
+  }
+
+  const bigDiv = {
+    backgroundColor: mode === "dark" ? "#021228" : "#ffffff"
+  }
   const time = (e) =>{
     e.preventDefault();
     setLink(1);
@@ -80,16 +118,18 @@ const Home = () => {
     for (var prop in secondCss) {
       document.getElementById("tamp").style[prop] = secondCss[prop];
     }
-    for (var prop in css) {
+    for (var prop in css ||  prop in borderStyless ) {
       document.getElementById("barier").style[prop] = css[prop];
+      document.getElementById("barier").style[prop] = borderStyless[prop];
     }
  }
  
  const hired = (e) =>{
    e.preventDefault();
    setLink(2);
-   for (var prop in css) {
+   for (var prop in css ||  prop in borderStyless) {
     document.getElementById("camp").style[prop] = css[prop];
+    document.getElementById("camp").style[prop] = borderStyless[prop];
   }
   for (var prop in secondCss) {
     document.getElementById("barier").style[prop] = secondCss[prop];
@@ -102,8 +142,9 @@ const Home = () => {
  const fix = (e) =>{
    e.preventDefault();
    setLink(3);
-   for (var prop in css) {
+   for (var prop in css ||  prop in borderStyless) {
     document.getElementById("tamp").style[prop] = css[prop];
+    document.getElementById("tamp").style[prop] = borderStyless[prop];
   }
   for (var prop in secondCss) {
     document.getElementById("barier").style[prop] = secondCss[prop];
@@ -120,6 +161,7 @@ const Home = () => {
   color:'#ffffff'
  }
 
+ 
   const menu1 = (e) =>{
      e.preventDefault();
      setMen(1);
@@ -681,7 +723,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="banner1">
+      <div style={filterCss} className="banner1">
           <div className="banner-content">
           <span>Welcome to Kushel Digi</span>
           <h2>
@@ -691,25 +733,25 @@ const Home = () => {
             We are leading technology solutions providing company all over the
             world doing over 40 years.
           </p>
-          <button className="home_btn">Read more</button>
+          <button  className="home_btn">Read more</button>
           </div>
           <div className="banner-images">
-              <img src={girl} alt="" />
+              <img style={filterCss} src={girl} alt="" />
           </div>
       </div>
       {/* // ==========more info section=============== */}
-      <div className="partner">
+      <div style={tiger} className="partner">
         <div className="first_partner">
           <img src="./images/23.png" alt="noting" />
         </div>
         <div className="second_partner">
           <div className="second_all">
             <span>Who we are</span>
-            <h2 >
+            <h2 style={tiger} >
               Your digital partner to create inspirational design and robust
               solution for Web, Mobile & <br /> Cloud.
             </h2>
-            <p>
+            <p style={tiger}>
               The top-notch and preeminent Web and Mobile App Development
               Company of India with its global presence in USA, MindInventory is
               first-rate choice of the clients worldwide. With sheer customer
@@ -719,32 +761,31 @@ const Home = () => {
             </p>
 
             <NavLink to="/about">
-              <button  className="who_btn">About us</button>
+              <button style={tiger2}  className="who_btn">About us</button>
             </NavLink>
           </div>
         </div>
       </div>
 
       {/* ==========services================  */}
-      <div className="services">
+      <div style={tiger1} className="services">
         <span>Our Services</span>
-        <div className="heading-service">
-          <h2>We are leading technology solutions providing company </h2>
-          <h2> all over the world doing over 40 years.</h2>
+        <div  className="heading-service">
+          <h2 style={tiger2}>We are leading technology solutions providing company </h2>
+          <h2 style={tiger2}> all over the world doing over 40 years.</h2>
         </div>
 
         <div className="development_service">
         <Carousel>
-        
         <div className="section-service">
             <div className="first-service">
               <div onClick={setChange} id="ask" className="three-section-first">
-                <img className="first-im" src={mask} alt="" />
-                <p>
+                <img style={filterCss} className="first-im" src={mask} alt="" />
+                <p style={tiger2}>
                   Website <br /> Development
                 </p>
                 <img
-                  style={{ width: "20px", margin: "0px -1px" }}
+                  style={{ width: "20px", margin: "0px -1px", filter: mode === "dark" ? "invert(0)" : "invert(1)" }}
                   src={arrow}
                   alt=""
                 />
@@ -753,10 +794,10 @@ const Home = () => {
             
             <div className="third-service">
               <div onClick={setChange1} id="bsk" className="three-section-third">
-                <img className="third-im" src={apple} alt="" />
-                <p>App Development</p>
+                <img style={filterCss} className="third-im" src={apple} alt="" />
+                <p style={tiger2}>App Development</p>
                 <img
-                  style={{ width: "20px", margin: "0px -1px" }}
+                  style={{ width: "20px", margin: "0px -1px",  filter: mode === "dark" ? "invert(0)" : "invert(1)" }}
                   src={arrow}
                   alt=""
                 />
@@ -779,12 +820,12 @@ const Home = () => {
           <div className="section-service">
             <div className="second-service">
               <div onClick={setChange2} id="csk" className="three-section-second">
-                <img className="second-im" src={digia} alt="" />
-                <p>
+                <img style={filterCss} className="second-im" src={digia} alt="" />
+                <p style={tiger2}>
                 Digital Marketing
                 </p>
                 <img
-                  style={{ width: "20px", margin: "0px -1px" }}
+                  style={{ width: "20px", margin: "0px -1px", filter: mode === "dark" ? "invert(0)" : "invert(1)"}}
                   src={arrow}
                   alt=""
                 />
@@ -792,10 +833,10 @@ const Home = () => {
             </div>
             <div className="fourth-service">
               <div onClick={setChange3} id="dsk" className="three-section-fourth">
-                <img className="fourth-im" src={emotions} alt="" />
-                <p>E-Commerce</p>
+                <img style={filterCss} className="fourth-im" src={emotions} alt="" />
+                <p style={tiger2}>E-Commerce</p>
                 <img
-                  style={{ width: "20px", margin: "0px -1px" }}
+                  style={{ width: "20px", margin: "0px -1px", filter: mode === "dark" ? "invert(0)" : "invert(1)" }}
                   src={arrow}
                   alt=""
                 />
@@ -808,8 +849,8 @@ const Home = () => {
               grad === 1 && (
                 <>
                 <div>
-          <div className="service-content">
-            <p>
+          <div  className="service-content">
+            <p style={tiger2}>
               With a decade-long experience in UI/UX designing, our creative
               team of designers offers a full range of web and mobile app design
               services, from prototyping and graphic design to pixel-perfect UI.
@@ -837,7 +878,7 @@ const Home = () => {
                 <>
                 <div>
           <div className="service-content">
-            <p>
+            <p style={tiger2}>
               With a decade-long experience in UI/UX designing, our creative
               team of designers offers a full range of web and mobile app design
               services, from prototyping and graphic design to pixel-perfect UI.
@@ -865,7 +906,7 @@ const Home = () => {
                 <>
                 <div>
           <div className="service-content">
-            <p>
+            <p style={tiger2}>
               With a decade-long experience in UI/UX designing, our creative
               team of designers offers a full range of web and mobile app design
               services, from prototyping and graphic design to pixel-perfect UI.
@@ -893,7 +934,7 @@ const Home = () => {
                 <>
                 <div>
           <div className="service-content">
-            <p>
+            <p style={tiger2}>
               With a decade-long experience in UI/UX designing, our creative
               team of designers offers a full range of web and mobile app design
               services, from prototyping and graphic design to pixel-perfect UI.
@@ -920,12 +961,12 @@ const Home = () => {
       </div>
 
       {/* ===========technology================= */}
-      <div className="technology">
-        <img src={tech} alt="" />
+      <div style={techfast} className="technology">
+        <img style={{filter: mode === "dark" ? "invert(0)" : "invert(1)"}} src={tech} alt="" />
         <div className="tech-image">
           {techApi.map((val) => {
             const { id, Name, width } = val;
-            return <img key={id} style={{ width: width }} src={Name} alt="" />;
+            return <img  key={id} style={{ width: width, filter: mode === "dark" ? "invert(0)" : "invert(1)" }} src={Name} alt="" />;
           })}
         </div>
         
@@ -935,7 +976,7 @@ const Home = () => {
             return <img key={id} style={{ width: width }} src={Name} alt="" />;
           })}
         </div>
-        <button onClick={setButton} className="button-chu">see More</button>
+        <button style={tiger2} onClick={setButton} className="button-chu">see More</button>
         <div className="tech-div">
           <h2>Let’s Discuss Your Project</h2>
           <div className="tech-para">
@@ -946,17 +987,17 @@ const Home = () => {
             <p>an amazing digital product.</p>
           </div>
           <NavLink to="/about">
-            <button className="tech-btn">About us</button>
+            <button   className="tech-btn">About us</button>
           </NavLink>
         </div>
       </div>
 
       {/* ==========latest project============== */}
-      <div className="project">
+      <div style={latestPro} className="project">
         <span>Our Latest Project</span>
         <div className="project-heading">
-          <h2>We design project designed with passion on time,</h2>
-          <h2>within budget of full value</h2>
+          <h2 style={tiger2}>We design project designed with passion on time,</h2>
+          <h2 style={tiger2}>within budget of full value</h2>
         </div>
 
         <div className="project-images">
@@ -965,30 +1006,30 @@ const Home = () => {
         </div>
         <NavLink to="#!">
           {" "}
-          <button className="project-btn">View Portfolio</button>
+          <button style={tiger2} className="project-btn">View Portfolio</button>
         </NavLink>
       </div>
 
       {/* ============industry wise============= */}
-      <div className="industry">
-        <h2>Our Industry wise</h2>
-        <img src={solution} alt="nothing" />
+      <div style={industrywise} className="industry">
+        <h2 style={tiger2}>Our Industry wise</h2>
+        <img  src={solution} alt="nothing" />
 
         <div className="industry-system">
           <div className="small-fintech">
-            <span id="bar" onClick={menu1}>Fintech</span>
-            <div className="fintech-para">
-              <p id="tam" onClick={menu2}>E-Commerce</p>
-              <p id="cam" onClick={menu3}>Healthcare</p>
-              <p id="dam" onClick={menu4}>Fitness</p>
-              <p id="eam" onClick={menu5}>Food Delivery</p>
-              <p id="fam" onClick={menu6}>Real Estate</p>
-              <p id="gam" onClick={menu7}>Travel</p>
-              <p id="ham" onClick={menu8}>Sports</p>
-              <p id="iam" onClick={menu9}>Social Networking</p>
-              <p id="jam" onClick={menu10}>Business</p>
-              <p id="kam" onClick={menu11}>Education</p>
-              <p id="lam" onClick={menu12}>Entertainment</p>
+            <span style={filterCss}  id="bar" onClick={menu1}>Fintech</span>
+            <div  className="fintech-para">
+              <p style={filterCss}  id="tam" onClick={menu2}>E-Commerce</p>
+              <p style={filterCss}  id="cam" onClick={menu3}>Healthcare</p>
+              <p style={filterCss} id="dam" onClick={menu4}>Fitness</p>
+              <p style={filterCss} id="eam" onClick={menu5}>Food Delivery</p>
+              <p style={filterCss} id="fam" onClick={menu6}>Real Estate</p>
+              <p style={filterCss} id="gam" onClick={menu7}>Travel</p>
+              <p style={filterCss} id="ham" onClick={menu8}>Sports</p>
+              <p style={filterCss} id="iam" onClick={menu9}>Social Networking</p>
+              <p style={filterCss} id="jam" onClick={menu10}>Business</p>
+              <p style={filterCss}  id="kam" onClick={menu11}>Education</p>
+              <p style={filterCss}  id="lam" onClick={menu12}>Entertainment</p>
             </div>
           </div>
 
@@ -996,18 +1037,18 @@ const Home = () => {
             men === 1 && (
               <>
               <div className="big-fintech">
-            <span>Fintech</span>
+            <span style={filterCss}>Fintech</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1017,7 +1058,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1029,18 +1070,18 @@ const Home = () => {
           men === 2 && (
             <>
             <div className="big-fintech">
-            <span>E-Commerce</span>
+            <span style={filterCss}>E-Commerce</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfers</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfers</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1050,7 +1091,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1062,18 +1103,18 @@ const Home = () => {
            men === 3 && (
             <>
             <div className="big-fintech">
-            <span>Healthcare</span>
+            <span style={filterCss}>Healthcare</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li  style={tiger2}>Easy Money Transfer</li>
+                <li  style={tiger2}>Easy Investment & Guides</li>
+                <li  style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1083,7 +1124,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button  style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1095,18 +1136,18 @@ const Home = () => {
           men === 4 && (
             <>
             <div className="big-fintech">
-            <span>Fitness</span>
+            <span style={filterCss}>Fitness</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1116,7 +1157,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1128,18 +1169,18 @@ const Home = () => {
           men === 5 && (
             <>
             <div className="big-fintech">
-            <span>Food Delivery</span>
+            <span style={filterCss}>Food Delivery</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1149,7 +1190,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1161,18 +1202,18 @@ const Home = () => {
           men === 6 && (
             <>
             <div className="big-fintech">
-            <span>Real Estate</span>
+            <span style={filterCss}>Real Estate</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1182,7 +1223,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1194,18 +1235,18 @@ const Home = () => {
           men === 7 && (
             <>
             <div className="big-fintech">
-            <span>Travel</span>
+            <span style={filterCss}>Travel</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1215,7 +1256,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1227,18 +1268,18 @@ const Home = () => {
           men === 8 && (
             <>
             <div className="big-fintech">
-            <span>Sports</span>
+            <span style={filterCss}>Sports</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1248,7 +1289,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1260,18 +1301,18 @@ const Home = () => {
           men === 9 && (
             <>
             <div className="big-fintech">
-            <span>Social Networking</span>
+            <span style={filterCss}>Social Networking</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1281,7 +1322,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1294,18 +1335,18 @@ const Home = () => {
             <>
           
             <div className="big-fintech">
-            <span>Business</span>
+            <span style={filterCss}>Business</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1315,7 +1356,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1328,18 +1369,18 @@ const Home = () => {
           men === 11 && (
             <>
             <div className="big-fintech">
-            <span>Education</span>
+            <span style={filterCss}>Education</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1349,7 +1390,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1362,18 +1403,18 @@ const Home = () => {
           men === 12 && (
             <>
             <div className="big-fintech">
-            <span>Entertainment</span>
+            <span style={filterCss}>Entertainment</span>
             <div className="big-fintch-para">
-              <p>Make your customers digital banking and investing </p>
-              <p>
+              <p style={tiger2}>Make your customers digital banking and investing </p>
+              <p style={tiger2}>
                 experience smooth without irritation like banking long queue.
               </p>
             </div>
             <div className="disc">
               <ul style={{ listStyle: "none" }}>
-                <li>Easy Money Transfer</li>
-                <li>Easy Investment & Guides</li>
-                <li>Manage Daily Expences And Offers</li>
+                <li style={tiger2}>Easy Money Transfer</li>
+                <li style={tiger2}>Easy Investment & Guides</li>
+                <li style={tiger2}>Manage Daily Expences And Offers</li>
               </ul>
             </div>
 
@@ -1383,7 +1424,7 @@ const Home = () => {
           </div>
 
           <div className="fin-portfolio">
-            <button className="fin-btn">View Portfolio</button>
+            <button style={tiger2} className="fin-btn">View Portfolio</button>
             <div className="fin-image">
               <img src={mobile} alt="hter" />
             </div>
@@ -1396,23 +1437,23 @@ const Home = () => {
       </div>
 
       {/* ============business model================ */}
-      <div className="business">
-        <h2>BUSINESS MODELS</h2>
+      <div style={businesswise} className="business">
+        <h2 style={tiger2}>BUSINESS MODELS</h2>
         <div className="three-business">
-          <p id="barier" onClick={time} className="first-b">Time & Material</p>
-          <p id="camp" onClick={hired} className="second-p">Hire Team</p>
-          <p id="tamp" onClick={fix} className="third-p">Fix Scope Model</p>
+          <p style={tiger2} id="barier" onClick={time} className="first-b">Time & Material</p>
+          <p style={tiger2} id="camp" onClick={hired} className="second-p">Hire Team</p>
+          <p style={tiger2} id="tamp" onClick={fix} className="third-p">Fix Scope Model</p>
         </div>
          {
           link === 1 && (
              <>
              <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="logo" />
+            <img style={filterCss} src={log} alt="logo" />
           </div>
           <div className="head-pa">
-            <h2 >Time & Material</h2>
-            <p>
+            <h2 style={tiger2}>Time & Material</h2>
+            <p style={tiger2}>
               We welcome the obscure vision through Time and Material Model that
               supports the Agile Development Process. This is a model where the
               client only pays for the time and resources spent on the project.
@@ -1428,11 +1469,11 @@ const Home = () => {
             <>
             <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="logo" />
+            <img style={filterCss} src={log} alt="logo" />
           </div>
           <div className="head-pa">
-            <h2 >Hire Team</h2>
-            <p>
+            <h2 style={tiger2}>Hire Team</h2>
+            <p style={tiger2}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dolore nobis deleniti nostrum? Iste maxime at omnis molestias nulla cum eius temporibus rerum. Maxime omnis delectus voluptatem repudiandae, itaque consequuntur.
             </p>
           </div>
@@ -1447,11 +1488,11 @@ const Home = () => {
             <>
             <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="logo" />
+            <img style={filterCss} src={log} alt="logo" />
           </div>
           <div className="head-pa">
-            <h2>Fix Scope Model</h2>
-            <p>
+            <h2 style={tiger2}>Fix Scope Model</h2>
+            <p  style={tiger2}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ad, impedit fugit similique dolor aperiam obcaecati, deserunt veniam quam eum exercitationem at nihil dolorum? Reiciendis neque quisquam eius in repellat 
             </p>
           </div>
@@ -1480,11 +1521,11 @@ const Home = () => {
 
       {/* ============reviews=============== */}
 
-      <div className="reviews">
+      <div style={reviewCss} className="reviews">
         <span>Our Reviews</span>
-        <h2>Why do people praise about Technogenius?</h2>
+        <h2 style={tiger2}>Why do people praise about Technogenius?</h2>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-           <SwiperSlide className="big-div">
+           <SwiperSlide style={bigDiv} className="big-div">
             <div className="swift-js">
               <div className="swifter-js">
                 <img src={man2} />
@@ -1502,7 +1543,7 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="big-div">
+          <SwiperSlide style={bigDiv} className="big-div">
             <div className="swift-js">
               <div className="swifter-js">
                
@@ -1522,7 +1563,7 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="big-div">
+          <SwiperSlide style={bigDiv} className="big-div">
             <div className="swift-js">
               <div className="swifter-js">
                 <img src={man2} />

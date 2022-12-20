@@ -9,7 +9,7 @@ import github from '../components/images/github.png';
 import NoPath from '../components/images/NoPath.png';
 import dashboard from '../components/images/dashboard.png';
 import log from '../components/images/log.png';
-const Success = () => {
+const Success = ({mode}) => {
     const [index,setIndex] = useState(1);
   const css = {
     opacity:"1"
@@ -60,21 +60,37 @@ const Success = () => {
      document.getElementById("camp").style[prop] = secondCss[prop];
    }
   }
+
+  const aboutsCon = {
+     backgroundColor: mode === "dark" ? "#0A0F16" : "#ffffff"
+  }
+
+  const aboutsCon1 = {
+    color: mode === "dark" ? "#ffffff" : "#000000"
+  }
+
+  const projectContainer = {
+    backgroundColor: mode === "dark" ? "#020e19" : "#ffffff"
+  }
+
+  const drrible = {
+    filter:mode === "dark" ? "invert(0)" : "invert(1)"
+  }
   return (
     <>
-    <div className="about-container">
-      <div className="partner">
+    <div style={aboutsCon} className="about-container">
+      <div style={aboutsCon} className="partner">
         <div className="first_partner">
           <img src="./images/23.png" alt="noting" />
         </div>
         <div className="second_partner">
           <div className="second_all">
             <span>Who we are</span>
-            <h2>
+            <h2 style={aboutsCon1}>
               Your digital partner to create inspirational design and robust
               solution for Web, Mobile & <br /> Cloud.
             </h2>
-            <p>
+            <p style={aboutsCon1}>
               The top-notch and preeminent Web and Mobile App Development
               Company of India with its global presence in USA, MindInventory
               is first-rate choice of the clients worldwide. With sheer
@@ -84,7 +100,7 @@ const Success = () => {
             </p>
 
             <NavLink to="/about">
-              <button className="who_btn">About us</button>
+              <button style={aboutsCon1} className="who_btn">About us</button>
             </NavLink>
           </div>
         </div>
@@ -92,16 +108,16 @@ const Success = () => {
       <div class="how-we-r how-we-r1">
         <span>Success Story</span>
         <div class="bahut">
-          <h2>We are a hub of talented, skilled, and </h2>
-          <h2>experienced mobile app &amp; web </h2>
-          <h2>developers.</h2>
+          <h2 style={aboutsCon1}>We are a hub of talented, skilled, and </h2>
+          <h2 style={aboutsCon1}>experienced mobile app &amp; web </h2>
+          <h2 style={aboutsCon1}>developers.</h2>
         </div>
         <div class="direct-hire">
           <div class="headd">
-            <p>Hire Dedicated Development Team</p>
+            <p style={aboutsCon1}>Hire Dedicated Development Team</p>
           </div>
           <div class="how-para">
-            <p>
+            <p style={aboutsCon1}>
               Kusheldigi has a team of highly-experienced developers who can
               work on your unique project idea and come up with the
               best-in-class solution. Hiring our dedicated development team is
@@ -110,7 +126,7 @@ const Success = () => {
             </p>
           </div>
           <div class="how-para">
-            <p>
+            <p style={aboutsCon1}>
               Our dedicated developers have expertise and experience to
               provide end-to-end web and{" "}
               <span className="m-app">mobile app development solutions</span> for startups to
@@ -124,12 +140,12 @@ const Success = () => {
       </div>
 
     </div>
-    <div className="project-container3">
-    <div className="project project1">
+    <div style={aboutsCon} className="project-container3">
+    <div style={projectContainer} className="project project1">
       <span>Success stories</span>
       <div className="project-heading">
-        <h2>We design project designed with passion on time,</h2>
-        <h2>within budget of full value</h2>
+        <h2 style={aboutsCon1}>We design project designed with passion on time,</h2>
+        <h2 style={aboutsCon1}>within budget of full value</h2>
       </div>
 
       <div className="project-images">
@@ -138,7 +154,7 @@ const Success = () => {
       </div>
       <NavLink to="#!">
         {" "}
-        <button className="project-btn">View Portfolio</button>
+        <button style={aboutsCon1} className="project-btn">View Portfolio</button>
       </NavLink>
     </div>
     <div className="techas">
@@ -157,11 +173,11 @@ const Success = () => {
     </div>
     <div className="drible drible3">
           <div className="drible-first">
-              <p className="workl">OUR Work</p>
+              <p style={aboutsCon1} className="workl">OUR Work</p>
               <div className="drible-first-img">
-                  <img src={drible} alt="" />
-                  <img src={behnce} alt="" />
-                  <img src={github} alt="" />
+                  <img style={drrible} src={drible} alt="" />
+                  <img style={drrible} src={behnce} alt="" />
+                  <img style={drrible} src={github} alt="" />
               </div>
 
               <div className="frible">
@@ -171,23 +187,23 @@ const Success = () => {
           <div className="drible-second">
               <div className="deli">
                   <div className="project-deliver">
-                       <h2>2500+</h2>
-                       <p>Project Deliverd</p>
+                       <h2 style={aboutsCon1}>2500+</h2>
+                       <p style={aboutsCon1}>Project Deliverd</p>
                   </div>
                   <div className="happy-clients">
-                       <h2>700+</h2>
-                       <p>Happy Clients</p>
+                       <h2 style={aboutsCon1}>700+</h2>
+                       <p style={aboutsCon1}>Happy Clients</p>
                   </div>
               </div>
               <div className="frible">
                 <img className="imma" src={dashboard} alt="das" />
               </div>
                <div className="multi">
-                <p>Multi-Vendor Ordering Platform <br /> Based on  ML</p>
+                <p style={aboutsCon1}>Multi-Vendor Ordering Platform <br /> Based on  ML</p>
                </div>
                <div className="multi1">
-                      <p>UI/UX Design, Web Development</p>
-                      <button>View Portfolio</button>
+                      <p style={aboutsCon1}>UI/UX Design, Web Development</p>
+                      <button style={aboutsCon1}>View Portfolio</button>
                 </div>
           </div>
     </div>
@@ -197,20 +213,20 @@ const Success = () => {
       <h2>BUSINESS MODELS</h2>
       </div>
       <div className="three-business">
-        <p id="barier" onClick={time}  className="first-b first-m">Time & Material</p>
-        <p id="camp" onClick={hired}  className="second-p">Hire Team</p>
-        <p id="tamp" onClick={fix}  className="third-p">Fix Scope Model</p>
+        <p style={aboutsCon1} id="barier" onClick={time}  className="first-b first-m">Time & Material</p>
+        <p style={aboutsCon1} id="camp" onClick={hired}  className="second-p">Hire Team</p>
+        <p style={aboutsCon1} id="tamp" onClick={fix}  className="third-p">Fix Scope Model</p>
       </div>
       {
         index === 1 && (
           <>
           <div className="pic-para">
         <div className="pic-imagea">
-          <img src={log} alt="" />
+          <img style={drrible} src={log} alt="" />
         </div>
         <div className="head-pa">
-          <h2>Time & Material</h2>
-          <p>
+          <h2 style={aboutsCon1}>Time & Material</h2>
+          <p style={aboutsCon1}>
             We welcome the obscure vision through Time and Material Model that
             supports the Agile Development Process. This is a model where the
             client only pays for the time and resources spent on the project.
@@ -226,11 +242,11 @@ const Success = () => {
           <>
           <div className="pic-para">
         <div className="pic-imagea">
-          <img src={log} alt="" />
+          <img style={drrible} src={log} alt="" />
         </div>
         <div className="head-pa">
-          <h2>Hire Team</h2>
-          <p>
+          <h2 style={aboutsCon1}>Hire Team</h2>
+          <p style={aboutsCon1}>
             We welcome the obscure vision through Time and Material Model that
             supports the Agile Development Process. This is a model where the
             client only pays for the time and resources spent on the project.
@@ -246,11 +262,11 @@ const Success = () => {
           <>
           <div className="pic-para">
         <div className="pic-imagea">
-          <img src={log} alt="" />
+          <img style={drrible} src={log} alt="" />
         </div>
         <div className="head-pa">
-          <h2>Fix Scope Model</h2>
-          <p>
+          <h2 style={aboutsCon1}>Fix Scope Model</h2>
+          <p style={aboutsCon1}>
             We welcome the obscure vision through Time and Material Model that
             supports the Agile Development Process. This is a model where the
             client only pays for the time and resources spent on the project.

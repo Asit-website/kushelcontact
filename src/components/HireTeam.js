@@ -31,7 +31,7 @@ import github from '../components/images/github.png';
 import NoPath from '../components/images/NoPath.png';
 import dashboard from '../components/images/dashboard.png';
 import log from "../components/images/log.png";
-const HireTeam = () => {
+const HireTeam = ({mode}) => {
   const [index,setIndex] = useState(1);
   const css = {
     opacity:"1"
@@ -82,11 +82,23 @@ const HireTeam = () => {
      document.getElementById("camp").style[prop] = secondCss[prop];
    }
   }
+
+  const hireTema ={
+    backgroundColor: mode === "dark" ? "#0A0F16" : "#ffffff"
+  }
+
+  const hireTema1 = {
+    filter: mode === "dark" ? "invert(0)" : "invert(1)"
+  }
+
+  const hireTema2 = {
+    color: mode === "dark" ? "#ffffff" : "#000000"
+  }
   return (
-    <div className="hire-team">
+    <div style={hireTema} className="hire-team">
       <div className="hire-developers">
-        <h1>Hire</h1>
-        <img className="hire-img" src={dev4} alt="" />
+        <h1 style={hireTema2}>Hire</h1>
+        <img style={hireTema1} className="hire-img" src={dev4} alt="" />
       </div>
       <div className="ui-ux">
         <div className="ui-ux-first">
@@ -94,7 +106,7 @@ const HireTeam = () => {
             <h2>
               Hire Ul/UX <br /> Designers
             </h2>
-            <img src={tiers} alt="" />
+            <img  src={tiers} alt="" />
           </div>
           <div className="group-ui">
             <img src={horizontalui} alt="" />
@@ -329,16 +341,16 @@ const HireTeam = () => {
       <div className="how-we-r">
         <span>What We Do</span>
         <div className="bahut">
-          <h2>We are a hub of talented, skilled, and </h2>
-          <h2>experienced mobile app & web </h2>
-          <h2>developers.</h2>
+          <h2 style={hireTema2}>We are a hub of talented, skilled, and </h2>
+          <h2 style={hireTema2}>experienced mobile app & web </h2>
+          <h2 style={hireTema2}>developers.</h2>
         </div>
         <div className="direct-hire">
           <div className="headd">
-            <p>Hire Dedicated Development Team</p>
+            <p style={hireTema2}>Hire Dedicated Development Team</p>
           </div>
           <div className="how-para">
-            <p>
+            <p style={hireTema2}>
               Kusheldigi has a team of highly-experienced developers who can
               work on your unique project idea and come up with the
               best-in-class solution. Hiring our dedicated development team is
@@ -347,7 +359,7 @@ const HireTeam = () => {
             </p>
           </div>
           <div className="how-para">
-            <p>
+            <p style={hireTema2}>
               Our dedicated developers have expertise and experience to provide
               end-to-end web and <span>mobile app development solutions</span>{" "}
               for startups to enterprises across the globe. Augment your team by
@@ -376,9 +388,9 @@ const HireTeam = () => {
             <div className="drible-first">
                 <p className="workl">OUR Work</p>
                 <div className="drible-first-img">
-                    <img src={drible} alt="" />
-                    <img src={behnce} alt="" />
-                    <img src={github} alt="" />
+                    <img style={hireTema1} src={drible} alt="" />
+                    <img style={hireTema1} src={behnce} alt="" />
+                    <img style={hireTema1} src={github} alt="" />
                 </div>
 
                 <div className="frible">
@@ -388,46 +400,46 @@ const HireTeam = () => {
             <div className="drible-second">
                 <div className="deli">
                     <div className="project-deliver">
-                         <h2>2500+</h2>
-                         <p>Project Deliverd</p>
+                         <h2 style={hireTema2}>2500+</h2>
+                         <p style={hireTema2}>Project Deliverd</p>
                     </div>
                     <div className="happy-clients">
-                         <h2>700+</h2>
-                         <p>Happy Clients</p>
+                         <h2 style={hireTema2}>700+</h2>
+                         <p style={hireTema2}>Happy Clients</p>
                     </div>
                 </div>
                 <div className="frible">
                   <img className="imma" src={dashboard} alt="das" />
                 </div>
                  <div className="multi">
-                  <p>Multi-Vendor Ordering Platform <br /> Based on  ML</p>
+                  <p style={hireTema2}>Multi-Vendor Ordering Platform <br /> Based on  ML</p>
                  </div>
                  <div className="multi1">
-                        <p>UI/UX Design, Web Development</p>
-                        <button>View Portfolio</button>
+                        <p style={hireTema2}>UI/UX Design, Web Development</p>
+                        <button style={hireTema2}>View Portfolio</button>
                   </div>
             </div>
       </div>
 
       <div className="busta">
         <div className='bus-mod'>
-        <h2>BUSINESS MODELS</h2>
+        <h2 style={hireTema2}>BUSINESS MODELS</h2>
         </div>
         <div className="three-business">
-          <p id="barier" onClick={time}  className="first-b first-m">Time & Material</p>
-          <p id="camp" onClick={hired}  className="second-p">Hire Team</p>
-          <p id="tamp" onClick={fix}  className="third-p">Fix Scope Model</p>
+          <p style={hireTema1} id="barier" onClick={time}  className="first-b first-m">Time & Material</p>
+          <p style={hireTema1} id="camp" onClick={hired}  className="second-p">Hire Team</p>
+          <p style={hireTema1} id="tamp" onClick={fix}  className="third-p">Fix Scope Model</p>
         </div>
         {
           index === 1 && (
             <>
             <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="" />
+            <img style={hireTema1} src={log} alt="" />
           </div>
           <div className="head-pa">
-            <h2>Time & Material</h2>
-            <p>
+            <h2 style={hireTema2}>Time & Material</h2>
+            <p style={hireTema2}>
               We welcome the obscure vision through Time and Material Model that
               supports the Agile Development Process. This is a model where the
               client only pays for the time and resources spent on the project.
@@ -443,11 +455,11 @@ const HireTeam = () => {
             <>
             <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="" />
+            <img style={hireTema1} src={log} alt="" />
           </div>
           <div className="head-pa">
-            <h2>Hire Team</h2>
-            <p>
+            <h2 style={hireTema2}>Hire Team</h2>
+            <p style={hireTema2}>
               We welcome the obscure vision through Time and Material Model that
               supports the Agile Development Process. This is a model where the
               client only pays for the time and resources spent on the project.
@@ -462,11 +474,11 @@ const HireTeam = () => {
             <>
             <div className="pic-para">
           <div className="pic-imagea">
-            <img src={log} alt="" />
+            <img style={hireTema1} src={log} alt="" />
           </div>
           <div className="head-pa">
-            <h2>Fix Scope Model</h2>
-            <p>
+            <h2 style={hireTema2}>Fix Scope Model</h2>
+            <p style={hireTema2}>
               We welcome the obscure vision through Time and Material Model that
               supports the Agile Development Process. This is a model where the
               client only pays for the time and resources spent on the project.

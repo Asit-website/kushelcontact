@@ -6,7 +6,7 @@ import line2 from "./images/line2.png";
 import map from "./images/map.png";
 import Alert from '@mui/material/Alert';
 
-const Contact = () => {
+const Contact = ({mode}) => {
 const drop = [
   {
     id:1,
@@ -302,9 +302,20 @@ const drop = [
     }
   }
 
+  const contactwala = {
+    background: mode === "dark" ? "#010910" : "#ffffff"
+  }
+  const contactwala1 = {
+     filter: mode === "dark" ? "invert(0)" : "invert(1)"
+  }
+
+  const contactwala2 = {
+    filter: mode === "dark" ? "invert(0)" : "invert(1)"
+  }
+
   return (
     <>
-      <div className="cont">
+      <div style={contactwala1} className="cont">
         <div className="first_heading_contact">
           <h2 style={{ color: "white" }}>
             Let's <span>Talk.</span>
@@ -334,19 +345,19 @@ const drop = [
 
       {/* second section  */}
 
-      <div className="contact_us">
+      <div style={contactwala} className="contact_us">
         <p className="contact_para">What would you like to Contact Us for ?</p>
         <div className="diff_btn">
-          <NavLink id="barier" onClick={tabChange} className="first_link" to="#!">
+          <NavLink style={contactwala1}  id="barier" onClick={tabChange} className="first_link" to="#!">
             NEW PROJECT
           </NavLink>
-          <NavLink id="camp" onClick={tabChange1} className="second_link" to="#!">
+          <NavLink style={contactwala1} id="camp" onClick={tabChange1} className="second_link" to="#!">
             CONSULTING
           </NavLink>
-          <NavLink id="tamp" onClick={tabChange2}  className="third_link" to="#!">
+          <NavLink style={contactwala1} id="tamp" onClick={tabChange2}  className="third_link" to="#!">
             JOINING US
           </NavLink>
-          <NavLink id="samp"  onClick={tabChange3} className="fourth_link" to="#!">
+          <NavLink style={contactwala1} id="samp"  onClick={tabChange3} className="fourth_link" to="#!">
             JUST SAY HI
           </NavLink>
         </div>
@@ -379,7 +390,7 @@ const drop = [
                 <div class="form">
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" 
+                    <input style={contactwala1} type="text" 
                       id="pName" 
                       name="pName" 
                       value={user?.pName}  
@@ -387,7 +398,7 @@ const drop = [
                       placeholder="Full Name*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" 
+                    <input style={contactwala1} type="text" 
                       id="pCompanyName" 
                       name="pCompanyName" 
                       value={user?.pCompanyName}  
@@ -398,7 +409,7 @@ const drop = [
                 </div>
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="text" 
+                    <input style={contactwala1} type="text" 
                       id="pWebsite" 
                       name="pWebsite" 
                       value={user?.pWebsite}  
@@ -406,7 +417,7 @@ const drop = [
                       placeholder="Website*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" 
+                    <input style={contactwala1} type="text" 
                       id="pDesiginition" 
                       name="pDesiginition" 
                       value={user?.pDesiginition}  
@@ -418,7 +429,7 @@ const drop = [
 
                 <div class="top-form">
                   <div class="inner-form">
-                    <input type="email"
+                    <input style={contactwala1} type="email"
                       id="pEmailAddress" 
                       name="pEmailAddress" 
                       value={user?.pEmailAddress }  
@@ -426,7 +437,7 @@ const drop = [
                       placeholder="Email Address*" />
                   </div>
                   <div class="inner-form">
-                    <input type="text" 
+                    <input style={contactwala1} type="text" 
                       id="pLocation" 
                       name="pLocation" 
                       value={user?.pLocation}  
@@ -438,7 +449,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select onChange={handleInputs} name="pEstimatedBudget" id="pEstimatedBudget" value={user?.pEstimatedBudget}>
+                     <select style={contactwala1} onChange={handleInputs} name="pEstimatedBudget" id="pEstimatedBudget" value={user?.pEstimatedBudget}>
                       <option 
                         value=""
                         >Estimated Budget*</option>
@@ -456,7 +467,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <input type="tel"
+                    <input style={contactwala1} type="tel"
                       id="pPhone" 
                       name="pPhone" 
                       value={user?.pPhone}  
@@ -468,7 +479,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                    <textarea className="second_area"
+                    <textarea style={contactwala1} className="second_area"
                       id="pMessage" 
                       name="pMessage" 
                       value={user?.pMessage}  
@@ -489,6 +500,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="cName"
                       name="cName"
                       value={user?.cName}
@@ -497,6 +509,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="cCompanyName"
                       name="cCompanyName"
                       value={user?.cCompanyName}
@@ -508,6 +521,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="cWebsite"
                       name="cWebsite"
                       value={user?.cWebsite}
@@ -516,6 +530,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="cDesiginition"
                       name="cDesiginition"
                       value={user?.cDesiginition}
@@ -528,6 +543,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input type="text" 
+                    style={contactwala1}
                       id="cEmailAddress"
                       name="cEmailAddress"
                       value={user?.cEmailAddress}
@@ -536,6 +552,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="cLocation"
                       name="cLocation"
                       value={user?.cLocation}
@@ -547,7 +564,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="cService" id="oldsel" value={user?.cService}>
+                     <select style={contactwala1} name="cService" id="oldsel" value={user?.cService}>
                         <option value="">Service</option>
                      </select>
                   </div>
@@ -557,6 +574,7 @@ const drop = [
                 <div class="bottom-form">
                   <div class="inner-form">
                   <input 
+                  style={contactwala1}
                     id="cPhone"
                     name="cPhone"
                     value={user?.cPhone}
@@ -569,6 +587,7 @@ const drop = [
                 <div class="bottom-form">
                   <div class="inner-form">
                     <textarea 
+                    style={contactwala1}
                       id="cMessage"
                       name="cMessage"
                       value={user?.cMessage}
@@ -589,6 +608,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="jName"
                       name="jName"
                       value={user?.jName}
@@ -597,6 +617,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="jExperience"
                       name="jExperience"
                       value={user?.jExperience}
@@ -608,6 +629,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="jWebsite"
                       name="jWebsite"
                       value={user?.jWebsite}
@@ -616,6 +638,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="jPhone"
                       name="jPhone"
                       value={user?.jPhone}
@@ -628,6 +651,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="jEmailAddress"
                       name="jEmailAddress"
                       value={user?.jEmailAddress}
@@ -636,6 +660,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="jLocation"
                       name="jLocation"
                       value={user?.jLocation}
@@ -647,7 +672,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="jCurrentState" id="oldsel" value={user?.jCurrentState}>
+                     <select style={contactwala1} name="jCurrentState" id="oldsel" value={user?.jCurrentState}>
                         <option value="">Current State</option>
                      </select>
                   </div>
@@ -656,7 +681,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="jHighestQualification" id="oldsel" value={user?.jHighestQualification}>
+                     <select style={contactwala1} name="jHighestQualification" id="oldsel" value={user?.jHighestQualification}>
                         <option value="">Highest Qualification</option>
                      </select>
                   </div>
@@ -665,7 +690,7 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                     <select name="jPostAppliedFor" id="oldsel" value={user?.jPostAppliedFor}>
+                     <select style={contactwala1} name="jPostAppliedFor" id="oldsel" value={user?.jPostAppliedFor}>
                         <option value="">Post Applied For</option>
                      </select>
                   </div>
@@ -674,7 +699,8 @@ const drop = [
 
                 <div class="bottom-form">
                   <div class="inner-form">
-                  <input 
+                  <input
+                  style={contactwala1} 
                     id="jDomainWorkOn"
                     name="jDomainWorkOn"
                     value={user?.jDomainWorkOn}
@@ -694,6 +720,7 @@ const drop = [
                 <div class="bottom-form">
                   <div class="inner-form">
                     <textarea 
+                    style={contactwala1}
                       id="jMessage"
                       name="jMessage"
                       value={user?.jMessage}
@@ -712,6 +739,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="hName"
                       name="hName"
                       value={user?.hName}
@@ -720,6 +748,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="hCompanyName"
                       name="hCompanyName"
                       value={user?.hCompanyName}
@@ -731,6 +760,7 @@ const drop = [
                 <div class="top-form">
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="hEmailAddress"
                       name="hEmailAddress"
                       value={user?.hEmailAddress}
@@ -739,6 +769,7 @@ const drop = [
                   </div>
                   <div class="inner-form">
                     <input 
+                    style={contactwala1}
                       id="hPhone"
                       name="hPhone"
                       value={user?.hPhone}
@@ -751,6 +782,7 @@ const drop = [
                 <div class="bottom-form">
                   <div class="inner-form">
                     <textarea 
+                    style={contactwala1}
                       id="hMessage"
                       name="hMessage"
                       value={user?.hMessage}
@@ -766,6 +798,7 @@ const drop = [
             }
 
             <button 
+             style={contactwala2}
               type="submit"
               name="contact_btn"
               id="contact_btn"

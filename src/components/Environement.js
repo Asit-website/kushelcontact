@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import '../../src/enviro.css';
 const Environement = () => {
     const [formStep , setFormStep] = useState(1);
 

@@ -21,31 +21,31 @@ import Insights from './components/Insights';
 import Uix from './components/Uix';
 import Environement from './components/Environement';
 const App = () => {
-  //    const [mode, setMode] = useState("dark");
-  // const [value, setValue] = useState("Enable Dark Mode");
+     const [mode, setMode] = useState("dark");
+  const [value, setValue] = useState("Enable Dark Mode");
   
-  // const toggleMode = () => {
-  //   if (mode == "light") {
-  //     setMode("dark");
-  //     document.body.style.backgroundColor = "#222";
-  //   } else {
-  //     setMode("light");
-  //     document.body.style.backgroundColor = "white";
-  //     setValue("Enable Light Mode");
-  //   }
-  // };
+  const toggleMode = () => {
+    if (mode == "light") {
+      setMode("dark");
+      document.body.style.backgroundColor = "#222";
+    } else {
+      setMode("light");
+      document.body.style.backgroundColor = "#ffffff";
+      setValue("Enable Light Mode");
+    }
+  };
   return (
        <Router>
-            <Navbar/>
+            <Navbar toggleMode={toggleMode} mode={mode}/>
             <Routes>
-                <Route exact path='/' element={<Home/>}/>
-                <Route exact path='/about' element={<About/>}/>
-                <Route exact path='/brand' element={<Brands/>}/>
-                <Route exact path='/hiring' element={<HireTeam/>}/>
+                <Route exact path='/' element={<Home mode={mode}/>}/>
+                <Route exact path='/about' element={<About mode={mode}/>}/>
+                <Route exact path='/brand' element={<Brands mode = {mode}/>}/>
+                <Route exact path='/hiring' element={<HireTeam mode={mode}/>}/>
                 <Route exact path='/service' element={<Service/>}/>
                 <Route exact path='/solution' element={<Solution/>}/>
-                <Route exact path='/success' element={<Success/>}/>
-                <Route exact path='/contact' element={<Contact/>}/>
+                <Route exact path='/success' element={<Success mode = {mode}/>}/>
+                <Route exact path='/contact' element={<Contact mode={mode}/>}/>
                 <Route exact path='/insight' element={<Insights/>}/>
                 <Route exact path='/uiux' element={<Uix/>}/>
                 <Route exact path='/privacy' element={<Privacy/>}/>

@@ -14,24 +14,37 @@ import achiv from "../components/images/achiv.png";
 import dri from "../components/images/dri.png";
 import behance from "../components/images/behance.png";
 import clutch from "../components/images/clutch.png";
-const About = () => {
+const About = ({mode}) => {
+  const successs = {
+    backgroundColor: mode === "dark" ? "#0A0F16" : "#ffffff",
+  }
+  const success1 = {
+    color: mode === "dark" ? "#ffffff" : "#000000"
+  }
+  const success2 = {
+    filter: mode === "dark" ? "invert(0)" : "invert(1)"
+  }
+
+  const visionsuc = {
+    backgroundColor: mode === "dark" ? "#0E0E0E" : "#ffffff",
+  }
   return (
     <>
-      <div className="success-ab">
+      <div style={successs} className="success-ab">
         <div className="success-ab-img">
-          <img src={Abo} alt="" />
+          <img style={success2} src={Abo} alt="" />
         </div>
         <div className="who-suc">
           <span>Who we are</span>
           <div className="head-para-suc">
-            <h2>
+            <h2 style={success1}>
               A team of Creative Minds designing best Apps and Website for the
               World.At Mindlnventory, we make sure that alongside growth of the
               company, our employees and client grow by providing a great
               work-life Culture in the Industry.
             </h2>
 
-            <p>
+            <p style={success1}>
               Our team works hand in hand with the client and make sure that the
               product that they are working on not only becomes success but also
               leaves an impression on the user being easy to use and keeping in
@@ -41,69 +54,69 @@ const About = () => {
         </div>
       </div>
 
-      <div className="vision-succ">
+      <div style={visionsuc} className="vision-succ">
         <div className="vision">
-          <img src={vision} alt="" />
-          <h2>Our Vision</h2>
+          <img style={success2} src={vision} alt="" />
+          <h2 style={success1}>Our Vision</h2>
           <div className="vision-para">
-            <p>We paint the bright future for the businesses</p>
-            <p>working on digital landscapes and firmly believe in</p>
-            <p>providing productive long-term business</p>
-            <p>relationships.</p>
+            <p style={success1}>We paint the bright future for the businesses</p>
+            <p style={success1}>working on digital landscapes and firmly believe in</p>
+            <p style={success1}>providing productive long-term business</p>
+            <p style={success1}>relationships.</p>
           </div>
         </div>
         <div className="mission">
-          <img src={mission} alt="" />
-          <h2>Our Mission</h2>
+          <img style={success2} src={mission} alt="" />
+          <h2 style={success1}>Our Mission</h2>
           <div className="mision-para">
-            <p>Handover contemporary and futuristic web and</p>
-            <p>mobile software solutions to the businesses ranging</p>
-            <p>from startups to enterprises with affordability and</p>
-            <p>satisfaction.</p>
+            <p style={success1}>Handover contemporary and futuristic web and</p>
+            <p style={success1}>mobile software solutions to the businesses ranging</p>
+            <p style={success1}>from startups to enterprises with affordability and</p>
+            <p style={success1}>satisfaction.</p>
           </div>
         </div>
       </div>
 
-      <div className="now-2022">
+      <div style={successs}  className="now-2022">
         <div className="years">
           <div className="years1">
-            <p>Now</p>
-            <img src={now} alt="" />
+            <p style={success1}>Now</p>
+            <img style={success2} src={now} alt="" />
             <div className="years-head">
-              <h2>New Office, More Team</h2>
-              <h2>Members with Same</h2>
-              <h2>Approach</h2>
+              <h2 style={success1}>New Office, More Team</h2>
+              <h2 style={success1}>Members with Same</h2>
+              <h2 style={success1}>Approach</h2>
             </div>
             <div className="years-para">
-              <p>After tirelessly working for 11 years we have grown bigger</p>
-              <p>with our clients, the way we work and the way we execute</p>
-              <p>projects for our clients.</p>
-              <p className="aug-ek-para">After tirelessly working for 11 years we have grown bigger with our clients, the way we work and the way we execute projects for our clients.</p>
+              <p style={success1}>After tirelessly working for 11 years we have grown bigger</p>
+              <p style={success1}>with our clients, the way we work and the way we execute</p>
+              <p style={success1}>projects for our clients.</p>
+              <p style={success1} className="aug-ek-para">After tirelessly working for 11 years we have grown bigger with our clients, the way we work and the way we execute projects for our clients.</p>
             </div>
           </div>
           <div className="years2">
-            <img src={success} alt="" />
+            <img style={success2} src={success} alt="" />
             <div className="years-button">
-              <button className="first-yr-bt">2011</button>
+              <button style={success2} className="first-yr-bt">2011</button>
               <button className="second-yr-bt">2022</button>
             </div>
           </div>
         </div>
-        <hr className="mid" />
+        <hr style={success2} className="mid" />
 
         <div className="august">
           <div className="first-aug">
             <h2 className="au">August 2021</h2>
-            <h2 className="ab">Delivering the Best</h2>
+            <h2 style={success1} className="ab">Delivering the Best</h2>
             <div className="aug-para">
-              <p>
+              <p style={success1}>
                 Be it in terms of Rewarding employees, maintaining work life
               </p>
-              <p>
+              <p style={success1}>
                 balance or delivering the best products to our clients we have
               </p>
-              <p>achieved a lot by moving to a bigger better office.</p>
-              <p className="aug-ek-para">  Be it in terms of Rewarding employees, maintaining work life  balance or delivering the best products to our clients we have achieved a lot by moving to a bigger better office.</p>
+              <p style={success1}>achieved a lot by moving to a bigger better office.</p>
+              <p style={success1} className="aug-ek-para">  Be it in terms of Rewarding employees, maintaining work life  balance or delivering the best products to our clients we have achieved a lot by moving to a bigger better office.</p>
             </div>
             <div className="aug-img">
               <img src={group} alt="" />
@@ -112,19 +125,19 @@ const About = () => {
           <div className="second-august">
             <div className="aug-list">
               <img src={aug} alt="" />
-              <p>Grown to 200+ in house Employees</p>
+              <p style={success1}>Grown to 200+ in house Employees</p>
             </div>
             <div className="aug-list">
               <img src={aug} alt="" />
-              <p>Moved to 25,000 Square Feet Office</p>
+              <p style={success1}>Moved to 25,000 Square Feet Office</p>
             </div>
             <div className="aug-list">
               <img src={aug} alt="" />
-              <p>Delivered more than 2500+ Project</p>
+              <p style={success1}>Delivered more than 2500+ Project</p>
             </div>
             <div className="aug-list">
               <img src={aug} alt="" />
-              <p>Served 1600+ Clients till date</p>
+              <p style={success1}>Served 1600+ Clients till date</p>
             </div>
             <div className="aug2-img">
               <img src={group1} alt="" />
@@ -133,19 +146,19 @@ const About = () => {
         </div>
       </div>
 
-      <div className="shubham-gupta">
+      <div style={visionsuc} className="shubham-gupta">
         <div className="first-gupt">
-          <img className="gup-img" src={businessTeam} alt="" />
-          <h2>Brain Behind Kusheldigi</h2>
+          <img style={success2} className="gup-img" src={businessTeam} alt="" />
+          <h2 style={success1}>Brain Behind Kusheldigi</h2>
           <img className="bara-gup" src={NoPath} alt="" />
         </div>
         <div className="second-gupta">
-          <h2>Shubham Gupta</h2>
+          <h2 style={success1}>Shubham Gupta</h2>
           <div className="small-sb-para">
-            <p>Founder & Director of Kusheldigisolutions</p>
+            <p style={success1}>Founder & Director of Kusheldigisolutions</p>
           </div>
           <div className="big-sb-para">
-            <p>
+            <p style={success1}>
               At Mindlnventory, we believe in enjoying each and every moment of
               life. We are enjoying freedom of speech, expressions, emotions,
               thoughts and most importantly sharing fun. Therefore, our life at
@@ -155,27 +168,27 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="achiv">
+      <div style={successs} className="achiv">
         <div className="ments">
           <div className="first-memts">
-            <img className="award-img" src={awards} alt="" />
-            <img className="achiv-img" src={achiv} alt="" />
-            <h2>Awards & Industry Recognition</h2>
+            <img style={success2} className="award-img" src={awards} alt="" />
+            <img  className="achiv-img" src={achiv} alt="" />
+            <h2 style={success1}>Awards & Industry Recognition</h2>
           </div>
           <div className="second-memts">
             <div className="memts-box">
-              <div className="memts-sox">
+              <div style={success2} className="memts-sox">
                 <h3>200+</h3>
                 <p>
                   People Inhouse <br />
                   Team
                 </p>
               </div>
-              <div className="memts-sox">
+              <div style={success2} className="memts-sox">
                 <h3>2500+</h3>
                 <p>Project Delivered</p>
               </div>
-              <div className="memts-sox">
+              <div style={success2} className="memts-sox">
                 <h3>$140M+</h3>
                 <p>
                   Worth of Bonus <br />
