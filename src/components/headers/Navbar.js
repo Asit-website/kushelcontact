@@ -56,7 +56,7 @@ const Navbar = ({toggleMode,mode}) => {
     }
 
     const changeNavColor =()=>{
-        if(window.scrollY >= 90){
+        if(window.scrollY >= 10){
             setNavColor(true)
         }
         else{
@@ -76,12 +76,14 @@ const Navbar = ({toggleMode,mode}) => {
                 <NavLink exact  to="/"   className='logo'>
                     <img style={stylis} src={logo} alt='logo' />
                 </NavLink>
-                <div className='hamburger' onClick={handleClick}>
+                <div className={mode ? `hamburger ${mode === "dark" ? "hamburger-icon-dark" : "hamburger-icon-white"}` : 'hamburger' } onClick={handleClick}>
                     {click ? (<i class="fa-solid fa-xmark"></i>)
                         : (<i class="fa-solid fa-bars"></i>)}
 
                 </div>
-                <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+                <ul className={click ? `nav-menu active ${mode === "dark" ? "background-dark" : "background-white"}` : "nav-menu"}>
+
                     <li  className='nav-item'>
                         <NavLink  exact to="/" style={nav} onClick={closeMenu}>Home</NavLink>
                     </li>
@@ -159,9 +161,9 @@ const Navbar = ({toggleMode,mode}) => {
                     <li  className='nav-item'>
                         <NavLink  to="/contact" style={navContact}   className="btn-primary"  onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </li>
-                    <li className='nav-item'>
+                    <li style={{display:'none'}} className='nav-item'>
                     <div >
-    <input onClick={toggleMode} type="checkbox" class="checkbox" id="checkbox"/>
+    <input  onClick={toggleMode} type="checkbox" class="checkbox" id="checkbox"/>
   <label for="checkbox" class="label">
     <i class='fas fa-sun'></i>
     <i class="fas fa-moon"></i>
@@ -169,7 +171,9 @@ const Navbar = ({toggleMode,mode}) => {
   </label>
 </div>
                     </li>
+                    
                 </ul>
+                
             </nav>
         </div>
     )

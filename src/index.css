@@ -33,7 +33,6 @@ body {
 }
 
 /* =========navbar css================= */
-
 .header {
   position: fixed;
   height: 90px;
@@ -70,6 +69,8 @@ body {
 .factive{
   background-color: white;
 }
+
+
 
 .header .navbar {
   display: flex;
@@ -116,7 +117,7 @@ body {
 }
 
 .hamburger i {
-  color: white;
+  /* color: white; */
   font-size: 25px;
   font-weight: bold;
 }
@@ -140,9 +141,29 @@ a {
 @media screen and (max-width: 999px) {
   .header {
     max-width: 100%;
-    background-color: black;
+    /* background-color: black; */
   }
+  .navbar-item{
+    background-color : white;
+  }
+  .background-dark{
+    background-color : #000!important;
 
+  }
+  .background-white{
+    background-color : #fff!important;
+    
+  }
+  /* .hamburger{
+    color : #000;
+  } */
+ 
+  .hamburger-icon-dark {
+    color : white!important;
+  }
+  .hamburger-icon-white {
+    color : black!important;
+  }
   .header .navbar {
     max-width: 100%;
   }
@@ -7072,7 +7093,7 @@ footer .another-footer-section {
   }
   .discus-project{
     background-color: #0A0F16;
-    padding: 20px 60px;
+    padding: 20px 0px;
   }
   .tech-div3{
     margin-top: -10px;
@@ -7081,7 +7102,96 @@ footer .another-footer-section {
   .pori{
     display: none;
   }
-  
+
+  .designing-tools{
+    background-color: #0B0E13;
+    padding: 50px 0px;
+    margin: 60px 0px;
+  }
+  .designing-tools .ds{
+    color: #0E66F9;
+    text-align: center;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 14.5px;
+    opacity: 0.9;
+    letter-spacing: 6.5px;
+  }
+  .designing-tools h2{
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .tool-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:0px 120px;
+    margin-top: 25px;
+  }
+  .tool-first h3{
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 400;
+    opacity: 0.6;
+    font-size: 17.5px;
+  }
+  .tool-second h3{
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 400;
+    opacity: 0.6;
+    font-size: 17.5px;
+  }
+  .tool-third h3{
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 400;
+    opacity: 0.6;
+    font-size: 17.5px;
+  }
+  .tool-fourth h3{
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 400;
+    opacity: 0.6;
+    font-size: 17.5px;
+  }
+  .colla {
+    margin-top: 25px;
+  }
+  .sketch{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px;
+  }
+  .sketch img{
+    width: 17px;
+  }
+  .sketch p{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    margin-left: 9px;
+  }
+  .tool-imh{
+    padding: 0px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .tool-imh img{
+    width: 60px;
+    height: 60px;
+  }
+  .tool-imh .tsolve{
+    width: 40px ;
+  }
 /* ===========================ui ux inner page css end=================== */
 
 /* =============================ui ux inner page css with media================= */
@@ -7102,7 +7212,10 @@ footer .another-footer-section {
     padding: 80px 20px;
   }
   .discus-project{
-    padding: 20px 20px;
+    padding: 20px 0px;
+  }
+  .discus-project .fsfs{
+    padding: 0 20px;
   }
 }
 
@@ -7185,6 +7298,18 @@ footer .another-footer-section {
   .image-section{
     margin-top: 30px;
   }
+  .tool-imh{
+    padding: 0 20px;
+  }
+  .tool-flex{
+    padding: 0 20px;
+  }
+  .designing-tools h2{
+    padding: 0 20px !important;
+  }
+  .designing-tools .ds{
+    padding: 0 20px !important;
+  }
 }
 
 @media only screen and (max-width:620px){
@@ -7233,6 +7358,13 @@ footer .another-footer-section {
   .ui-ux-list p{
     font-size: 13px;
   }
+  .tool-imh img{
+    width: 30px;
+    height: 30px;
+  }
+  .designing-tools h2{
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width:437px){
@@ -7255,6 +7387,37 @@ footer .another-footer-section {
   }
   .crosover{
     padding: 0px 0px;
+  }
+  .tool-imh img{
+     width: 25px;
+     height: 25px;
+     margin: 15px 0px !important;
+  }
+}
+
+@media only screen and (max-width:971px){
+  .tool-flex{
+    flex-direction: column;
+  }
+  .tool-imh img{
+    margin: 0 5px;
+  }
+  .designing-tools h2{
+    text-align: justify;
+    padding: 0 120px;
+  }
+  .designing-tools .ds{
+    text-align: justify;
+    padding: 0 120px;
+  }
+  .tool-second{
+    margin-top: 15px;
+  }
+  .tool-third{
+    margin-top: 15px;
+  }
+  .tool-fourth{
+    margin-top: 15px;
   }
 }
 /* ======================end====================================== */
@@ -7299,3 +7462,608 @@ footer .another-footer-section {
 .fa-sun {
   color: yellow;
 }
+
+/* ========================mobile app dev css===================== */
+
+.mobile-app-dv{
+  background-color: #0A0F16;
+  padding: 60px 0px;
+}
+.native{
+  padding: 0 120px;
+}
+.native img{
+  max-width: 900px;
+  margin-top: 80px;
+  width: 100%;
+}
+.native .dev-ser{
+  color: #ffffff;
+  margin-top: 20px;
+ font-size: 50px;
+ font-family: "Poppins", sans-serif;
+ font-weight: bold;
+}
+.what-we-mobile{
+  margin-top: 80px;
+}
+.what-we-mobile .sp{
+   color: #0E66F9;
+   font-size: 14px;
+   letter-spacing: 5.5px;
+   font-family: "Raleway";
+   font-weight: 600;
+   opacity: 0.92;
+}
+.header-devp{
+  margin-top: 12px;
+}
+.header-devp h2{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+}
+.header-devp h3{
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
+  font-size: 17px;
+}
+.para-devp{
+  margin-top: 20px;
+}
+.para-devp p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16.5px;
+  opacity: 0.5;
+  line-height: 28px;
+}
+.para-devp1{
+  margin-top: 15px;
+}
+.para-devp1 p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16.5px;
+  opacity: 0.5;
+  line-height: 28px; 
+}
+.exsdhhd{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.first-exsd h2{
+  color: #0E66F9;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+.first-exsd p{
+  color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 17.5px;
+    word-spacing: 1.5px;
+    margin-top: 6px;
+}
+.second-exsd h2{
+  color: #0E66F9;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+.second-exsd p{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17.5px;
+  word-spacing: 1.5px;
+  margin-top: 6px;
+}
+.third-exsd h2{
+  color: #0E66F9;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+.third-exsd p{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17.5px;
+  word-spacing: 1.5px;
+  margin-top: 6px;
+}
+.exsds{
+  margin-top: 80px;
+}
+.exsds .exsf-d{
+  color: #0E66F9;
+  font-size: 14px;
+  font-family: "Raleway";
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0.95;
+}
+.exsds-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.first-exsds h3{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.first-exsds{
+  margin-right: 150px;
+}
+.second-exsds{
+  margin-left: 150px;
+}
+.first-exsds p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16.5px;
+  opacity: 0.5;
+  line-height: 29px; 
+}
+.second-exsds h3{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.second-exsds p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16.5px;
+  opacity: 0.5;
+  line-height: 29px; 
+}
+.exsds-para{
+  margin-top: 10px;
+}
+.exsds-images{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.exsds-images img{
+  width: 55px;
+  height: 55px;
+  margin: 20px 0px;
+  /* object-fit: ; */
+}
+.exsds-images h5{
+  /* margin-top: 15px; */
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  opacity: 0.5;
+  font-size: 12px;
+}
+.end-to-end{
+  margin-top: 80px;
+}
+.end-to-end h2{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+}
+.end-para{
+  margin-top: 20px;
+}
+.end-para1{
+  margin-top: 15px;
+}
+.end-to-end P{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 29px;
+  font-size: 16.5px; 
+}
+ .frog{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 12px 0px;
+}
+.fh{
+  margin-top: 25px;
+}
+.frog p{
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 1;
+  margin-left: 10px;
+}
+.frog img{
+  width: 17px;
+ margin-top: 0px !important;
+}
+#tech-div7{
+  margin-top: 80px;
+}
+.industry2{
+  background-color: #0E0E0E;
+}
+.key-benifits{
+  background-color: #0A0F16;
+  padding: 60px 120px;
+}
+.key-benifits .key{
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.key-benifits img{
+  max-width: 900px;
+  margin-top: 30px;
+  width: 100%;
+}
+.key-benifits .key1{
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.key-en{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.first-key-in h3{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+.key-in-para{
+  margin-top: 10px;
+}
+.key-in-para p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 29px;
+  font-size: 16.5px; 
+}
+.second-key-in{
+  margin-right: 60px;
+  overflow-y: scroll;
+  height: 600px;
+}
+.second-key-in::-webkit-scrollbar{
+  display: none;
+}
+.head-para-key h3{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.head-para-key1{
+  margin-top: 40px;
+}
+.ulus {
+  color: #0E66F9;
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: 500;
+  letter-spacing: 10px;
+  padding: 0 120px;
+  opacity: 0.95;
+}
+.why-app-chose{
+  background-color: #0A0F16;
+  padding:30px 120px;
+}
+.why-app-chose .chos-app{
+  color: #0E66F9;
+  font-size: 15.5px;
+  font-family: "Raleway";
+  font-weight: 500;
+  opacity: 0.95;
+  letter-spacing: 5px;
+}
+.why-app-chose h2{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  margin-top: 10px;
+}
+.app-choss{
+  margin-top: 15px;
+}
+.why-app-chose .chos-app1{
+  font-size: 16px;
+  font-family: "Raleway";
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.45;
+  width: 85%;
+  line-height: 29px;
+}
+.customer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.customer-header-para h3{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+.custom-support{
+  margin-top: 15px;
+}
+.customer-header-para p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 29px;
+  font-size: 16.5px; 
+}
+.customer-header-para1{
+  margin-top: 30px;
+}
+.customer2{
+   position: relative;
+   right: 50px;
+}
+.colla1{
+  margin-top:30px;
+}
+.exsds .natm{
+  display: none;
+}
+.para-devp .ddd,
+.para-devp1 .ddd{
+  display: none;
+}
+.chos2{
+  display: none;
+}
+.fff{
+  display: none;
+}
+/* =========================mobile app dev css media start=================== */
+@media only screen and (max-width:1160px){
+  .fsfs{
+    padding: 0 20px;
+  }
+  .drible{
+    padding: 0 20px;
+  }
+  .native{
+    padding: 0 20px;
+  }
+  .key-benifits{
+    padding: 60px 20px;
+  }
+  .second-key-in{
+    margin-right: 0px;
+  }
+  .why-app-chose{
+    padding: 30px 60px;
+  }
+  .ulus{
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width:1249px){
+  .exsds p{
+    display: none;
+  }
+  .exsds .natm{
+    display: block !important;
+  }
+}
+@media only screen and (max-width:831px){
+  .exsds-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-exsds{
+    margin-right: 0px;
+  }
+  .second-exsds{
+    margin-left: 0px;
+  }
+  .exsds-images{
+    justify-content: center;
+  }
+  .first-exsds{
+    text-align: center;
+  }
+  .second-exsds{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .exsds-images-first{
+    margin: 0 10px;
+  }
+  .exsds-images-second{
+    margin: 0 10px;
+  }
+  .exsds-images-third{
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width:850px){
+  .customer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer2{
+    right: 0px;
+    margin-top: 30px;
+  }
+  .customer-header-para h3{
+    text-align: center;
+  }
+  .customer-header-para p{
+    text-align: center;
+  }
+  .why-app-chose .chos-app{
+    text-align: center;
+  }
+  .why-app-chose .chos-app1{
+    text-align: center;
+    width: 100%;
+    display: none;
+
+  }
+
+  .chos2{
+    display: block !important;
+  }
+  .why-app-chose h2{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:727px){
+  .para-devp p,
+  .para-devp1 p{
+    display: none;
+  }
+  .para-devp .ddd,
+  .para-devp1 .ddd{
+    display: block !important;
+  }
+  .exsdhhd{
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-exsd{
+    text-align: center;
+  }
+  .second-exsd{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-exsd{
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width:830px){
+.key-en{
+  flex-direction: column;
+  align-items: center;
+}
+.first-key-in{
+  text-align: center;
+}
+.second-key-in{
+  text-align: center;
+  margin-top: 40px;
+}
+.key-benifits .key{
+  text-align: center;
+}
+.key-benifits img{
+  display: block;
+  margin: 30px auto;
+}
+.key-benifits .key1{
+  text-align: center;
+}
+}
+
+@media only screen and (max-width:620px){
+  .native .dev-ser{
+    font-size: 25px;
+  }
+  .header-devp h2{
+    font-size: 20px;
+  }
+  .para-devp p,
+  .para-devp1 p{
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .first-exsd h2{
+    font-size: 25px;
+  }
+  .first-exsd p{
+    font-size: 14px;
+  }
+  .second-exsd h2{
+    font-size: 25px;
+  }
+  .second-exsd p{
+    font-size: 14px;
+  }
+  .third-exsd h2{
+    font-size: 25px;
+  }
+  .third-exsd p{
+    font-size: 14px;
+  }
+  .exsds .natm{
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .end-to-end h2{
+    font-size: 20px;
+  }
+  .end-to-end p{
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .key-benifits .key{
+    font-size: 25px;
+  }
+  .key-benifits .key1{
+    font-size: 25px;
+  }
+  .key-in-para p{
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width:395px){
+  .end-para p{
+    display: none;
+  }
+  .fff{
+    display: block !important;
+  }
+  .end-para1 p{
+    display: none;
+  }
+}
+/* ============================mobile app dev css end=========================== */
+/* =========================mobile app dev css end====================== */

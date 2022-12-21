@@ -20,6 +20,7 @@ import Success from './components/Success';
 import Insights from './components/Insights';
 import Uix from './components/Uix';
 import Environement from './components/Environement';
+import MobileApp from './components/MobileApp';
 const App = () => {
      const [mode, setMode] = useState("dark");
   const [value, setValue] = useState("Enable Dark Mode");
@@ -48,6 +49,7 @@ const App = () => {
                 <Route exact path='/contact' element={<Contact mode={mode}/>}/>
                 <Route exact path='/insight' element={<Insights/>}/>
                 <Route exact path='/uiux' element={<Uix/>}/>
+                <Route exact path='/mobileApp' element={<MobileApp/>}/>
                 <Route exact path='/privacy' element={<Privacy/>}/>
                 <Route exact path='/refund' element={<Refund/>}/>
                 <Route exact path='/quality' element={<Quality/>}/>
