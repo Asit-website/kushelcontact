@@ -7853,6 +7853,9 @@ footer .another-footer-section {
 .fff{
   display: none;
 }
+.ccc{
+  display: none;
+}
 /* =========================mobile app dev css media start=================== */
 @media only screen and (max-width:1160px){
   .fsfs{
@@ -7871,7 +7874,7 @@ footer .another-footer-section {
     margin-right: 0px;
   }
   .why-app-chose{
-    padding: 30px 60px;
+    padding: 30px 20px;
   }
   .ulus{
     padding: 0 20px;
@@ -7999,6 +8002,9 @@ footer .another-footer-section {
 .key-benifits .key1{
   text-align: center;
 }
+.exsds-images{
+  margin-top: 10px;
+}
 }
 
 @media only screen and (max-width:620px){
@@ -8052,8 +8058,39 @@ footer .another-footer-section {
     font-size: 13px;
     line-height: 24px;
   }
+  .why-app-chose .chos-app1{
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .customer-header-para p{
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .why-app-chose h2{
+    font-size: 20px;
+  }
+  .customer-header-para h3{
+    font-size: 18px;
+  }
+  .customer-header-para1 h3{
+    font-size: 18px;
+  }
+  .head-para-key h3{
+    font-size: 25px;
+  }
+  .header-devp h3{
+    text-align: center;
+  }
+  .header-devp p{
+    text-align: center;
+  }
+  .header-devp h2{
+    text-align: center;
+  }
+  .what-we-mobile .sp{
+    text-align: center;
+  }
 }
-
 @media only screen and (max-width:395px){
   .end-para p{
     display: none;
@@ -8063,6 +8100,19 @@ footer .another-footer-section {
   }
   .end-para1 p{
     display: none;
+  }
+  .first-key-in h3{
+    display: none;
+  }
+  .ccc{
+    display: block !important;
+  }
+  .key-in-para p{
+    display: none;
+  }
+  .header-devp h2{
+    display: none;
+    margin-top: 15px;
   }
 }
 /* ============================mobile app dev css end=========================== */

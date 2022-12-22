@@ -529,6 +529,8 @@ const MobileApp = () => {
               <h2>Company to Design & Develop Your</h2>
               <h2>Custom Mobile Application.</h2>
               <h3>Trusted Mobile Application Development Company</h3>
+
+              <h2 className="ccc">We are Mobile App Development Company to Design & Develop Your Custom Mobile Application. Trusted Mobile Application Development Company</h2>
             </div>
             <div className="para-devp">
               <p>
@@ -1211,7 +1213,9 @@ const MobileApp = () => {
           <div className="first-key-in">
             <h3>Enhance Your Business Growth</h3>
             <h3>with Our Superior Mobile App</h3>
-            <h3>Development Services</h3>
+            <h3>Development Services </h3>
+
+            <h3 className="ccc">Enhance Your Business Growth with Our Superior Mobile App Development Services </h3>
             <div className="key-in-para">
               <p>Mobile applications are becoming very</p>
               <p>popular among businesses and service</p>
@@ -1220,6 +1224,8 @@ const MobileApp = () => {
               <p>target customers. Here are some major</p>
               <p>reasons why you should have a mobile app</p>
               <p>for your business:</p>
+
+              <p className="ccc">Mobile applications are becoming very popular among businesses and service providers. Mobile apps have been proved to be very effective for communicating with target customers. Here are some major reasons why you should have a mobile app for your business:</p>
             </div>
           </div>
           <div className="second-key-in">
@@ -1230,6 +1236,8 @@ const MobileApp = () => {
                 <p>services on their smartphones rather than using a</p>
                 <p>laptop. The availability of your business app will</p>
                 <p>probably increase the chance to get more sales.</p>
+
+                <p className="ccc">It has been found that people search for products or services on their smartphones rather than using a laptop. The availability of your business app will probably increase the chance to get more sales.</p>
               </div>
             </div>
             <div className="head-para-key head-para-key1">
@@ -1241,6 +1249,8 @@ const MobileApp = () => {
                 <p>concerns and complaints. And, mobile apps help</p>
                 <p>businesses to interact with them and resolve</p>
                 <p>complaints with minimal lag time.</p>
+
+                <p className="ccc">Customers always expect instant responses to their concerns and complaints. And, mobile apps help businesses to interact with them and resolve complaints with minimal lag time.</p>
               </div>
             </div>
 
@@ -1254,6 +1264,8 @@ const MobileApp = () => {
                 <p>concerns and complaints. And, mobile apps help</p>
                 <p>businesses to interact with them and resolve</p>
                 <p>complaints with minimal lag time.</p>
+
+                <p className="ccc">Customers always expect instant responses to their concerns and complaints. And, mobile apps help businesses to interact with them and resolve complaints with minimal lag time.</p>
               </div>
             </div>
             <div className="head-para-key head-para-key1">
@@ -1263,6 +1275,8 @@ const MobileApp = () => {
                 <p>concerns and complaints. And, mobile apps help</p>
                 <p>businesses to interact with them and resolve</p>
                 <p>complaints with minimal lag time.</p>
+
+                <p className="ccc">Customers always expect instant responses to their concerns and complaints. And, mobile apps help businesses to interact with them and resolve complaints with minimal lag time.</p>
               </div>
             </div>
             <div className="head-para-key head-para-key1">
@@ -1272,6 +1286,8 @@ const MobileApp = () => {
                 <p>concerns and complaints. And, mobile apps help</p>
                 <p>businesses to interact with them and resolve</p>
                 <p>complaints with minimal lag time.</p>
+
+                <p className="ccc">Customers always expect instant responses to their concerns and complaints. And, mobile apps help businesses to interact with them and resolve complaints with minimal lag time.</p>
               </div>
             </div>
           </div>
@@ -1442,6 +1458,8 @@ const MobileApp = () => {
                     <p>technologies to deliver you user-friendly,</p>
                     <p>scalable, secure, and new business solutions</p>
                     <p>as per your need.</p>
+
+                    {/* <p>We work on the latest frameworks and technologies to deliver you user-friendly, scalable, secure, and new business solutions as per your need.</p> */}
                  </div>
               </div>
               <div className="customer-header-para customer-header-para1">

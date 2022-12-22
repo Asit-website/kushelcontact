@@ -158,7 +158,7 @@ const Home = ({mode}) => {
   color:"#0e66f9"
  }
  const secondCss1 = {
-  color:'#ffffff'
+   color: mode === "dark" ? "#ffffff" : "#000000"
  }
 
  
