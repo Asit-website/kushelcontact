@@ -759,7 +759,7 @@ const menu12 = (e) =>{
 
       {/* ======================industry code=============== */}
 
-      <div className="industry" style={{ backgroundColor: "#0E0E0E" }}>
+      <div className="industry industry2">
         <h2>Our Industry wise</h2>
         <img src={solution} alt="nothing" />
         <div className="industry-system">

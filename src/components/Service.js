@@ -365,7 +365,7 @@ const Service = () => {
                      <h2>Mobile App Design & <br /> Development</h2>
                      </div>
                      <div className="second-button-flex">
-                     <button>Explore all Mobile Services</button>
+                    <NavLink to="/mobileApp"><button>Explore all Mobile Services</button></NavLink> 
                      </div>
                  </div>
                   <div className="line-flex">
