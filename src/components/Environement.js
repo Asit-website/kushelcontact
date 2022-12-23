@@ -75,7 +75,7 @@ const Environement = () => {
           </div>
           <div className='form-section'>
             <div className='down-arrow'>
-                <img src={`${process.env.PUBLIC_URL}/assets/down-arrow.png.webp`} alt=''/>
+                <img src={`${process.env.PUBLIC_URL}/assets/down-arrow.png`} alt=''/>
             </div>
             <div className='enquiry-form-section'>
               <div className='enquiry-form'>

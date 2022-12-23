@@ -28,6 +28,7 @@ const App = () => {
     if (mode == "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#222";
+      
     } else {
       setMode("light");
       document.body.style.backgroundColor = "#ffffff";

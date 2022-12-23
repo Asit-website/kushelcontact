@@ -76,12 +76,14 @@ const Navbar = ({toggleMode,mode}) => {
                 <NavLink exact  to="/"   className='logo'>
                     <img style={stylis} src={logo} alt='logo' />
                 </NavLink>
-                <div className='hamburger' onClick={handleClick}>
+                <div className={mode ? `hamburger ${mode === "dark" ? "hamburger-icon-dark" : "hamburger-icon-white"}` : 'hamburger' } onClick={handleClick}>
                     {click ? (<i class="fa-solid fa-xmark"></i>)
                         : (<i class="fa-solid fa-bars"></i>)}
 
                 </div>
-                <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+                <ul className={click ? `nav-menu active ${mode === "dark" ? "background-dark" : "background-white"}` : "nav-menu"}>
+
                     <li  className='nav-item'>
                         <NavLink  exact to="/" style={nav} onClick={closeMenu}>Home</NavLink>
                     </li>
@@ -169,7 +171,9 @@ const Navbar = ({toggleMode,mode}) => {
   </label>
 </div>
                     </li>
+                    
                 </ul>
+                
             </nav>
         </div>
     )

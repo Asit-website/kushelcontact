@@ -1,6 +1,6 @@
 /* ============================environement page css start================= */
 .banners{
-    background-image : url("../public/assets/Engagement-Models.png.webp");
+    background-image : url("../public/assets/enviornment_model_banner.png");
     background-size: unset !important;
     background-position: top right !important;
     padding-bottom: 40px !important;
@@ -12,6 +12,7 @@
   .pageTitle h1{
     font-weight : bold;
     font-size : 70px;
+    color : white;
   
   }
   
@@ -31,6 +32,7 @@
     margin : 1rem 0;
     font-family: "Raleway";
     font-weight: 400;
+    color : white;
   }
   .page-info{
     display : flex;
@@ -59,7 +61,7 @@
     background: #ecf3d4;
     padding: 12% 12%;
     border-radius: 40px;
-    max-width: 55%;
+    max-width: 80%;
     width: 100%;
     float: right;
     margin-top: 12px;
@@ -74,13 +76,15 @@
   
   .dir-name{
     font-weight : bold;
-    font-size : 16px;
+    font-size : 14px;
+    color : white;
   }
   
   .dir-pos{
     font-size : 14px;
     width : 250px;
     line-height : 1.6;
+    color : white
   }
   
   .form-section{
@@ -117,6 +121,7 @@
     max-width : 500px;
     width : 100%;
     border-radius : 20px;
+    background-color : white;
   }
   
   .form-slider::before{
@@ -351,6 +356,7 @@
   
   .table-section{
     padding : 5% 12%;
+    color : white;
   }
   .table-section-title{
     border-top: #dddddd solid 2px;
@@ -519,6 +525,8 @@
     margin-top: 50px;
     max-width : 80%;
     width: 100%;
+    background-color : black;
+    color : white;
   }
   
   
@@ -601,6 +609,7 @@
     max-width : 100%;
     width : 100%;
     text-align : center;
+    color : white;
   }
   
   .consulting-section h2{

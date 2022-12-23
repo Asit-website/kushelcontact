@@ -71,6 +71,8 @@ body {
   background-color: white;
 }
 
+
+
 .header .navbar {
   display: flex;
   justify-content: space-between;
@@ -116,7 +118,7 @@ body {
 }
 
 .hamburger i {
-  color: white;
+  /* color: white; */
   font-size: 25px;
   font-weight: bold;
 }
@@ -140,9 +142,29 @@ a {
 @media screen and (max-width: 999px) {
   .header {
     max-width: 100%;
-    background-color: black;
+    /* background-color: black; */
   }
+  .navbar-item{
+    background-color : white;
+  }
+  .background-dark{
+    background-color : #000!important;
 
+  }
+  .background-white{
+    background-color : #fff!important;
+    
+  }
+  /* .hamburger{
+    color : #000;
+  } */
+ 
+  .hamburger-icon-dark {
+    color : white!important;
+  }
+  .hamburger-icon-white {
+    color : black!important;
+  }
   .header .navbar {
     max-width: 100%;
   }
