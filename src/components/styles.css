@@ -108,3 +108,21 @@ background-size: cover;
     right: 30%;
   }
 }
+
+@media only screen and (min-width:1400px){
+  .swiper-button-next{
+    margin: 0 170px;
+  }
+  .swiper-button-prev{
+    margin: 0 170px;
+  }
+}
+
+@media only screen and (min-width:1500px){
+  .swiper-button-next{
+    margin: 0 220px;
+  }
+  .swiper-button-prev{
+    margin: 0 220px;
+  }
+}

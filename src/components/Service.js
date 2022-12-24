@@ -26,22 +26,30 @@ import figma from '../components/images/figma.png'
 import sketch from '../components/images/sketch.png';
 import photosop from '../components/images/photosop.png';
 import illus from '../components/images/illus.png';
-import wordpress from '../components/images/wordpress.png';
-import commerce from '../components/images/commerce.png';
-import shopify from '../components/images/shopify.png';
-import magneto from '../components/images/magneto.png';
-import lara from '../components/images/lara.png';
+
 import mag from '../components/images/mag.png';
 import word from '../components/images/word.png';
 import bigcom from '../components/images/bigcom.png';
-import seo from '../components/images/seo.png';
-import ads from '../components/images/ads.png';
-import meta from '../components/images/meta.png';
+
 import ins from '../components/images/ins.png';
 import ios from '../components/images/ios.png';
 import android from '../components/images/android.png';
 import hybrid from '../components/images/hybrid.png';
 import { NavLink } from 'react-router-dom';
+import aws2  from '../components/images/aws2.png';
+import kubbaba from '../components/images/kubbaba.png';
+import google from '../components/images/google.png';
+import azuresir from '../components/images/azuresir.png';
+import digi from '../components/images/digi.png';
+import wordpress2 from '../components/images/wordpress2.png';
+import es from '../components/images/es.png';
+import thela from '../components/images/thela.png';
+import magi from '../components/images/magi.png';
+import laraji from '../components/images/laraji.png';
+import seopop from '../components/images/seopop.png';
+import pop from '../components/images/pop.png';
+import meta2 from '../components/images/meta2.png';
+import Mask5 from '../components/images/Mask5.png';
 const Service = () => {
    const [tabIndex, setTabIndex] = useState(1);
 
@@ -132,11 +140,13 @@ const Service = () => {
 
 
    const css3 = {
-      opacity:"1"
+      opacity:"1",
+      borderBottom:"2px solid #ffffff"
     }
    
     const secondCss4 = {
-      opacity:"0.6"
+      opacity:"0.6",
+      borderBottom:"none"
     }
     const time = (e) =>{
       e.preventDefault();
@@ -357,6 +367,109 @@ const Service = () => {
            </div>
         </div>
 
+
+        <div className="cloud-container">
+        <div className="cloud-computing">
+            <div className="first-cloud">
+               <div className="cloud-button-flex">
+                    <div className="cloud-first-button-flex">
+                       <h2>Cloud Computing</h2>
+                    </div>
+                    <div className="cloud-second-button-flex">
+                       <button>Explore Cloud Services</button>
+                    </div>
+               </div>
+
+               <div className="hr-cloud">
+                  <img  src={ly} alt="" />
+               </div>
+
+               <div className="flex-kot">
+                   <div className='kot'>
+                   <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud App Development</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p>Cloud Configuration</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p >Cloud Integration</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p>Cloud Security</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p>Cloud Server Solutions</p>
+                </div>
+                <div className="kot-a">
+                   <img  src={put} alt="" />
+                   <p>Cloud Migration</p>
+                </div>
+                   </div>
+
+
+
+                   <div className='kot-images-first'>
+                       <div className="firstIm">
+                          <img className='awsman'  src={aws2} alt="awsa" />
+                          <p className='kota-p'>Amazon AWS</p>
+                       </div>
+                       <div className="secondIm">
+                          <img className='kubman'  src={kubbaba} alt="kus" />
+                          <p className='kota-p'>Kubernetes</p>
+                       </div>
+                       <div className="thirdIm">
+                          <img className='cloudman' src={google} alt="gca" />
+                          <p className='kota-p'>Google Cloud</p>
+                       </div>
+                   </div>
+                   <div className='kot-images-second'>
+                        <div className="fourth">
+                           <img className='azut' src={azuresir} alt="mag" />
+                           <p className='kota-p'>Microsoft Azure</p>
+                        </div>
+                        <div className="fifth">
+                           <img className='digiman' src={digi} alt="" />
+                           <p className='kota-p'>Digital Ocean</p>
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div className="other-services">
+             <div className="iot">
+                 <div className='first-iot'>
+                     <img src={mag} alt="" />
+                 </div>
+                 <div className="second-iot">
+                   <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+             <div className="wearable-app">
+                 <div className="first-wear">
+                   <img src={word} alt="" />
+                 </div>
+                 <div className="second-wear">
+                   <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+             <div className="ibeacon">
+                 <div className="first-i">
+                    <img src={bigcom} alt="" />
+                 </div>
+                 <div className="second-i">
+                 <img src={rightArrow} alt="rightcheck" />
+                 </div>
+             </div>
+        </div>
+        </div>
+
+
         <div className="mobile-app">
            <div className="mobile-app-cl">
               <div className="first-cl">
@@ -439,6 +552,7 @@ const Service = () => {
            
         </div>
 
+       
          
         <div className="cloud-container">
         <div className="cloud-computing">
@@ -484,22 +598,26 @@ const Service = () => {
 
                    <div className='kot-images-first'>
                        <div className="firstIm">
-                          <img  src={wordpress} alt="awsa" />
+                          <img className='wordman'  src={wordpress2} alt="awsa" />
+                          <p className='kota-p'>Wordpress</p>
                        </div>
                        <div className="secondIm">
-                          <img  src={commerce} alt="kus" />
+                          <img className='wordman'  src={es} alt="kus" />
+                          <p className='kota-p'>Big Commerce</p>
                        </div>
                        <div className="thirdIm">
-                          <img src={shopify} alt="gca" />
+                          <img className='wordman' src={thela} alt="gca" />
+                          <p className='kota-p'>Shopify</p>
                        </div>
                    </div>
                    <div className='kot-images-second'>
                         <div className="fourth">
-                           <img className='aza' style={{opacity:0.9}} src={magneto} alt="mag" />
-                           {/* <p>Microsoft Azure</p> */}
+                           <img className='wordman'  src={magi} alt="mag" />
+                           <p className='kota-p'>Magento</p>
                         </div>
                         <div className="fifth">
-                           <img src={lara} alt="" />
+                           <img className='wordman' src={laraji} alt="" />
+                           <p className='kota-p'>Laravel</p>
                         </div>
                    </div>
                </div>
@@ -662,20 +780,23 @@ const Service = () => {
 
                    <div className='kot-images-first'>
                        <div className="firstIm firstIm1">
-                          <img  src={seo} alt="awsa" />
+                          <img className='wordman'  src={seopop} alt="awsa" />
+                          <p className='kota-p'>SEO</p>
                        </div>
                        <div className="secondIm secondIm1">
-                          <img  src={ads} alt="kus" />
+                          <img className='wordman'  src={pop} alt="kus" />
+                          <p className='kota-p'>Google ADS</p>
                        </div>
                       
                    </div>
                    <div className='kot-images-second'>
                         <div className="fourth fourth1">
-                           <img className='aza' style={{opacity:0.9}} src={meta} alt="mag" />
-                           {/* <p>Microsoft Azure</p> */}
+                           <img className='wordman' src={meta2} alt="mag" />
+                           <p className='kota-p'>Meta</p>
                         </div>
                         <div className="fifth fifth1">
-                           <img src={ins} alt="" />
+                           <img className='wordman' src={Mask5} alt="" />
+                           <p className='kota-p'>Instagram</p>
                         </div>
                    </div>
                </div>

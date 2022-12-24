@@ -87,6 +87,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-family: "Roboto Slab", serif;
+  font-weight: 500 !important;
 }
 
 .header .navbar img {
@@ -296,7 +297,7 @@ a {
   background-position: center;
   background-size: cover;
   position: relative;
-  padding: 45px 60px;
+  padding: 60px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -350,8 +351,21 @@ a {
 .banner-images img{
   width: 100%;
   max-width: 400px;
-  top: 49px;
+  top: 63px;
   position: relative;
+}
+
+@media only screen and (min-width:1400px){
+  .banner-images img{
+    max-width: 550px;
+    width: 100%;
+  }
+  .banner-content h2{
+    font-size: 40px;
+  }
+  .banner-content p{
+    font-size: 18px;
+  }
 }
 
 
@@ -396,7 +410,8 @@ a {
 }
 
 .second_partner p {
-  width: 85%;
+  /* width: 85%; */
+  width: 29.4em;
   max-width: 100%;
   font-family: "Raleway";
   font-weight: 400;
@@ -896,8 +911,11 @@ a {
 .industry-system {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 40px;
+}
+.industry-system .small-fintech{
+  margin-right: 40px;
 }
 .industry-system .small-fintech span {
   color: #0e66f9;
@@ -916,7 +934,7 @@ a {
   opacity: 0.95;
 }
 .big-fintech {
-  /* margin-right: 50px; */
+  margin-right: 50px;
   margin-left: 80px;
 }
 .industry-system .big-fintech span {
@@ -1097,7 +1115,8 @@ a {
   background: linear-gradient(to right, #68f510, #116ce6);
   width: 550px;
   max-width: 100%;
-  border-radius: 5px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
   padding: 10px 0px;
 }
 .span-group {
@@ -1129,7 +1148,8 @@ a {
   width: 550px;
   max-width: 100%;
   padding: 10px 0px;
-  border-radius: 5px;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
 }
 
 .ano-group {
@@ -2365,6 +2385,10 @@ footer .another-footer-section {
 
   .two-div .ano-color{
     margin-top: 20px;
+    border-radius: 10px;
+  }
+  .two-div .one-color{
+    border-radius: 10px;
   }
 
   .section-imagea{
@@ -2381,6 +2405,7 @@ footer .another-footer-section {
     margin-left: 0px;
     text-align: center;
     margin-top: 30px;
+    margin-right: 0px;
   }
   .small-fintech{
     text-align: center;
@@ -2390,6 +2415,9 @@ footer .another-footer-section {
   }
   .fin-image img{
     margin-top: 30px;
+  }
+  .industry-system .small-fintech{
+    margin-right: 0px;
   }
 
   .fin-portfolio .fin-btn{
@@ -3094,6 +3122,72 @@ footer .another-footer-section {
 .kot-images-first{
   margin-top: 28px;
 }
+.kot-images-first .kota-p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 15.5px;
+}
+.kot-images-first .firstIm .awsman{
+  width: 60px;
+  max-width: 100%;
+  margin-top: 18px;
+}
+.kot-images-first .secondIm .kubman{
+  width: 45px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+.kot-images-first .thirdIm .cloudman{
+  width: 50px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+.kot-images-second .fourth .azut{
+  width: 55px;
+  max-width: 100%;
+ margin-bottom: 20px;
+ margin-top: 30px;
+}
+.kot-images-second .fifth .digiman{
+  width: 45px;
+  max-width: 100%;
+ margin-bottom: 20px;
+ margin-top: 50px;
+}
+.kot-images-second .kota-p{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 15.5px;
+}
+.kot-images-first .firstIm .wordman{
+  width: 45px;
+  max-width: 100%;
+}
+.kot-images-first .secondIm .wordman{
+  width: 45px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+.kot-images-first .thirdIm .wordman{
+  width: 45px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+.kot-images-second .fourth .wordman{
+  width: 45px;
+  max-width: 100%;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+.kot-images-second .fifth .wordman{
+  width: 45px;
+  max-width: 100%;
+  margin-bottom: 12px;
+  margin-top: 30px;
+}
+
 .kot-images-first .firstIm img{
   width: 65px;
   margin: 15px 0px;
@@ -3247,21 +3341,23 @@ footer .another-footer-section {
 }
 
 .submodel .three-business .first-b{
-  border: none;
+ border-bottom: 2px solid #ffffff;
 }
 
 .submodel .abs-color{
  width: 580px;
  max-width: 100%;
  height: auto;
- border-radius: 15px;
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
 }
 
 .submodel .ans-color{
   width: 580px;
   max-width: 100%;
-  border-radius: 15px;
   height: auto;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .busta{
@@ -3332,6 +3428,64 @@ footer .another-footer-section {
       flex-direction: column;
       margin-left: 0px;
     }
+    .firstIm{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .secondIm{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .thirdIm{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .fourth{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .fifth{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .kot-images-second .fourth .azut{
+     margin-top:10px;
+    }
+    .kot-images-second .fifth .digiman{
+      margin-top:30px;
+     }
+     .kot-images-first  .firstIm .wordman{
+      display: block;
+      margin: 30px auto;
+     }
+     .kot-images-first  .secondIm .wordman{
+      display: block;
+      margin: 30px auto;
+     }
+     .kot-images-first  .thirdIm .wordman{
+      display: block;
+      margin: 30px auto;
+     }
+     .kot-images-second  .fourth .wordman{
+      display: block;
+      margin: 10px auto;
+     }
+     .kot-images-second  .fifth .wordman{
+      display: block;
+      margin: 30px auto;
+     }
+     .flex-kot .kot-a{
+      position: relative;
+      right: -22px;
+     }
+     .kota-p{
+      text-align: center;
+     }
 
     .line-first-flex{
       flex-direction: column;
@@ -3339,7 +3493,7 @@ footer .another-footer-section {
     }
     .kot-images-second{
       position: relative;
-      right: 7px;
+      right: 0px;
     }
     .kot-images-second .fifth img{
        margin-bottom: 0px;
@@ -3706,7 +3860,7 @@ footer .another-footer-section {
     .hire-sard{
       max-width: 400px;
       width: 100% !important;
-      margin: 10px 0px;
+      margin: 10px 0px !important;
     }
   }
 
@@ -3756,7 +3910,7 @@ footer .another-footer-section {
 .solution-offer{
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 130px;
 }
 
@@ -3792,7 +3946,8 @@ footer .another-footer-section {
     font-weight: bolder;
     letter-spacing: 1px;
     font-size: 26px;
-    width: 85%;
+    width: 21em;
+    /* width: 85%; */
     letter-spacing: 1px;
     max-width: 100%;
     margin-top: 12px;
@@ -3808,7 +3963,8 @@ footer .another-footer-section {
   color: #ffffff;
   font-size: 15px;
   line-height: 25px;
-  width: 75%;
+  /* width: 75%; */
+  width: 29em;
   max-width: 100%;
 }
 
@@ -3967,8 +4123,11 @@ footer .another-footer-section {
   margin: 42px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: center;
+}
+.mobility-solution .mobile-sox{
+ margin-right: 18px;
+ margin-left: 18px;
 }
 
 .mobility-solution .mobile-sox{
@@ -4806,6 +4965,7 @@ footer .another-footer-section {
   font-family: "Raleway";
   font-weight: bold;
   font-size: 25px;
+  margin: 0 10px;
 }
 .hire-mobile-app button{
   width: 95px;
@@ -4817,6 +4977,7 @@ footer .another-footer-section {
     font-weight: 600;
     font-family: "Raleway";
     font-size: 8.5px;
+    margin: 0 15px;
 }
 .hire-mobile-app button:hover{
   background-color: #0e66f9;
@@ -4830,7 +4991,7 @@ footer .another-footer-section {
 .hire-card{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 30px;
 }
 .hire-fard{
@@ -4856,8 +5017,10 @@ footer .another-footer-section {
 .hire-sard{
   border: 0.5px solid #8400E2;
   border-radius: 10px;
-  width: 145px;
+  max-width: 500px;
+  width: 100%;
   /* opacity: 0.9; */
+  margin: 0 15px;
   height: 200px;
 }
 
@@ -8088,6 +8251,15 @@ footer .another-footer-section {
     text-align: center;
   }
   .what-we-mobile .sp{
+    text-align: center;
+  }
+  .para-devp1 .ddd{
+    text-align: center;
+  }
+  .para-devp .ddd{
+    text-align: center;
+  }
+  .native .dev-ser{
     text-align: center;
   }
 }
