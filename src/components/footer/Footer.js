@@ -6,6 +6,7 @@ import InvestmentApi from './InvestementApi';
 import ResourcesApi from './ResourcesApi';
 import { NavLink } from 'react-router-dom';
 import AddressAvatarApi from './AddressAvatarApi';
+import logo from '../images/logo.png';
 const Footer = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className="footer">
             <div className='first-footer'>
                <div className="first_logo">
-                  <img src={orange} alt="orange" />
+                  <img src={logo} alt="orange" />
                </div>
                <div className='second_logo'>
                   {
@@ -99,7 +100,7 @@ const Footer = () => {
          <hr  className="foot-line" />
          <div className='another-footer-section'>
             <div className='section-para'>
-              <p>Copyrights © 2021 Naresh Varma Design. All rights reserved.</p>
+              <p>Copyrights © 2021 Kushel Digi Solutions. All rights reserved.</p>
             </div>
             <div>
             <div className="section-another-para">

@@ -210,9 +210,6 @@ const drop = [
 
   var css = {
     background: "#0e66f9",
-    maxWidth: "230px",
-    width: "100%",
-    height: "40px",
     display:"flex",
     alignItems:"center",
     justifyContent:"center",
@@ -221,9 +218,6 @@ const drop = [
 
   var secondCss = {
     background:"transparent",
-    maxWidth: "230px",
-    width: "100%",
-    height: "40px",
     display:"flex",
     alignItems:"center",
     justifyContent:"center",

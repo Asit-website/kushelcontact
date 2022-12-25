@@ -139,10 +139,14 @@ a {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1080px) {
   .header {
     max-width: 100%;
     /* background-color: black; */
+  }
+  .about-mega{
+    margin-left: 0px !important;
+
   }
   .navbar-item{
     background-color : white;
@@ -439,6 +443,15 @@ a {
   background-color: #0e66f9;
   border: none;
   transition: 0.5s;
+}
+
+@media only screen and (min-width:1450px){
+  .second_partner h2{
+    width: 63%;
+  }
+  .first_partner img{
+    height: 450px;
+  }
 }
 
 /* ============partner css end============= */
@@ -1513,14 +1526,13 @@ a {
   margin-top: 35px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
+  justify-content: space-around;
 }
 
 .diff_btn .first_link {
   background-color: #0e66f9;
   /* padding:10px 62px; */
-  max-width: 230px;
+  max-width: 300px;
   width: 100%;
   height: 40px;
   display: flex;
@@ -1529,9 +1541,9 @@ a {
 }
 
 .diff_btn .second_link {
+  max-width: 300px;
   border: 2px solid #ffffff;
   /* padding:10px 62px; */
-  max-width: 230px;
   width: 100%;
   height: 40px;
   display: flex;
@@ -1542,8 +1554,8 @@ a {
 .diff_btn .third_link {
   border: 2px solid #ffffff;
   /* padding:10px 62px; */
-  max-width: 230px;
   width: 100%;
+  max-width: 300px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -1551,9 +1563,9 @@ a {
 }
 
 .diff_btn .fourth_link {
+  max-width: 300px;
   border: 2px solid #ffffff;
   /* padding:10px 62px; */
-  max-width: 230px;
   width: 100%;
   height: 40px;
   display: flex;
@@ -1576,7 +1588,7 @@ a {
 .form_map {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -1655,6 +1667,12 @@ a {
   margin-top: 3px;
   width: 70px;  /* 103px */
   max-width: 100%;
+}
+.torm_map{
+  margin-right: 60px;
+}
+.form_cont{
+  margin-left: 60px;
 }
 
 .torm_map .map {
@@ -2084,7 +2102,12 @@ footer .another-footer-section {
   .cont .first_heading_contact {
     text-align: center;
   }
-
+.torm_map{
+  margin-right: 0px;
+}
+.form_cont{
+  margin-left: 0px;
+}
   .first_heading_contact p{
     width: auto;
   }
@@ -3251,6 +3274,27 @@ footer .another-footer-section {
 .iot .first-iot img{
   width: 100px;
   max-width: 100%;
+}
+.iot .first-iot .tree{
+   color: #FFFFFF;
+   font-family: "Raleway";
+   font-weight: 600;
+   font-size: 15.5px;
+   line-height: 27px;
+}
+.wearable-app .first-wear .tree{
+  color: #FFFFFF;
+   font-family: "Raleway";
+   font-weight: 600;
+   font-size: 15.5px;
+   line-height: 27px;
+}
+.ibeacon .first-i .tree{
+  color: #FFFFFF;
+   font-family: "Raleway";
+   font-weight: 600;
+   font-size: 15.5px;
+   line-height: 27px;
 }
 .iot .second-iot img{
   width: 35px;
@@ -5042,7 +5086,8 @@ footer .another-footer-section {
   margin-top: 65px;
 }
 .hiring-box1{
-  background: linear-gradient(to right, #2D9DE0, #024FB6);
+  background-color: #0F131B;
+  border: 0.2px solid #2d2b2b;
   max-width: 800px;
   width: 100%;
   display: flex;
@@ -5051,6 +5096,10 @@ footer .another-footer-section {
   padding: 38px 30px;
   margin-right: 36px;
   border-radius: 10px;
+}
+.hiring-box1:hover{
+  background: linear-gradient(to right, #2D9DE0, #024FB6);
+  transition: all 0.5s;
 }
 .hiring-box1 h2{
   font-family: "Raleway";
@@ -5072,6 +5121,10 @@ footer .another-footer-section {
   border-radius: 10px;
  border: 0.2px solid #2d2b2b;
  margin-left: 36px;
+}
+.hiring-box2:hover{
+  background: linear-gradient(to right, #2D9DE0, #024FB6);
+  transition: all 0.5s;
 }
 .hiring-box2 h2{
   font-family: "Raleway";
@@ -6376,7 +6429,8 @@ footer .another-footer-section {
    top: 80px;
    border-width: 30px;
    border-top-width: 1px;
-  right: 12%;
+  /* right: 12%; */
+  margin-left: -119px;
  border-radius: 5px;
 }
 .border-mega{
@@ -7755,6 +7809,12 @@ footer .another-footer-section {
   letter-spacing: 2px;
   opacity: 0.95;
 }
+
+@media only screen and (min-width:1400px){
+  .exsds .exsf-d{
+     display: none;
+  }
+}
 .exsds-flex{
   display: flex;
   align-items: center;
@@ -7896,6 +7956,7 @@ footer .another-footer-section {
   justify-content: space-between;
   margin-top: 70px;
 }
+
 .first-key-in h3{
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -7975,6 +8036,13 @@ footer .another-footer-section {
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 40px;
+}
+
+
+@media only screen and (min-width:1450px){
+  .demans-group{
+    padding: 50px 160px;
+  }
 }
 .customer-header-para h3{
   color: #ffffff;
@@ -8089,6 +8157,12 @@ footer .another-footer-section {
     flex-direction: column;
     align-items: center;
   }
+  .customer1{
+    margin-right: 0px;
+  }
+  .customer2{
+    margin-left: 0px;
+  }
   .customer2{
     right: 0px;
     margin-top: 30px;
@@ -8150,10 +8224,12 @@ footer .another-footer-section {
 }
 .first-key-in{
   text-align: center;
+  margin-right: 0px;
 }
 .second-key-in{
   text-align: center;
   margin-top: 40px;
+  margin-left: 0px;
 }
 .key-benifits .key{
   text-align: center;

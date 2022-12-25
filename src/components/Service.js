@@ -444,7 +444,7 @@ const Service = () => {
         <div className="other-services">
              <div className="iot">
                  <div className='first-iot'>
-                     <img src={mag} alt="" />
+                     <p className='tree'>IOT App <br /> Development</p>
                  </div>
                  <div className="second-iot">
                    <img src={rightArrow} alt="rightcheck" />
@@ -452,7 +452,7 @@ const Service = () => {
              </div>
              <div className="wearable-app">
                  <div className="first-wear">
-                   <img src={word} alt="" />
+                    <p className='tree'>Wearable App <br />Development</p>
                  </div>
                  <div className="second-wear">
                    <img src={rightArrow} alt="rightcheck" />
@@ -460,7 +460,7 @@ const Service = () => {
              </div>
              <div className="ibeacon">
                  <div className="first-i">
-                    <img src={bigcom} alt="" />
+                    <p className='tree'>iBeacon App <br /> Development</p>
                  </div>
                  <div className="second-i">
                  <img src={rightArrow} alt="rightcheck" />
@@ -816,14 +816,14 @@ const Service = () => {
               <span>Can’t find a service you are </span>
               <span>looking for?</span>
             </div>
-            <button>Explore All Services</button>
+           <NavLink to="/service"><button>Explore All Services</button></NavLink>
           </div>
           <div className="ano-color ans-color">
             <div className="ano-group">
               <span>Want to hire a resource to </span>
               <span>work with you?</span>
             </div>
-            <button>Hire team</button>
+            <NavLink to="/hiring"><button>Hire team</button></NavLink>
           </div>
         </div>
         <div className="busta">
