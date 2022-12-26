@@ -106,6 +106,7 @@ const Navbar = ({toggleMode,mode}) => {
                     </li>
                     <li  className='nav-item '>
                         <NavLink onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}  to="/about" style={nav} onClick={closeMenu}>About us</NavLink>
+                        <ul>
                         <div  style={stylish} className='about-mega fabout-mega'>
                         <div className='border-mega'></div>
                         <div className="flex-abus">
@@ -152,6 +153,7 @@ const Navbar = ({toggleMode,mode}) => {
                           </div>
                       </div>
                       </div>
+                      </ul>
                     </li>
 
                     <li   className='nav-item'>

@@ -1576,15 +1576,17 @@ const Home = ({mode}) => {
               <span>Can’t find a service you are </span>
               <span>looking for?</span>
             </div>
-            <button>Explore All Services</button>
+           <NavLink to="/service"><button>Explore All Services</button></NavLink>
           </div>
+
           <div className="ano-color">
             <div className="ano-group">
               <span>Want to hire a resource to </span>
               <span>work with you?</span>
             </div>
-            <button>Hire team</button>
+          <NavLink to="/hiring"><button>Hire team</button></NavLink>
           </div>
+
         </div>
       </div>
 
