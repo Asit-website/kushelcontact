@@ -668,8 +668,6 @@ const Home = ({mode}) => {
       document.getElementById("ask").style.borderImage="none";
       document.getElementById("bsk").style.background="none";
       document.getElementById("bsk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
-      document.getElementById("csk").style.background="none";
-      document.getElementById("csk").style.borderImage="linear-gradient(#0B9A44, #0A7E12) 1";
   }
   const setChange1 = (e) =>{
     e.preventDefault();
@@ -678,8 +676,6 @@ const Home = ({mode}) => {
     document.getElementById("bsk").style.borderImage="none";
     document.getElementById("ask").style.borderImage="linear-gradient(#FDCB2C, #F9863F) 1";
     document.getElementById("ask").style.background="none";
-    document.getElementById("csk").style.background="none";
-    document.getElementById("csk").style.borderImage="linear-gradient(#0B9A44, #0A7E12) 1";
   }
 
   const setChange2 = (e) =>{
@@ -687,10 +683,8 @@ const Home = ({mode}) => {
       setGrad(3);
       document.getElementById("csk").style.background="linear-gradient(to bottom, #0B9A44, #0A7E12) border-box";
       document.getElementById("csk").style.borderImage="none";
-      document.getElementById("bsk").style.background="none";
-      document.getElementById("bsk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
-      document.getElementById("ask").style.borderImage="linear-gradient(#FDCB2C, #F9863F) 1";
-      document.getElementById("ask").style.background="none";
+      document.getElementById("dsk").style.background="none";
+      document.getElementById("dsk").style.borderImage="linear-gradient(#BF00FF, #280334) 1";
 
   }
 
@@ -703,20 +697,10 @@ const Home = ({mode}) => {
      document.getElementById("dsk").style.borderImage="none";
      document.getElementById("csk").style.background="none";
      document.getElementById("csk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
-     document.getElementById("esk").style.background="none";
-     document.getElementById("esk").style.borderImage="linear-gradient(#F61361, #6056F1) 1";
   }
   const setChange4 = (e) =>{
     e.preventDefault();
     setGrad(5);
-    document.getElementById("ask").style.background="linear-gradient(to bottom, #F3670E, #F5B307) border-box";
-    document.getElementById("ask").style.borderImage="none";
-    document.getElementById("dsk").style.background="none";
-    document.getElementById("dsk").style.borderImage="linear-gradient( #BF00FF, #280334) 1";
-    document.getElementById("csk").style.background="none";
-    document.getElementById("csk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
-    document.getElementById("esk").style.background="linear-gradient(to right ,#F61361, #6056F1) border-box";
-    document.getElementById("esk").style.borderImage="none";
  }
 
   const savedCss = {
@@ -817,8 +801,7 @@ const Home = ({mode}) => {
                 />
               </div>
             </div>
-          </div>
-          <div className="section-service">
+          
             <div className="third-service">
               <div onClick={setChange1} id="bsk" className="three-section-third">
                 <img style={filterCss} className="third-im" src={apple} alt="" />
@@ -856,9 +839,7 @@ const Home = ({mode}) => {
                 />
               </div>
             </div> */}
-          </div>
-
-          <div className="section-service">
+          
             
             <div className="fourth-service">
               <div onClick={setChange3} id="dsk" className="three-section-fourth">

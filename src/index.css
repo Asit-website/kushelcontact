@@ -565,7 +565,7 @@ a {
 .three-section-second {
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(#0B9A44, #0A7E12) 1;
+  background: linear-gradient(to bottom, #0B9A44, #0A7E12) border-box;
   border-radius: 10px;
   width: 300px;
   max-width: 100%;
@@ -635,7 +635,7 @@ a {
 .three-section-fourth{
   border-width: 2px;
   border-style: solid;
-  background: linear-gradient(to bottom, #BF00FF, #280334) border-box;
+  border-image: linear-gradient( #BF00FF, #280334) 1;
   background-repeat: no-repeat;
   width: 300px;
   max-width: 100%;
@@ -670,8 +670,8 @@ a {
 .three-section-fifth{
   border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(#F61361, #6056F1) 1;
-  /* background: linear-gradient(to right, #F61361, #6056F1) border-box; */
+  /* border-image: linear-gradient(to bottom, #F3670E, #F5B307) border-box; */
+  background: linear-gradient(to right, #F61361, #6056F1) border-box;
   border-radius: 10px;
   width: 300px;
   max-width: 100%;

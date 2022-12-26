@@ -1,4 +1,7 @@
 /* ============================environement page css start================= */
+.env-body{
+  background-color : rgb(10, 15, 22);
+}
 .banners{
     background-image : url("../public/assets/enviornment_model_banner.png");
     background-size: unset !important;

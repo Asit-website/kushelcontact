@@ -54,7 +54,7 @@ const Environement = () => {
     }
   return (
    
-<div className='App'>
+<div className='env-body'>
       <div className="banners">
         <div className="pageTitle">
           <h1>Engagement <span>Models</span></h1>
