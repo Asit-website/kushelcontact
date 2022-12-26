@@ -161,7 +161,7 @@ const Navbar = ({toggleMode,mode}) => {
                     <li  className='nav-item'>
                         <NavLink  to="/contact" style={navContact}   className="btn-primary"  onClick={closeMenu}>Contact us <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </li>
-                    {/* <li  className='nav-item'>
+                    <li  className='nav-item'>
                     <div >
     <input  onClick={toggleMode} type="checkbox" class="checkbox" id="checkbox"/>
   <label for="checkbox" class="label">
@@ -170,7 +170,7 @@ const Navbar = ({toggleMode,mode}) => {
     <div class='ball'/>
   </label>
 </div>
-                    </li> */}
+                    </li>
                     
                 </ul>
                 

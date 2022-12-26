@@ -470,8 +470,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 910px;
-  max-width: 100%;
+  max-width : 999px;
+  width: fit-content;
   padding: 50px 0px;
 }
 
@@ -526,6 +526,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 500;
+  
 }
 
 .services .second-service {
@@ -536,9 +537,8 @@ a {
 .three-section-second {
   border-width: 2px;
   border-style: solid;
-  background: linear-gradient(to bottom, #0B9A44, #0A7E12) border-box;
-  border-radius: 5px;
-  background-repeat: no-repeat;
+  border-image: linear-gradient(#0B9A44, #0A7E12) 1;
+  border-radius: 10px;
   width: 300px;
   max-width: 100%;
   padding: 17px 30px;
@@ -551,7 +551,7 @@ a {
 
 .three-section-second .second-im {
   width: 100%;
-  max-width: 54px;
+  max-width: 50px;
   margin: 0 -15px;
   object-fit: cover;
 }
@@ -605,10 +605,10 @@ a {
 }
 
 .three-section-fourth{
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(#F752B0, #A400FF) 1;
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #BF00FF, #280334) border-box;
+  background-repeat: no-repeat;
   width: 300px;
   max-width: 100%;
   padding: 17px 30px;
@@ -632,6 +632,43 @@ a {
   font-size: 14px;
   font-weight: 500;
 }
+
+
+.services .fifth-service {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.three-section-fifth{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(#F61361, #6056F1) 1;
+  /* background: linear-gradient(to right, #F61361, #6056F1) border-box; */
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  padding: 17px 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.three-section-fifth .fifth-im{
+  width: 100%;
+  max-width: 50px;
+  margin: 0 -15px;
+  object-fit: cover;
+}
+.three-section-fifth p{
+  margin: 0 40px;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 
 .service-content {
   margin-top: 40px;
@@ -2256,6 +2293,21 @@ footer .another-footer-section {
     padding: 0px 0px;
   }
 }
+
+@media only screen and (max-width:1250px) {
+  .development_service {
+    
+    max-width : fit-content;
+    width: 100%;
+  }
+  .section-service{
+    flex-direction: column;
+   }  
+
+   .service-content p{
+    padding: 0px 15px;
+   }
+}
 @media only screen and (max-width:1095px) {
    .banner img{
     display: none;
@@ -2289,13 +2341,7 @@ footer .another-footer-section {
     margin-top: 30px;
    }
 
-   .section-service{
-    flex-direction: column;
-   }  
 
-   .service-content p{
-    padding: 0px 15px;
-   }
    
 }
 

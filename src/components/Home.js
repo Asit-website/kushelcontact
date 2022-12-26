@@ -37,6 +37,11 @@ import nipta1 from '../components/images/nipta1.png';
 import techAnotherApi from "./technologyApi/teachAnotherApi";
 import imageApi from "./imageApi/imageApi";
 import imageAnotherApi from "./imageApi/imageAnotherApi";
+import uiux from "./images/uiux.png"
+import xdimg from "./images/xdimg.png"
+import figma from "./images/figmaimg.png"
+import photoshop from "./images/photosp.png"
+import dmdimg from "./images/pngegg.png"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -663,7 +668,8 @@ const Home = ({mode}) => {
       document.getElementById("ask").style.borderImage="none";
       document.getElementById("bsk").style.background="none";
       document.getElementById("bsk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
-     
+      document.getElementById("csk").style.background="none";
+      document.getElementById("csk").style.borderImage="linear-gradient(#0B9A44, #0A7E12) 1";
   }
   const setChange1 = (e) =>{
     e.preventDefault();
@@ -671,7 +677,9 @@ const Home = ({mode}) => {
     document.getElementById("bsk").style.background="linear-gradient(to bottom, #29B22D, #29B22D,#24D968) border-box";
     document.getElementById("bsk").style.borderImage="none";
     document.getElementById("ask").style.borderImage="linear-gradient(#FDCB2C, #F9863F) 1";
-    document.getElementById("ask").style.background="none"
+    document.getElementById("ask").style.background="none";
+    document.getElementById("csk").style.background="none";
+    document.getElementById("csk").style.borderImage="linear-gradient(#0B9A44, #0A7E12) 1";
   }
 
   const setChange2 = (e) =>{
@@ -679,19 +687,37 @@ const Home = ({mode}) => {
       setGrad(3);
       document.getElementById("csk").style.background="linear-gradient(to bottom, #0B9A44, #0A7E12) border-box";
       document.getElementById("csk").style.borderImage="none";
-      document.getElementById("dsk").style.borderImage="linear-gradient(#F752B0, #A400FF) 1";
-      document.getElementById("dsk").style.background="none"
+      document.getElementById("bsk").style.background="none";
+      document.getElementById("bsk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
+      document.getElementById("ask").style.borderImage="linear-gradient(#FDCB2C, #F9863F) 1";
+      document.getElementById("ask").style.background="none";
+
   }
 
   const setChange3 = (e) =>{
      e.preventDefault();
      setGrad(4);
+     document.getElementById("ask").style.background="linear-gradient(to bottom, #F3670E, #F5B307) border-box";
+     document.getElementById("ask").style.borderImage="none";
      document.getElementById("dsk").style.background="linear-gradient(to bottom, #BF00FF, #280334) border-box";
      document.getElementById("dsk").style.borderImage="none";
      document.getElementById("csk").style.background="none";
      document.getElementById("csk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
-
+     document.getElementById("esk").style.background="none";
+     document.getElementById("esk").style.borderImage="linear-gradient(#F61361, #6056F1) 1";
   }
+  const setChange4 = (e) =>{
+    e.preventDefault();
+    setGrad(5);
+    document.getElementById("ask").style.background="linear-gradient(to bottom, #F3670E, #F5B307) border-box";
+    document.getElementById("ask").style.borderImage="none";
+    document.getElementById("dsk").style.background="none";
+    document.getElementById("dsk").style.borderImage="linear-gradient( #BF00FF, #280334) 1";
+    document.getElementById("csk").style.background="none";
+    document.getElementById("csk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
+    document.getElementById("esk").style.background="linear-gradient(to right ,#F61361, #6056F1) border-box";
+    document.getElementById("esk").style.borderImage="none";
+ }
 
   const savedCss = {
     display: save ? 'flex' : 'none'
@@ -791,7 +817,8 @@ const Home = ({mode}) => {
                 />
               </div>
             </div>
-            
+          </div>
+          <div className="section-service">
             <div className="third-service">
               <div onClick={setChange1} id="bsk" className="three-section-third">
                 <img style={filterCss} className="third-im" src={apple} alt="" />
@@ -803,7 +830,21 @@ const Home = ({mode}) => {
                 />
               </div>
             </div>
-           
+          </div>
+          <div className="section-service"> 
+            <div className="second-service">
+              <div onClick={setChange2} id="csk" className="three-section-second">
+                <img style={filterCss} className="second-im" src={digia} alt="" />
+                <p style={tiger2}>
+                Digital Marketing
+                </p>
+                <img
+                  style={{ width: "20px", margin: "0px -1px", filter: mode === "dark" ? "invert(0)" : "invert(1)"}}
+                  src={arrow}
+                  alt=""
+                />
+              </div>
+            </div>
             {/* <div className="third-service">
               <div className="three-section-third">
                 <img className="third-im" src={apple} alt="" />
@@ -818,19 +859,7 @@ const Home = ({mode}) => {
           </div>
 
           <div className="section-service">
-            <div className="second-service">
-              <div onClick={setChange2} id="csk" className="three-section-second">
-                <img style={filterCss} className="second-im" src={digia} alt="" />
-                <p style={tiger2}>
-                Digital Marketing
-                </p>
-                <img
-                  style={{ width: "20px", margin: "0px -1px", filter: mode === "dark" ? "invert(0)" : "invert(1)"}}
-                  src={arrow}
-                  alt=""
-                />
-              </div>
-            </div>
+            
             <div className="fourth-service">
               <div onClick={setChange3} id="dsk" className="three-section-fourth">
                 <img style={filterCss} className="fourth-im" src={emotions} alt="" />
@@ -842,7 +871,21 @@ const Home = ({mode}) => {
                 />
               </div>
             </div>
-          
+          </div>
+          <div className="section-service">
+            <div className="second-service">
+              <div onClick={setChange4} id="esk" className="three-section-fifth">
+                <img style={filterCss} className="fifth-im" src={uiux} alt="" />
+                <p style={tiger2}>
+                UI & UX Design
+                </p>
+                <img
+                  style={{ width: "20px", margin: "0px -1px", filter: mode === "dark" ? "invert(0)" : "invert(1)"}}
+                  src={arrow}
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </Carousel>
             {
@@ -956,6 +999,32 @@ const Home = ({mode}) => {
                 </>
               )
             }
+
+            {
+              grad === 5 && (
+                <>
+                <div>
+          <div className="service-content">
+            <p style={tiger2}>
+                With a decade-long experience in UI/UX designing, our creative team of designers offers a full range of web and mobile app design services, from prototyping and graphic design to pixel-perfect UI.
+            </p>
+          </div>
+
+          <div className="another-xd">
+            {/* {XdApi.map((val) => {
+              return <img key={val.id} src={val.Name} alt="" />;
+            })} */}
+
+            <img src={photoshop} alt="" />
+            <img src={xdimg} alt="" />
+            <img src={figma} alt="" />
+            <img src={dmdimg} alt="" />
+          </div>
+          </div>
+                </>
+              )
+            }
+
          
         </div>
       </div>
