@@ -1,7 +1,8 @@
 const ArtApi = [
     {
         id:1,
-        Name:'About Us'
+        Name:'About Us',
+        link:"/about"
     }
     ,
     {

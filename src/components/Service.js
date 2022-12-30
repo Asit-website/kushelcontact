@@ -30,8 +30,6 @@ import illus from '../components/images/illus.png';
 import mag from '../components/images/mag.png';
 import word from '../components/images/word.png';
 import bigcom from '../components/images/bigcom.png';
-
-import ins from '../components/images/ins.png';
 import ios from '../components/images/ios.png';
 import android from '../components/images/android.png';
 import hybrid from '../components/images/hybrid.png';
@@ -50,6 +48,11 @@ import seopop from '../components/images/seopop.png';
 import pop from '../components/images/pop.png';
 import meta2 from '../components/images/meta2.png';
 import Mask5 from '../components/images/Mask5.png';
+import vue2 from '../components/images/vue2.png';
+import react3 from '../components/images/react3.png';
+import ang from '../components/images/ang.png';
+import html5 from '../components/images/html5.png';
+import boots from '../components/images/boots.png';
 const Service = () => {
    const [tabIndex, setTabIndex] = useState(1);
 
@@ -225,21 +228,25 @@ const Service = () => {
                            <>
                            <div className="resarch-flex">
                       <div className="first-res">
-                        <img className='ant-sta' src={reactJs} alt="jsa" />
-                       
+                        <img className='hg'  src={react3} alt="jsa" />
+                       <p>React</p>
                       </div>
                       <div className="first-res">
-                        <img className='ant-sta ant-status' src={nodejs} alt="web" />
+                        <img className='hg'  src={vue2} alt="web" />
+                        <p>Vue</p>
                       
                       </div>
                       <div className="first-res">
-                        <img className='ant-st'  src={angular} alt="goa" />
+                        <img className='hg'  src={ang} alt="goa" />
+                        <p>Angular</p>
                       </div>
                       <div className="first-res">
-                        <img className='ant-st'  src={html} alt="prota" />
+                        <img className='hg'  src={html5} alt="prota" />
+                        <p>HTML  <span>5</span> </p>
                       </div>
                       <div className="first-res">
-                        <img className='ant-st'  src={sql} alt="prota" />
+                        <img className='hg'  src={boots} alt="prota" />
+                        <p>Bootstrap</p>
                       </div>
                   </div>
                            </>
@@ -804,10 +811,6 @@ const Service = () => {
         </div>
     
         </div>
-
-
-      
-       
 
      <div className="submodel">
      <div className="two-div">

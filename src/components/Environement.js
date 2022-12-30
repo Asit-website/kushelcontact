@@ -297,7 +297,8 @@ const Environement = () => {
             <div className='factors-table-section'>
               <div class="factors-title">
                 <h2>
-                  <img src={`${process.env.PUBLIC_URL}/assets/arrow.svg`} alt=''/>
+                  {/* <img src={`${process.env.PUBLIC_URL}/assets/arrow.svg`} alt=''/> */}
+                  <i  className="fa-solid fa-angles-down settlr"></i>
                   FACTORS
                 </h2>
                 <p className='suited'>Suited For :</p>

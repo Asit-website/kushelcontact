@@ -122,7 +122,7 @@ const Navbar = ({toggleMode,mode}) => {
                         </div>
                         <div className='mega-cir'>
                            <img src={mega} alt="" /> 
-                           <li><a className='tryies' href="#!">Contact Us</a></li>
+                           <li><NavLink to="/contact" className='tryies' href="#!">Contact Us</NavLink></li>
                         </div>
                       </ul>
                       {/* <hr className='hr-mega' /> */}

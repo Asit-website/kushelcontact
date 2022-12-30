@@ -1,5 +1,4 @@
 import React from 'react'
-import orange from '../images/orange.png';
 import socialLinksApi from './socialLinksApi';
 import ArtApi from './ArtApi';
 import InvestmentApi from './InvestementApi';
@@ -21,7 +20,7 @@ const Footer = () => {
                     socialLinksApi.map((val)=>{
 
                         return(
-                          <img key={val.id} src={val.image} alt="google" />
+                         <a rel="noreferrer" target="_blank" href={val.link}><img key={val.id} src={val.image} alt="google" /></a>
                         )
                     })
                   }
@@ -34,9 +33,7 @@ const Footer = () => {
                {
                 ArtApi.map(val=>{
                   return (
-                   
-                    <p>{val.Name}</p>
-                    
+                     <p>{val.Name}</p> 
                   )
                 })
                }
@@ -73,10 +70,6 @@ const Footer = () => {
             <div className="fifth-footer">
               <span className='fifth-footer-span'>Contact Us</span>
               <div className='fifth-footer-para'>
-                 {/* <p><span><img style={{width:'8px'}} src={location} alt="" /></span>10 Dhan Mohol, New york, NY, 25365 USA</p>
-                 <p><span><img src={phone} alt="" /></span>Support: +1 (516) 231 1313</p>
-                 <p><span><img src={gmail} alt="" /></span>Email: info@yourmail.com</p> */}
-
                  {
                   AddressAvatarApi.map(val=>{
                     return(

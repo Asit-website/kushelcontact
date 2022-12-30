@@ -527,8 +527,8 @@ a {
 }
 
 .three-section-first {
-  border-width: 2px;
-  border-style: solid;
+  /* border-width: 2px;
+  border-style: solid; */
   background: linear-gradient(to bottom, #F3670E, #F5B307) border-box;
   background-repeat: no-repeat;
   width: 300px;
@@ -563,8 +563,8 @@ a {
 }
 
 .three-section-second {
-  border-width: 2px;
-  border-style: solid;
+  /* border-width: 2px;
+  border-style: solid; */
   background: linear-gradient(to bottom, #0B9A44, #0A7E12) border-box;
   border-radius: 10px;
   width: 300px;
@@ -635,7 +635,7 @@ a {
 .three-section-fourth{
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient( #BF00FF, #280334) 1;
+  border-image: linear-gradient( #F752B0, #A400FF) 1;
   background-repeat: no-repeat;
   width: 300px;
   max-width: 100%;
@@ -1345,6 +1345,7 @@ a {
 
 .section-image-first {
   position: relative;
+  background-size: cover;
   background: url("../public/images/loro.png");
   background-repeat: no-repeat;
   width: 240px;
@@ -1358,6 +1359,7 @@ a {
 }
 
 .section-image-second {
+  background-size: cover;
   position: relative;
   background: url("../public/images/ladki.png");
   background-repeat: no-repeat;
@@ -1374,6 +1376,7 @@ a {
 .section-image-third {
   background: url("../public/images/panata.png");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 240px;
   object-fit: cover;
   max-width: 100%;
@@ -1388,6 +1391,7 @@ a {
 .section-image-fourth {
   background: url("../public/images/hdfcs.png");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 240px;
   object-fit: cover;
   max-width: 100%;
@@ -1413,10 +1417,15 @@ a {
   transform: translate(-50%, -50%);
   height: auto;
   max-width: 100%;
+ 
+}
+.secta5:last-child img{
+  filter: invert(1);
 }
 .section-image-fifth {
   background: url("../public/images/dabur.png");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 240px;
   object-position: cover;
   max-width: 100%;
@@ -1426,8 +1435,9 @@ a {
   filter: brightness(0.4);
 }
 .section-image-sixth {
-  background: none;
+ background: url("../public/images/eaimage.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 240px;
   object-position: cover;
   max-width: 100%;
@@ -1437,8 +1447,9 @@ a {
   filter: brightness(0.4);
 }
 .section-image-seventh {
-  background: none;
+  background: url('../public/images/flowers.png');
   background-repeat: no-repeat;
+  background-size: cover;
   width: 240px;
   object-position: cover;
   max-width: 100%;
@@ -1449,8 +1460,9 @@ a {
 }
 
 .section-image-eight {
-  background: none;
+  background: url('../public/images/mithal\ image.png');
   background-repeat: no-repeat;
+  background-size: cover;
   width: 240px;
   object-position: cover;
   max-width: 100%;
@@ -1459,6 +1471,7 @@ a {
   border: 1.5px solid white;
   filter: brightness(0.4);
 }
+
 /* ============our review css end =============== */
 /* business css end==================== */
 
@@ -2504,6 +2517,9 @@ footer .another-footer-section {
   .contact_us .contact_para{
     font-size: 15px;
   }
+  .banner-images img{
+    top: 49px;
+  }
   .button-chu {
     font-size: 13px;
   }
@@ -3064,7 +3080,25 @@ footer .another-footer-section {
 }
 
 
-
+.first-res p{
+  color: #FFFFFF;
+  font-family: "Raleway";
+  font-weight: 600;
+ font-size: 14.5px;
+ margin: 6px 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.first-res span{
+  margin-top: -4px;
+  margin-left: 4px;
+}
+.first-res .hg{
+  width: 40px;
+  max-width: 100%;
+  object-fit: cover;
+}
 .resarch-flex .first-res .ant-st{
   width: 50px;
  margin: 0 10px;
@@ -3686,23 +3720,20 @@ footer .another-footer-section {
     }
     
   }
-
+@media only screen and (max-width:500px){
+  .first-res p{
+    margin:0px 0px !important;
+  }
+}
   @media only screen and (max-width:410px){
-    .resarch-flex .first-res .ant-st{
-      width: 25px;
+    .resarch-flex{
+      flex-direction: column;
+      align-items: center;
     }
-    .resarch-flex .first-res .ant-sta{
-      width: 20px;
+    .resarch-flex img{
+      margin: 20px 15px !important;
     }
-    .resarch-flex .first-res .ant-big{
-      width: 32px;
-    }
-    .resarch-flex .first-res .antcolony{
-      width: 30px !important;
-    }
-    .resarch-flex .first-res .antserim{
-      width: 25px !important;
-    }
+    
   }
 
 
@@ -5350,6 +5381,13 @@ footer .another-footer-section {
   margin-top: 20px;
   height: auto;
 }
+.ano-col6{
+  width: 570px;
+  max-width: 100%;
+}
+.touchable{
+  cursor: pointer;
+}
 /* hire team css end=============================================== */
 
 /* ===============================about css start=================== */
@@ -5377,7 +5415,8 @@ footer .another-footer-section {
 /* ====================our work css start===================== */
  .our-work{
   background-color: #0A0F16;
-  padding: 170px 0px;
+  padding: 60px 0px;
+  padding-top: 160px;
  }
 .work-flex{
   display: flex;
@@ -5446,7 +5485,9 @@ footer .another-footer-section {
   }
 
   /* ==========work css in service============= */
-
+  .our-work{
+    padding-top: 120px;
+  }
   .work-head h2{
     font-size: 18px;
   }

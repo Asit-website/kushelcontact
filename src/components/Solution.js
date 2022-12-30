@@ -1265,17 +1265,16 @@ const menu12 = (e) =>{
               <span>Can’t find a service you are </span>
               <span>looking for?</span>
             </div>
-            <button>Explore All Services</button>
+           <NavLink className="touchable" to="/service"><button>Explore All Services</button></NavLink>
           </div>
           <div
-            style={{ width: "570px", maxWidth: "100%" }}
-            className="ano-color ano-col"
+            className="ano-color ano-col ano-col6"
           >
             <div className="ano-group">
               <span>Want to hire a resource to </span>
               <span>work with you?</span>
             </div>
-            <button>Hire team</button>
+           <NavLink className="touchable" to="/hiring"><button>Hire team</button></NavLink>
           </div>
         </div>
 

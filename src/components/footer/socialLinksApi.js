@@ -2,6 +2,7 @@ const socialLinksApi = [
     {
         id:1,
         image:'imagesa/fb.png',
+        link:"https://www.facebook.com/kusheldigisolutions?mibextid=ZbWKwL"
     },
     {
         id:2,
@@ -18,7 +19,8 @@ const socialLinksApi = [
     },
     {
         id:5,
-        image:'imagesa/linkedin.png'
+        image:'imagesa/linkedin.png',
+        link:"https://www.linkedin.com/company/kusheldigisolutions/"
     }
 ]
 

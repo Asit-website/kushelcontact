@@ -8,19 +8,19 @@ const imageApi = [
     {
         id:2,
         Class:'section-image-sixth',
-        // image:'images/justfab.png',
-        width:'90px'
+        image:'images/logobar.png',
+        width:'160px'
     },
     {
         id:3,
         Class:'section-image-seventh',
-        // image:'images/imdex.png',
-        width:'90px'
+        image:'images/fco-logo.png',
+        width:'120px'
     },
     {
         id:4,
         Class:'section-image-eight',
-        // image:'images/help.png',
+        image:'images/mithal.png',
         width:'140px'
     }
 ]

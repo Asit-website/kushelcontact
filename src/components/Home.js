@@ -666,7 +666,9 @@ const Home = ({mode}) => {
       setGrad(1);
       document.getElementById("ask").style.background="linear-gradient(to bottom, #F3670E, #F5B307) border-box";
       document.getElementById("ask").style.borderImage="none";
+      document.getElementById("ask").style.borderStyle="none";
       document.getElementById("bsk").style.background="none";
+      document.getElementById("bsk").style.borderStyle="solid";
       document.getElementById("bsk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
   }
   const setChange1 = (e) =>{
@@ -674,7 +676,9 @@ const Home = ({mode}) => {
     setGrad(2);
     document.getElementById("bsk").style.background="linear-gradient(to bottom, #29B22D, #29B22D,#24D968) border-box";
     document.getElementById("bsk").style.borderImage="none";
+    document.getElementById("bsk").style.borderStyle="none";
     document.getElementById("ask").style.borderImage="linear-gradient(#FDCB2C, #F9863F) 1";
+    document.getElementById("ask").style.borderStyle="solid";
     document.getElementById("ask").style.background="none";
   }
 
@@ -683,19 +687,21 @@ const Home = ({mode}) => {
       setGrad(3);
       document.getElementById("csk").style.background="linear-gradient(to bottom, #0B9A44, #0A7E12) border-box";
       document.getElementById("csk").style.borderImage="none";
+      document.getElementById("csk").style.borderStyle="none";
+      document.getElementById("dsk").style.borderStyle="solid";
       document.getElementById("dsk").style.background="none";
-      document.getElementById("dsk").style.borderImage="linear-gradient(#BF00FF, #280334) 1";
+      document.getElementById("dsk").style.borderImage="linear-gradient(#F752B0, #A400FF) 1";
 
   }
 
   const setChange3 = (e) =>{
      e.preventDefault();
      setGrad(4);
-     document.getElementById("ask").style.background="linear-gradient(to bottom, #F3670E, #F5B307) border-box";
-     document.getElementById("ask").style.borderImage="none";
      document.getElementById("dsk").style.background="linear-gradient(to bottom, #BF00FF, #280334) border-box";
      document.getElementById("dsk").style.borderImage="none";
      document.getElementById("csk").style.background="none";
+     document.getElementById("csk").style.borderStyle="solid";
+     document.getElementById("dsk").style.borderStyle="none";
      document.getElementById("csk").style.borderImage="linear-gradient(#29b12b, #33ead7) 1";
   }
   const setChange4 = (e) =>{
@@ -743,7 +749,7 @@ const Home = ({mode}) => {
             We are leading technology solutions providing company all over the
             world doing over 40 years.
           </p>
-          <button  className="home_btn">Read more</button>
+         <NavLink to="/about"><button  className="home_btn">Read more</button></NavLink>
           </div>
           <div className="banner-images">
               <img style={filterCss} src={girl} alt="" />
